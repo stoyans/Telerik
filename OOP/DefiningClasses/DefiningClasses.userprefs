@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="1MobilePhone/MobilePhone.cs">
+    <Files>
+      <File FileName="1MobilePhone/MobilePhone.cs" Line="16" Column="27" />
+      <File FileName="1MobilePhone/Display.cs" Line="50" Column="1" />
+      <File FileName="1MobilePhone/GSM.cs" Line="103" Column="35" />
+      <File FileName="1MobilePhone/Battery.cs" Line="30" Column="7" />
+      <File FileName="1MobilePhone/Calls.cs" Line="12" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="1MobilePhone" expanded="True">
+            <Node name="MobilePhone.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
