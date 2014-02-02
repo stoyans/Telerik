@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework forms</title>
+</head>
+<body>
+    <form method="post">
+
+        <table border="1" cellpadding="3">
+
+            <tr>
+                <th width=200 align="right">
+                    Last Name
+                </th>
+                <td width=350 colspan="4">
+                    <input type="text" name="lastname" size="50" autofocus="autofocus" />
+                </td>
+            </tr>
+            <tr>
+                <th width=200 align="right">
+                    First Name
+                </th>
+                <td width=350 colspan="4">
+                    <input type="text" name="firstname" size="50" />
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    Address
+                </th>
+                <td height=100 colspan="4">
+                    <textarea name="address" rows="9" cols="40" />
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    City
+                </th>
+                <td>
+                    <input type="text" name="firstname" size="30" />
+                </td>
+                <th>
+                    State
+                </th>
+                <td>
+                    <input type="text" size="10" />
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    Zip/Postal Code
+                </th>
+                <td colspan="4">
+                    <input type="text" name="firstname" size="10" />
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    Country
+                </th>
+                <td colspan="4">
+                    <select name="country">
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Greece">Greece</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    Phone(country code,
+                    <br />area code, number)
+                </th>
+                <td colspan="4">
+                    +(<input type="text" size="4" placeholder="000" pattern="[0-9]{3}" />)
+                    <input type="text" size="5" placeholder="000"> -
+                    <input type="text" size="18" placeholder="00-00-00">
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    E-mail
+                </th>
+                <td colspan="4">
+                    <input type="text" name="mail" />
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    Birth Day
+                </th>
+                <td colspan="4">
+                    Month <input type="text" size="3" required="true" />
+                    Day <input type="text" size="5" />
+                    Year (4 digits) <input type="text" size="4" />
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    Gender
+                </th>
+                <td colspan="4">
+                    <select name="country">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    Starting Date
+                </th>
+                <td colspan="4">
+                    <input type="radio" name="date" value="spring" />
+                    <label for="spring">Spring 2006</label>
+                    <input type="radio" name="date" value="summer" />
+                    <label for="summer">Summer 2006</label>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">
+                    Comments/Questions
+                </th>
+                <td colspan="4">
+                    <textarea name="comments" cols="40" rows="6"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center" bgcolor="green">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Clear Form" />
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
