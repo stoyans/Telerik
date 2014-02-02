@@ -27,8 +27,9 @@ namespace MobilePhone
             {
                 Console.WriteLine(phone.ToString());
             }
+            Console.WriteLine(GSM.IPhone4S.ToString());
         }
-        Console.WriteLine();
+        
 
     }
 }

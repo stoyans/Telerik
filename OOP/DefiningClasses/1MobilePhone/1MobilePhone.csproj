@@ -36,7 +36,7 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="GSMTest.cs" />
-    <Compile Include="MobilePhone.cs" />
+    <Compile Include="GSMCallHistoryTest.cs" />
     <Compile Include="Battery.cs" />
     <Compile Include="GSM.cs" />
     <Compile Include="Display.cs" />

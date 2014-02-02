@@ -12,7 +12,6 @@ namespace MobilePhone
 			this.DisplaySize = size;
 			this.NumberOfColors = colors;
 		}
-		
 		public int DisplaySize
 		{
 			get
