@@ -16,7 +16,7 @@ namespace MobilePhone
                new GSM("Samsung", "GS2", 450, "Person3", new Battery(980, 7, Battery.BatteryModel.LithiumPolymer), new Display(4, 165000) )
             };
 
-           return mobilePhone;
+            return mobilePhone;
         }
 
         GSM[] phones = GSMTests();
@@ -29,7 +29,7 @@ namespace MobilePhone
             }
             Console.WriteLine(GSM.IPhone4S.ToString());
         }
-        
+
 
     }
 }
