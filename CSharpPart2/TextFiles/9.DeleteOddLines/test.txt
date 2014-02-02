@@ -1,0 +1,251 @@
+2.                       Version 2.1, February 1999
+4. Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+6. Everyone is permitted to copy and distribute verbatim copies
+8.
+10. as the successor of the GNU Library Public License, version 2, hence
+12.
+14.
+16.freedom to share and change it.  By contrast, the GNU General Public
+18.free software--to make sure the software is free for all its users.
+20.  This license, the Lesser General Public License, applies to some
+22.Free Software Foundation and other authors who decide to use it.  You
+24.this license or the ordinary General Public License is the better
+26.
+28.not price.  Our General Public Licenses are designed to make sure that
+30.for this service if you wish); that you receive source code or can get
+32.it in new free programs; and that you are informed that you can do
+34.
+36.distributors to deny you these rights or to ask you to surrender these
+38.you if you distribute copies of the library or if you modify it.
+40.  For example, if you distribute copies of the library, whether gratis
+42.you.  You must make sure that they, too, receive or can get the source
+44.complete object files to the recipients, so that they can relink them
+46.it.  And you must show them these terms so they know their rights.
+48.  We protect your rights with a two-step method: (1) we copyright the
+50.permission to copy, distribute and/or modify the library.
+52.  To protect each distributor, we want to make it very clear that
+54.modified by someone else and passed on, the recipients should know
+56.author's reputation will not be affected by problems that might be
+58.
+60.any free program.  We wish to make sure that a company cannot
+62.restrictive license from a patent holder.  Therefore, we insist that
+64.consistent with the full freedom of use specified in this license.
+66.  Most GNU software, including some libraries, is covered by the
+68.General Public License, applies to certain designated libraries, and
+70.this license for certain libraries in order to permit linking those
+72.
+74.a shared library, the combination of the two is legally speaking a
+76.General Public License therefore permits such linking only if the
+78.Public License permits more lax criteria for linking other code with
+80.
+82.does Less to protect the user's freedom than the ordinary General
+84.of an advantage over competing non-free programs.  These disadvantages
+86.libraries.  However, the Lesser license provides advantages in certain
+88.
+90.encourage the widest possible use of a certain library, so that it becomes
+92.allowed to use the library.  A more frequent case is that a free
+94.case, there is little to gain by limiting the free library to free
+96.
+98.programs enables a greater number of people to use a large body of
+100.non-free programs enables many more people to use the whole GNU
+102.system.
+104.  Although the Lesser General Public License is Less protective of the
+106.linked with the Library has the freedom and the wherewithal to run
+108.
+110.modification follow.  Pay close attention to the difference between a
+112.former contains code derived from the library, whereas the latter must
+114.
+116.   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+118.  0. This License Agreement applies to any software library or other
+120.other authorized party saying it may be distributed under the terms of
+122.Each licensee is addressed as "you".
+124.  A "library" means a collection of software functions and/or data
+126.(which use some of those functions and data) to form executables.
+128.  The "Library", below, refers to any such software library or work
+130.Library" means either the Library or any derivative work under
+132.portion of it, either verbatim or with modifications and/or translated
+134.included without limitation in the term "modification".)
+136.  "Source code" for a work means the preferred form of the work for
+138.all the source code for all modules it contains, plus any associated
+140.and installation of the library.
+142.  Activities other than copying, distribution and modification are not
+144.running a program using the Library is not restricted, and output from
+146.on the Library (independent of the use of the Library in a tool for
+148.and what the program that uses the Library does.
+150.  1. You may copy and distribute verbatim copies of the Library's
+152.you conspicuously and appropriately publish on each copy an
+154.all the notices that refer to this License and to the absence of any
+156.Library.
+158.  You may charge a fee for the physical act of transferring a copy,
+160.fee.
+162.  2. You may modify your copy or copies of the Library or any portion
+164.distribute such modifications or work under the terms of Section 1
+166.
+168.
+170.    stating that you changed the files and the date of any change.
+172.    c) You must cause the whole of the work to be licensed at no
+174.
+176.    table of data to be supplied by an application program that uses
+178.    is invoked, then you must make a good faith effort to ensure that,
+180.    table, the facility still operates, and performs whatever part of
+182.
+184.    a purpose that is entirely well-defined independent of the
+186.    application-supplied function or table used by this function must
+188.    root function must still compute square roots.)
+190.These requirements apply to the modified work as a whole.  If
+192.and can be reasonably considered independent and separate works in
+194.sections when you distribute them as separate works.  But when you
+196.on the Library, the distribution of the whole must be on the terms of
+198.entire whole, and thus to each and every part regardless of who wrote
+200.
+202.your rights to work written entirely by you; rather, the intent is to
+204.collective works based on the Library.
+206.In addition, mere aggregation of another work not based on the Library
+208.a storage or distribution medium does not bring the other work under
+210.
+212.License instead of this License to a given copy of the Library.  To do
+214.that they refer to the ordinary GNU General Public License, version 2,
+216.ordinary GNU General Public License has appeared, then you can specify
+218.these notices.
+220.  Once this change is made in a given copy, it is irreversible for
+222.subsequent copies and derivative works made from that copy.
+224.  This option is useful when you wish to copy part of the code of
+226.
+228.derivative of it, under Section 2) in object code or executable form
+230.it with the complete corresponding machine-readable source code, which
+232.medium customarily used for software interchange.
+234.  If distribution of object code is made by offering access to copy
+236.source code from the same place satisfies the requirement to
+238.compelled to copy the source along with the object code.
+240.  5. A program that contains no derivative of any portion of the
+242.linked with it, is called a "work that uses the Library".  Such a
+244.therefore falls outside the scope of this License.
+246.  However, linking a "work that uses the Library" with the Library
+248.contains portions of the Library), rather than a "work that uses the
+250.Section 6 states terms for distribution of such executables.
+252.  When a "work that uses the Library" uses material from a header file
+254.derivative work of the Library even though the source code is not.
+256.linked without the Library, or if the work is itself a library.  The
+258.
+260.structure layouts and accessors, and small macros and small inline
+262.file is unrestricted, regardless of whether it is legally a derivative
+264.Library will still fall under Section 6.)
+266.  Otherwise, if the work is a derivative of the Library, you may
+268.Any executables containing that work also fall under Section 6,
+270.
+272.link a "work that uses the Library" with the Library to produce a
+274.under terms of your choice, provided that the terms permit
+276.engineering for debugging such modifications.
+278.  You must give prominent notice with each copy of the work that the
+280.this License.  You must supply a copy of this License.  If the work
+282.copyright notice for the Library among them, as well as a reference
+284.of these things:
+286.    a) Accompany the work with the complete corresponding
+288.    changes were used in the work (which must be distributed under
+290.    with the Library, with the complete machine-readable "work that
+292.    user can modify the Library and then relink to produce a modified
+294.    that the user who changes the contents of definitions files in the
+296.    to use the modified definitions.)
+298.    b) Use a suitable shared library mechanism for linking with the
+300.    copy of the library already present on the user's computer system,
+302.    will operate properly with a modified version of the library, if
+304.    interface-compatible with the version that the work was made with.
+306.    c) Accompany the work with a written offer, valid for at
+308.    specified in Subsection 6a, above, for a charge no more
+310.
+312.    from a designated place, offer equivalent access to copy the above
+314.
+316.    materials or that you have already sent this user a copy.
+318.  For an executable, the required form of the "work that uses the
+320.reproducing the executable from it.  However, as a special exception,
+322.normally distributed (in either source or binary form) with the major
+324.which the executable runs, unless that component itself accompanies
+326.
+328.restrictions of other proprietary libraries that do not normally
+330.use both them and the Library together in an executable that you
+332.
+334.Library side-by-side in a single library together with other library
+336.library, provided that the separate distribution of the work based on
+338.permitted, and provided that you do these two things:
+340.    a) Accompany the combined library with a copy of the same work
+342.    facilities.  This must be distributed under the terms of the
+344.
+346.    that part of it is a work based on the Library, and explaining
+348.
+350.the Library except as expressly provided under this License.  Any
+352.distribute the Library is void, and will automatically terminate your
+354.or rights, from you under this License will not have their licenses
+356.
+358.signed it.  However, nothing else grants you permission to modify or
+360.prohibited by law if you do not accept this License.  Therefore, by
+362.Library), you indicate your acceptance of this License to do so, and
+364.the Library or works based on it.
+366.  10. Each time you redistribute the Library (or any work based on the
+368.original licensor to copy, distribute, link with or modify the Library
+370.restrictions on the recipients' exercise of the rights granted herein.
+372.this License.
+374.  11. If, as a consequence of a court judgment or allegation of patent
+376.conditions are imposed on you (whether by court order, agreement or
+378.excuse you from the conditions of this License.  If you cannot
+380.License and any other pertinent obligations, then as a consequence you
+382.license would not permit royalty-free redistribution of the Library by
+384.the only way you could satisfy both it and this License would be to
+386.
+388.particular circumstance, the balance of the section is intended to apply,
+390.
+392.patents or other property right claims or to contest validity of any
+394.integrity of the free software distribution system which is
+396.generous contributions to the wide range of software distributed
+398.system; it is up to the author/donor to decide if he or she is willing
+400.impose that choice.
+402.This section is intended to make thoroughly clear what is believed to
+404.
+406.certain countries either by patents or by copyrighted interfaces, the
+408.an explicit geographical distribution limitation excluding those countries,
+410.excluded.  In such case, this License incorporates the limitation as if
+412.
+414.versions of the Lesser General Public License from time to time.
+416.but may differ in detail to address new problems or concerns.
+418.Each version is given a distinguishing version number.  If the Library
+420."any later version", you have the option of following the terms and
+422.the Free Software Foundation.  If the Library does not specify a
+424.the Free Software Foundation.
+426.  14. If you wish to incorporate parts of the Library into other free
+428.write to the author to ask for permission.  For software which is
+430.Software Foundation; we sometimes make exceptions for this.  Our
+432.of all derivatives of our free software and of promoting the sharing
+434.
+436.
+438.WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+440.OTHER PARTIES PROVIDE THE LIBRARY "AS IS" WITHOUT WARRANTY OF ANY
+442.IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+444.LIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME
+446.
+448.WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+450.FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+452.LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+454.FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+456.DAMAGES.
+458.                     END OF TERMS AND CONDITIONS
+460.           How to Apply These Terms to Your New Libraries
+462.  If you develop a new library, and you want it to be of the greatest
+464.everyone can redistribute and change.  You can do so by permitting
+466.ordinary General Public License).
+468.  To apply these terms, attach the following notices to the library.  It is
+470.convey the exclusion of warranty; and each file should have at least the
+472.
+474.    Copyright (C) <year>  <name of author>
+476.    This library is free software; you can redistribute it and/or
+478.    License as published by the Free Software Foundation; either
+480.
+482.    but WITHOUT ANY WARRANTY; without even the implied warranty of
+484.    Lesser General Public License for more details.
+486.    You should have received a copy of the GNU Lesser General Public
+488.    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+490.Also add information on how to contact you by electronic and paper mail.
+492.You should also get your employer (if you work as a programmer) or your
+494.necessary.  Here is a sample; alter the names:
+496.  Yoyodyne, Inc., hereby disclaims all copyright interest in the
+498.
+500.  Ty Coon, President of Vice
+502.That's all there is to it!

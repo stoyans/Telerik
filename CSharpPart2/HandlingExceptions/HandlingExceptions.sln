@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.HandleSquareRoot", "1.HandleSquareRoot\1.HandleSquareRoot.csproj", "{C0999680-6530-4444-A838-2830C2154B8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.HandleIntegerInGivenRange", "2.HandleIntegerInGivenRange\2.HandleIntegerInGivenRange.csproj", "{04510A89-EF0C-48EE-BD40-256433305ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.HandleDownloadFile", "4.HandleDownloadFile\4.HandleDownloadFile.csproj", "{5A44A3C9-1B8A-443B-A157-601B244FE715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.HandleReadFileContent", "3.HandleReadFileContent\3.HandleReadFileContent.csproj", "{C3A9BF30-E7AD-4F81-B0B5-294985D0E946}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04510A89-EF0C-48EE-BD40-256433305ABE}.Debug|x86.ActiveCfg = Debug|x86
+		{04510A89-EF0C-48EE-BD40-256433305ABE}.Debug|x86.Build.0 = Debug|x86
+		{04510A89-EF0C-48EE-BD40-256433305ABE}.Release|x86.ActiveCfg = Release|x86
+		{04510A89-EF0C-48EE-BD40-256433305ABE}.Release|x86.Build.0 = Release|x86
+		{5A44A3C9-1B8A-443B-A157-601B244FE715}.Debug|x86.ActiveCfg = Debug|x86
+		{5A44A3C9-1B8A-443B-A157-601B244FE715}.Debug|x86.Build.0 = Debug|x86
+		{5A44A3C9-1B8A-443B-A157-601B244FE715}.Release|x86.ActiveCfg = Release|x86
+		{5A44A3C9-1B8A-443B-A157-601B244FE715}.Release|x86.Build.0 = Release|x86
+		{C0999680-6530-4444-A838-2830C2154B8D}.Debug|x86.ActiveCfg = Debug|x86
+		{C0999680-6530-4444-A838-2830C2154B8D}.Debug|x86.Build.0 = Debug|x86
+		{C0999680-6530-4444-A838-2830C2154B8D}.Release|x86.ActiveCfg = Release|x86
+		{C0999680-6530-4444-A838-2830C2154B8D}.Release|x86.Build.0 = Release|x86
+		{C3A9BF30-E7AD-4F81-B0B5-294985D0E946}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A9BF30-E7AD-4F81-B0B5-294985D0E946}.Debug|x86.Build.0 = Debug|x86
+		{C3A9BF30-E7AD-4F81-B0B5-294985D0E946}.Release|x86.ActiveCfg = Release|x86
+		{C3A9BF30-E7AD-4F81-B0B5-294985D0E946}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = 3.HandleReadFileContent\3.HandleReadFileContent.csproj
+	EndGlobalSection
+EndGlobal
