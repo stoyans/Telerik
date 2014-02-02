@@ -42,9 +42,8 @@ namespace MobilePhone
             {
                 if (value.Length < 3)
                 {
-                    throw new ArgumentException();
+                    throw new ArgumentException("The name of the Model must be longer than 2 letters!");
                 }
-
                 this.model = value;
             }
         }
@@ -59,7 +58,7 @@ namespace MobilePhone
             {
                 if (value.Length < 3)
                 {
-                    throw new ArgumentException();
+                    throw new ArgumentException("The name of the Manufacturer must be longer than 2 letters!");
                 }
 
                 this.manufacturer = value;
@@ -74,9 +73,9 @@ namespace MobilePhone
             }
             set
             {
-                if (value.Length < 3)
-                {
-                    throw new ArgumentException();
+                if (ValidateInput(value) == false || value == null)
+                {   
+                    throw new ArgumentException("Invalid name! Only letters, space and hyphen is allowed!");
                 }
 
                 this.owner = value;
@@ -99,6 +98,24 @@ namespace MobilePhone
             }
         }
 
+        private bool ValidateInput(string input)
+        {
+            bool allowedSymbol = false;
+            for (int i = 0; i < input.Length; i++)
+            {
+                char ch = input[i];
+                if (char.IsLetter(ch) || ch == '-' || ch == ' ')
+                {
+                    allowedSymbol = true;
+                }
+                else
+                {
+                    return allowedSymbol = false;
+                }
+            }
+            return allowedSymbol;
+
+        }
         public void AddCall(Calls call)
         {
             callsTotal.Add(call);

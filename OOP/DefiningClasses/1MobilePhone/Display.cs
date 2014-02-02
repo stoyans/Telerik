@@ -20,7 +20,7 @@ namespace MobilePhone
             }
             set
             {
-                if (value < 0)
+                if (value < 1)
                 {
                     throw new ArgumentOutOfRangeException("The size of the display must be > 0!");
                 }
@@ -36,7 +36,7 @@ namespace MobilePhone
             }
             set
             {
-                if (value < 0)
+                if (value < 1)
                 {
                     throw new ArgumentOutOfRangeException("The colors can Not be negative!");
                 }
@@ -46,8 +46,7 @@ namespace MobilePhone
 
         public override string ToString()
         {
-            return string.Format("Display has {0}M colors and the size is {1} inches",
-                                  numberOfColors, sizeInInch);
+            return string.Format("Display has {0}M colors and the size is {1} inches", numberOfColors, sizeInInch);
         }
 
     }

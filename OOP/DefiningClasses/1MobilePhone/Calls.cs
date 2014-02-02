@@ -35,6 +35,10 @@ namespace MobilePhone
             }
             set
             {
+                if (value.Length < 6 || value == null)
+                {
+                    throw new ArgumentOutOfRangeException("Phone number is invalid!");
+                }
                 this.dialedPhone = value;
             }
         }
@@ -47,6 +51,10 @@ namespace MobilePhone
             }
             set
             {
+                if (value < 0 || value == null)
+                {
+                    throw new ArgumentOutOfRangeException("Duration of the call can't be negative!");
+                }
                 this.duration = value;
             }
         }

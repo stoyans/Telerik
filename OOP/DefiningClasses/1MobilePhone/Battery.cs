@@ -4,7 +4,6 @@ namespace MobilePhone
 {
     public class Battery
     {
-
         private int idleHours;
         private int talkHours;
         private BatteryModel batteryModel;
@@ -58,6 +57,7 @@ namespace MobilePhone
             return string.Format("Battery type is: {0}, idlehours are {1}, talk houres are {2}",
             this.batteryModel, this.idleHours, this.talkHours);
         }
+
     }
 }
 
