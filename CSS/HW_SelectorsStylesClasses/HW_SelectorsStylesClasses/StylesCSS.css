@@ -1,0 +1,50 @@
+﻿body {
+    font-family:Calibri;
+}
+table {
+    background-color:grey;
+    
+}
+td {
+    width:200px;
+    padding-bottom:15px;
+
+}
+th.head {
+    font-style:italic;
+    width:120px;
+    text-align:left;
+    color:whitesmoke;
+    font-family:Calibri;
+    vertical-align:top;
+}
+.yellow {
+    color:lightyellow;
+}
+.grey {
+    color:lightgray;
+    font-family:Calibri;
+}
+#spacing {
+    padding-top:15px;
+}
+#red {
+    color:red;
+    font-weight:bold;
+    font-family:Calibri;
+}
+#orange {
+    color:orange;
+    font-family:Calibri;
+    font-size:18px;
+}
+#title {
+    background-color:grey;
+    width:328px;
+    font-size:22px;
+    text-align:left;
+    font-family:Calibri;
+    color:whitesmoke;
+    padding-left:2px;
+    padding-bottom:10px;
+}

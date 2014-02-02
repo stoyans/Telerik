@@ -1,0 +1,37 @@
+body {
+    font-family:Calibri;
+}
+thead tr th {
+    padding-left:10px;
+}
+thead
+{
+background-color:#65C240;
+color:white;
+}
+table, th, td
+{
+border-collapse:collapse;
+text-align:left;
+border: 1px solid #D6D6C2;
+padding-left:10px;
+}
+td, th
+{
+width:5cm;
+height: 1cm;
+
+}
+tr:nth-child(even) {
+background-color: rgba(222,184,135, 0.3);
+}
+.bgcolor
+{
+background-color: rgba(222,184,135, 0.8);
+width:1.3em; height:1.3em;
+}
+.size {
+    width:30px;
+    height:20px;
+}
+

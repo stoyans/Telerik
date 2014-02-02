@@ -1,0 +1,42 @@
+body{
+	background-color: #949470;
+}
+h1{
+	text-align:center;
+	color: #DAD3CC;
+}
+nav a{
+	color: white;
+	text-align: center;
+    font-weight:bold
+}
+#footer{
+	text-align:center;
+}
+#position{
+    text-align:center;
+}
+nav {
+    text-align: center;
+}
+ul, li {
+   	list-style-type: none;
+}
+article a{
+	color: black;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+a.last:visited
+{text-decoration:underline;}
+a.last:link
+{text-decoration:underline;}
+a.last:hover
+{text-decoration:underline;}
+#current
+{
+background-color: rgba(255,255,255, 0.4);
+}

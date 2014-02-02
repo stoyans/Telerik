@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_SelectorsStylesClasses", "HW_SelectorsStylesClasses\HW_SelectorsStylesClasses.csproj", "{7FA32BA2-54D8-4901-A84C-7F8D68ED8C3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FA32BA2-54D8-4901-A84C-7F8D68ED8C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA32BA2-54D8-4901-A84C-7F8D68ED8C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA32BA2-54D8-4901-A84C-7F8D68ED8C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA32BA2-54D8-4901-A84C-7F8D68ED8C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
