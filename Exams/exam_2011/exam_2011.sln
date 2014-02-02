@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextDate", "NextDate\NextDate.csproj", "{A550B555-496F-4927-B6FA-829CD8C8D3FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tribonacci", "Tribonacci\Tribonacci.csproj", "{B6783A97-1BE7-4394-98AF-8892846AFC81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sheets", "Sheets\Sheets.csproj", "{255263C0-6089-4547-AD56-0A0E5E6AEF9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carpets", "Carpets\Carpets.csproj", "{08DCAE85-DB9F-4E1B-8099-0B965E4694F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08DCAE85-DB9F-4E1B-8099-0B965E4694F8}.Debug|x86.ActiveCfg = Debug|x86
+		{08DCAE85-DB9F-4E1B-8099-0B965E4694F8}.Debug|x86.Build.0 = Debug|x86
+		{08DCAE85-DB9F-4E1B-8099-0B965E4694F8}.Release|x86.ActiveCfg = Release|x86
+		{08DCAE85-DB9F-4E1B-8099-0B965E4694F8}.Release|x86.Build.0 = Release|x86
+		{255263C0-6089-4547-AD56-0A0E5E6AEF9D}.Debug|x86.ActiveCfg = Debug|x86
+		{255263C0-6089-4547-AD56-0A0E5E6AEF9D}.Debug|x86.Build.0 = Debug|x86
+		{255263C0-6089-4547-AD56-0A0E5E6AEF9D}.Release|x86.ActiveCfg = Release|x86
+		{255263C0-6089-4547-AD56-0A0E5E6AEF9D}.Release|x86.Build.0 = Release|x86
+		{A550B555-496F-4927-B6FA-829CD8C8D3FC}.Debug|x86.ActiveCfg = Debug|x86
+		{A550B555-496F-4927-B6FA-829CD8C8D3FC}.Debug|x86.Build.0 = Debug|x86
+		{A550B555-496F-4927-B6FA-829CD8C8D3FC}.Release|x86.ActiveCfg = Release|x86
+		{A550B555-496F-4927-B6FA-829CD8C8D3FC}.Release|x86.Build.0 = Release|x86
+		{B6783A97-1BE7-4394-98AF-8892846AFC81}.Debug|x86.ActiveCfg = Debug|x86
+		{B6783A97-1BE7-4394-98AF-8892846AFC81}.Debug|x86.Build.0 = Debug|x86
+		{B6783A97-1BE7-4394-98AF-8892846AFC81}.Release|x86.ActiveCfg = Release|x86
+		{B6783A97-1BE7-4394-98AF-8892846AFC81}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Carpets\Carpets.csproj
+	EndGlobalSection
+EndGlobal

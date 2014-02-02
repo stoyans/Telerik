@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tribonacci/Main.cs">
+    <Files>
+      <File FileName="Tribonacci/Main.cs" Line="1" Column="1" />
+      <File FileName="NextDate/Main.cs" Line="1" Column="1" />
+      <File FileName="Sheets/Main.cs" Line="14" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/Tanis/exam_2011/Sheets/Main.cs" line="58" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
