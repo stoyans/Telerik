@@ -73,9 +73,9 @@ namespace MobilePhone
             }
             set
             {
-                if (ValidateInput(value) == false || value == null)
+                if (ValidateInput(value) == false || value == null || value.Length < 3)
                 {   
-                    throw new ArgumentException("Invalid name! Only letters, space and hyphen is allowed!");
+                    throw new ArgumentException("Invalid name - length of the name must be longer! \nOnly letters, space and hyphen is allowed!");
                 }
 
                 this.owner = value;
