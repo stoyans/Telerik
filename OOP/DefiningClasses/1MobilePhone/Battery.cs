@@ -13,7 +13,7 @@ namespace MobilePhone
             NiMH, NiCd, LithiumPolymer, LithiumLon
         }
 
-        public Battery(int IdleHours, int TalkHours, BatteryModel modelBattery)
+        public Battery(int IdleHours = 0, int TalkHours = 0, BatteryModel modelBattery = BatteryModel.LithiumLon)
         {
             this.IdleHours = IdleHours;
             this.TalkHours = TalkHours;
@@ -30,7 +30,7 @@ namespace MobilePhone
             {
                 if (value < 0)
                 {
-                    throw new ArgumentOutOfRangeException();
+                    throw new ArgumentOutOfRangeException("Idle hours can not be negative!");
                 }
                 this.idleHours = value;
             }
@@ -46,7 +46,7 @@ namespace MobilePhone
             {
                 if (value < 0)
                 {
-                    throw new ArgumentOutOfRangeException();
+                    throw new ArgumentOutOfRangeException("Idle hours can not be negative!");
                 }
                 this.talkHours = value;
             }

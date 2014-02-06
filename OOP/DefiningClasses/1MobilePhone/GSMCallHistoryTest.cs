@@ -12,7 +12,9 @@ namespace MobilePhone
                 Display display = new Display(4, 16000000);
                 Battery battery = new Battery(620, 8, Battery.BatteryModel.NiMH);
                 GSM phone = new GSM("One", "HTC", 850, "Person", battery, display);
-
+                GSM pn = new GSM("Next", "Google");
+                Console.WriteLine(pn.ToString());
+                
                 GSMTest test = new GSMTest();
                 Console.WriteLine("=============");
                 test.GSMTesting();

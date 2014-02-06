@@ -11,25 +11,23 @@ namespace MobilePhone
         private string owner;
         private Battery battery;
         private Display display;
-        internal static GSM IPhone4S = new GSM("IPhone4S", "Apple", 1000, "Somebody");
+        internal static GSM iPhone4S = new GSM("IPhone4S", "Apple", 1000, "Somebody");
         List<Calls> callsTotal = new List<Calls>();
 
-
-        public GSM(string model, string manufacturer, int price, string owner, Battery battery, Display display)
+        public GSM(string model = null, string manufacturer = null, int price = 0, string owner = null, Battery battery = null, Display display = null)
         {
-            this.Model = model;
-            this.Manufacturer = manufacturer;
-            this.Price = price;
-            this.Owner = owner;
+            this.manufacturer = manufacturer;
+            this.model = model;
+            this.price = price;
+            this.owner = owner;
             this.battery = battery;
             this.display = display;
         }
-        public GSM(string model, string manufacturer, int price, string owner)
+
+        public GSM(string model, string manufacturer) : this(model, manufacturer, 0, null, null, null)
         {
-            this.Model = model;
-            this.Manufacturer = manufacturer;
-            this.Price = price;
-            this.Owner = owner;
+            this.manufacturer = manufacturer;
+            this.model = model;
         }
 
         public string Model
@@ -92,7 +90,7 @@ namespace MobilePhone
             {
                 if (value < 0)
                 {
-                    throw new ArgumentOutOfRangeException();
+                    throw new ArgumentOutOfRangeException("The price must be > 0");
                 }
                 this.price = value;
             }

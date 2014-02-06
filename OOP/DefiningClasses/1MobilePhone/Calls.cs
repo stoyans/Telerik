@@ -51,7 +51,7 @@ namespace MobilePhone
             }
             set
             {
-                if (value < 0 || value == null)
+                if (value < 0)
                 {
                     throw new ArgumentOutOfRangeException("Duration of the call can't be negative!");
                 }

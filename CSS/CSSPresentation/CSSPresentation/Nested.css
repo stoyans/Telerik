@@ -1,0 +1,14 @@
+﻿body
+{
+   margin:0;
+   padding:0;
+}
+
+.divs {
+    border:2px solid red;
+    background-color: black;
+    border-radius:75px;
+    float:left;
+    width:90%;
+    margin:0;
+}
