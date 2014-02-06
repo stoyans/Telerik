@@ -96,6 +96,14 @@ namespace MobilePhone
             }
         }
 
+        public GSM IPhone4S
+        {
+            get 
+            {
+                return iPhone4S;
+            }
+        }
+
         private bool ValidateInput(string input)
         {
             bool allowedSymbol = false;
