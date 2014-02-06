@@ -1,0 +1,20 @@
+﻿@font-face {
+    font-family: EdwardScript;
+    src: url('../images/EdwardScript.TTF');
+}
+
+body {
+    color: #0094ff;
+}
+
+    body p:first-letter {
+        font-family: EdwardScript;
+        font-size: 1cm;
+    }
+    body p::first-line {
+        font-weight:bold;
+    }
+
+p {
+    font-family: Consolas;
+}
