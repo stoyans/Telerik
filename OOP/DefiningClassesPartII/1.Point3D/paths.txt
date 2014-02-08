@@ -1,0 +1,2 @@
+Coordinates of the point are: X = 2, Y = 3, Z = 7
+Coordinates of the point are: X = 1, Y = -3, Z = 8

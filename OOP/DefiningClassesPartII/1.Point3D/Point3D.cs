@@ -51,7 +51,7 @@ namespace _1.Point3D
             }
         }
 
-        public static Point3D()
+        static Point3D()
         {
             pointO = new Point3D(0, 0, 0);
         }

@@ -14,7 +14,8 @@ namespace _1.Point3D
             Path pathOfPoints3D = new Path();
             pathOfPoints3D.AddPoint(point);
             pathOfPoints3D.AddPoint(point2);
-            PathStorage.savePaths(pathOfPoints3D);
+            PathStorage.SavePaths(pathOfPoints3D);
+            PathStorage.LoadPaths();
 
         }
     }

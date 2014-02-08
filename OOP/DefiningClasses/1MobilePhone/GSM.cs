@@ -16,10 +16,10 @@ namespace MobilePhone
 
         public GSM(string model = null, string manufacturer = null, int price = 0, string owner = null, Battery battery = null, Display display = null)
         {
-            this.manufacturer = manufacturer;
-            this.model = model;
-            this.price = price;
-            this.owner = owner;
+            this.Manufacturer = manufacturer;
+            this.Model = model;
+            this.Price = price;
+            this.Owner = owner;
             this.battery = battery;
             this.display = display;
         }
@@ -83,9 +83,12 @@ namespace MobilePhone
             }
             set
             {
-                if (ValidateInput(value) == false || value == null || value.Length < 3)
-                {   
-                    throw new ArgumentException("Invalid name - length of the name must be longer! \nOnly letters, space and hyphen is allowed!");
+                if (value != null)
+                {
+                    if (ValidateInput(value) == false || value == null || value.Length < 3)
+                    {
+                        throw new ArgumentException("Invalid name - length of the name must be longer! \nOnly letters, space and hyphen is allowed!");
+                    }
                 }
 
                 this.owner = value;
