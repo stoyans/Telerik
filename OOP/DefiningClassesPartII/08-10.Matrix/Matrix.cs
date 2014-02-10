@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace _08_10.Matrix
 {
-    public class Matrix<T> where T : IComparable, IFormattable
+    public class Matrix<T> where T : IComparable, IFormattable, IConvertible, IComparable<T>, IEquatable<T>
     {
         private int row;
         private int col;
         private T[,] matrix;
-
 
         public Matrix(int row, int col, T[,] matrix)
         {

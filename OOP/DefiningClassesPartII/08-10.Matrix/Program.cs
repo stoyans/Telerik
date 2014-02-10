@@ -10,8 +10,8 @@ namespace _08_10.Matrix
     {
         static void Main()
         {
-            Matrix<int> matrix = new Matrix<int>(3, 3, new[,] { { 2, 2, 1 }, { -1, 4, 8 }, { 3, 4, 0 } });
-            Matrix<int> matrix2 = new Matrix<int>(3, 3, new[,] { { 2, 2, 1 }, { -1, 4, 8 }, { 3, 4, 0 } });
+            Matrix<decimal> matrix = new Matrix<decimal>(3, 3, new decimal[,] { { 2, 2, 1 }, { -1, 4, 8 }, { 3, 4, 0 } });
+            Matrix<decimal> matrix2 = new Matrix<decimal>(3, 3, new decimal[,] { { 2, 2, 1 }, { -1, 4, 8 }, { 3, 4, 0 } });
             matrix.Print();
 
             (matrix + matrix2).Print();
