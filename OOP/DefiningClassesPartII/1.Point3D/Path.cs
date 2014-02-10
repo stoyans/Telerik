@@ -20,14 +20,6 @@ namespace _1.Point3D
         {
             pathOfPoints.Add(point);
         }
-
-        public void PrintPath()
-        {
-            foreach (var point in pathOfPoints)
-            {
-                Console.WriteLine(point);
-            }
-        }
         
     }
 }
