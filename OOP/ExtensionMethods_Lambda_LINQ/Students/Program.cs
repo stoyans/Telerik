@@ -82,16 +82,15 @@ namespace Students
 
             //Task 16
 
-            var studentsMath = ///students.Where(st=>st.Group.DepartmentName == "Mathematics");
-                from student in students
-                             join gr in groups on student.GroupNumber equals gr.GroupNumber
-                             where gr.GroupNumber == 2
-                             select student;
+            var studentsMath = from student in students
+                               join gr in groups on student.GroupNumber equals gr.GroupNumber
+                               where gr.GroupNumber == 2
+                               select student;
 
-            foreach (var st in studentsMath)
-            {
-                Console.WriteLine(st.FirstName);
-            }
+           foreach (var st in studentsMath)
+           {
+               Console.WriteLine(st.FirstName);
+           }
 
 
         }
