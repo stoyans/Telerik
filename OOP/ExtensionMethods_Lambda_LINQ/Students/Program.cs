@@ -28,6 +28,7 @@ namespace Students
             };
 
             //task 9
+            Console.WriteLine("==== Students from Group 2 in descending order ====");
             var groupTwoStudents = students.Where(st => st.GroupNumber == 2).OrderBy(st => st.FirstName);
             foreach (var item in groupTwoStudents)
             {
@@ -35,6 +36,7 @@ namespace Students
             }
 
             //task 10
+            Console.WriteLine("==== Students from Group 2 in descending order with Extension method ====");
             List<Student> getStudents = students.GetStudentsByGroup(2);
 
             foreach (var item in getStudents)
@@ -43,6 +45,7 @@ namespace Students
             }
 
             //Task 11
+            Console.WriteLine("==== Students with email in ABV ====");
             var studentsWithABVMail = students.Where(st => st.Email.Substring(st.Email.IndexOf('@') + 1) == "abv.bg");
             foreach (var item in studentsWithABVMail)
             {
@@ -50,6 +53,7 @@ namespace Students
             }
 
             //Task 12
+            Console.WriteLine("==== Students with Sofia phones ====");
             var studentsWithSofiaPhone = students.Where(st => st.Tel.ToString().Substring(0, 2) == "02");
             foreach (var item in studentsWithSofiaPhone)
             {
@@ -57,6 +61,7 @@ namespace Students
             }
 
             //Task 13
+            Console.WriteLine("==== Students with at least one excellent mark ====");
             var studentsWithAtLeastOneSixMark = from student in students
                                                 where student.Marks.Contains(6)
                                                 select new { fullName = student.FirstName + " " + student.LastName, Marks = student.Marks };
@@ -67,6 +72,7 @@ namespace Students
             }
 
             //Task 14
+            Console.WriteLine("==== Students with 2 F marks ====");
             List<Student> studentsWith2Marks = students.GetStudentsBy2Marks(2);
             foreach (var item in studentsWith2Marks)
             {
@@ -74,6 +80,7 @@ namespace Students
             }
 
             //Task 15
+            Console.WriteLine("==== Marks of the students from 2006 ====");
             var marksOfStudentsEnrolled2006 = students.Where(st => st.FN.ToString().Substring(7, 2) == "06");
             foreach (var student in marksOfStudentsEnrolled2006)
             {
@@ -81,7 +88,7 @@ namespace Students
             }
 
             //Task 16
-
+            Console.WriteLine("==== Students from Math ====");
             var studentsMath = from student in students
                                join gr in groups on student.GroupNumber equals gr.GroupNumber
                                where gr.GroupNumber == 2
