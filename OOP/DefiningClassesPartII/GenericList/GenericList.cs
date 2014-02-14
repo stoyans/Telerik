@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace GenericList
 {
-    public class GenericList<T> where T : IComparable
+    public class GenericList<T> where T: IComparable
     {
         private int capacityDefault;
         private T[] items;
         private int index = 0;
+        
 
         public GenericList(int capacity)
         {
@@ -28,6 +30,10 @@ namespace GenericList
             }
             this.items[index++] = item;
         }
+        public void foreac()
+        {
+            items.GetEnumerator();
+        }
 
         public T FindAt(int index)
         {
@@ -35,6 +41,7 @@ namespace GenericList
             {
                 throw new ArgumentOutOfRangeException("Index does not exist!");
             }
+            
             return items[index];
         }
 
