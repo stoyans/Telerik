@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace _03.AnimalsTest
 {
-    class Tomcat : Animal, ISound
+    class Tomcat : Cat, ISound
     {
-        public Tomcat(string name, int age)
+        public Tomcat(string name, int age) 
+            : base(name, age, "male")
         {
-            this.Name = name;
-            this.Age = age;
-            this.Sex = "male";
+
         }
 
-        public void MakeSound()
+        public new void MakeSound()
         {
             Console.WriteLine("Mewmmww");
         }

@@ -11,9 +11,8 @@ namespace _02.Human
         private int grade;
 
         public Student(string firstName, string lastName, int grade)
+            : base(firstName, lastName)
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
             this.Grade = grade; 
         }
 

@@ -11,10 +11,9 @@ namespace _02.Human
         private int weekSalary;
         private int workHoursPerDay;
 
-        public Worker(string firstName, string lastName, int weekSalary, int hoursPerDay)
+        public Worker(string firstName, string lastName, int weekSalary, int hoursPerDay) 
+            : base(firstName, lastName)
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
             this.WeekSalary = weekSalary;
             this.WorkHoursPerDay = hoursPerDay;
         }

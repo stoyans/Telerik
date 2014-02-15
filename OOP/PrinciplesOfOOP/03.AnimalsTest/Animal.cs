@@ -12,6 +12,13 @@ namespace _03.AnimalsTest
         private string name;
         private string sex;
 
+        public Animal(string name, int age, string sex)
+        {
+            this.Name = name;
+            this.Age = age;
+            this.Sex = sex;
+        }
+
         public int Age
         {
             get
@@ -46,7 +53,6 @@ namespace _03.AnimalsTest
                 this.sex = value;
             }
         }
-
 
     }
 }

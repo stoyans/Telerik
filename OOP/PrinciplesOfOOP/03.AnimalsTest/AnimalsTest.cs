@@ -8,7 +8,6 @@ namespace _03.AnimalsTest
 {
     class AnimalsTest
     {
-
         public static double AverageAge(Animal[] animals)
         {
             int sumAge = animals.Sum(animal => animal.Age);
@@ -44,7 +43,7 @@ namespace _03.AnimalsTest
                 new Kitten("Kitten3", 2)
             };
 
-            Console.WriteLine("{0:F2}",AnimalsTest.AverageAge(kittens));
+            Console.WriteLine("Average age of kittens {0:F2}", AnimalsTest.AverageAge(kittens));
         }
 
     }

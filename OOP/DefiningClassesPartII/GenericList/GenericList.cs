@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 namespace GenericList
-{
+{                 
     public class GenericList<T> where T: IComparable
     {
         private int capacityDefault;

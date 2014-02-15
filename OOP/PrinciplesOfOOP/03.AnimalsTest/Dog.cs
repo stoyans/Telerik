@@ -10,10 +10,9 @@ namespace _03.AnimalsTest
     {
 
         public Dog(string name, int age, string sex)
+            : base(name, age, sex)
         {
-            this.Name = name;
-            this.Age = age;
-            this.Sex = sex;            
+           
         }
 
         public void MakeSound()

@@ -11,6 +11,11 @@ namespace _02.Human
         private string firstName;
         private string lastName;
 
+        public Human(string firstName, string lastName)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+        }
         public string FirstName
         {
             get
