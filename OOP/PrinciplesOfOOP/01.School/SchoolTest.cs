@@ -14,14 +14,13 @@ namespace Excercise1
                 pesho.AddDiscipline(p1);
                 pesho.AddDiscipline(new Discipline("biology", 2, 5));
 
-                Classes classs = new Classes("grada");
+                Classes firstClass = new Classes("SomeClass");
                 pesho.Comment = "";
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
-            
+            } 
 
 		}
 	}

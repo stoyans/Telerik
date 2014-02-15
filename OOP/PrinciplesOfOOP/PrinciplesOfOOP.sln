@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolTest", "Excercise1\SchoolTest.csproj", "{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Human", "02.Human\02.Human.csproj", "{26F3D8FC-8837-4339-AB19-CD4EF0E76CE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.AnimalsTest", "03.AnimalsTest\03.AnimalsTest.csproj", "{17270FE4-72B4-4779-8AFC-62845D359D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.School", "01.School\01.School.csproj", "{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,16 +19,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Debug|x86.ActiveCfg = Debug|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Debug|x86.Build.0 = Debug|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Release|Any CPU.ActiveCfg = Release|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Release|Mixed Platforms.Build.0 = Release|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Release|x86.ActiveCfg = Release|x86
-		{11BF9CB6-DCF8-4826-8C41-D51607E8F5CF}.Release|x86.Build.0 = Release|x86
 		{26F3D8FC-8837-4339-AB19-CD4EF0E76CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26F3D8FC-8837-4339-AB19-CD4EF0E76CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26F3D8FC-8837-4339-AB19-CD4EF0E76CE1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -49,6 +39,16 @@ Global
 		{17270FE4-72B4-4779-8AFC-62845D359D75}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{17270FE4-72B4-4779-8AFC-62845D359D75}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{17270FE4-72B4-4779-8AFC-62845D359D75}.Release|x86.ActiveCfg = Release|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2402E799-7C2C-4AA2-ACE4-AC8CE119ED91}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
