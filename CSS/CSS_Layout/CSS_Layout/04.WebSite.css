@@ -1,0 +1,173 @@
+﻿body {
+    background-color: #f1ecec;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 190px;
+    background-color: #f1ecec;
+    float: left;
+}
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+dd {
+    margin: 0;
+}
+
+dt {
+    color: red;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+nav a h2 {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 0;
+    float: left;
+    margin-bottom: 15px;
+    padding-top: 17px;
+}
+
+nav img {
+    padding-top: 20px;
+    padding-left: 1px;
+    float: left;
+}
+
+dl {
+    padding-top: 45px;
+}
+
+section {
+    padding-left: 5px;
+    width: 650px;
+    margin: 0;
+    float: left;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+}
+
+hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+h2.title {
+    margin-left: 0;
+    padding-left: 2px;
+    font-size: 17px;
+    background-color: gray;
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+section img {
+    float: left;
+    margin-right: 10px;
+    padding-bottom: 25px;
+}
+
+p {
+    margin: 5px;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+article {
+    padding-bottom: 20px;
+}
+
+    article p a {
+        color: #981414;
+    }
+
+#last {
+    margin-bottom: 40px;
+}
+
+button.rightbutton {
+    background-color: transparent;
+    background-image: url('img/rightarrow.png');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 20px;
+    border-color: black;
+    border-width: 1px;
+    background-position: center;
+    background-position-x: right;
+}
+
+button.leftbutton {
+    background-color: transparent;
+    background-image: url('img/leftarrow.png');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 20px;
+    border-color: black;
+    border-width: 1px;
+    background-position: center;
+    background-position-x: left;
+}
+
+aside {
+    text-align: center;
+    width: 190px;
+    float: left;
+    background-color: whitesmoke;
+}
+
+    aside div {
+        border: 1px solid;
+        margin-bottom: 3px;
+        width:178px;
+        margin-left:5px;
+    }
+
+    aside p {
+        border: 1px solid;
+        margin-bottom: 3px;
+        margin-top: 1px;
+    }
+
+        aside p a {
+            color: #981414;
+            
+        }
+
+    aside h3 {
+        background-color: gray;
+        color: white;
+        font-size:15px;
+    }
+
+    aside div a {
+        color: #981414;
+    }
+
+#style-button {
+    width: 155px;
+    height: 35px;
+    background: #f0f9ff; /* Old browsers */
+    background: -moz-linear-gradient(top, #f0f9ff 0%, #cbebff 38%, #a1dbff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f9ff), color-stop(38%,#cbebff), color-stop(100%,#a1dbff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f0f9ff 0%,#cbebff 38%,#a1dbff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f0f9ff 0%,#cbebff 38%,#a1dbff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f0f9ff 0%,#cbebff 38%,#a1dbff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 38%,#a1dbff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+    border:1px solid gray;
+    color:#18a2c1;
+    margin-top:5px;
+}

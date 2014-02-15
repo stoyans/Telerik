@@ -1,0 +1,56 @@
+﻿body {
+    font-family: Calibri;
+}
+header {
+    padding-top:0;
+    margin-top:0;
+}
+
+#categories {
+    background-color: lightgray;
+    border: 1px solid gray;
+    width: 500px;
+    height: 530px;
+    border-radius: 8px;
+}
+
+section.category-item {
+    width: 450px;
+    background-color: white;
+    margin: 10px;
+    margin-top: 20px;
+    border: 1px black;
+    padding: 12px;
+    float: left;
+    border: 1px solid gray;
+}
+p {
+    margin:0;
+}
+article {
+    margin:0;
+}
+
+h3 {
+    margin-left: 14px;
+}
+
+div.buttons {
+    position:relative;
+    margin-left:310px;
+    margin-top:13px;
+    width:140px;
+}
+
+img {
+    border: 1px solid gray;
+    float:left;
+    margin-right: 16px;
+}
+button {
+    background-image:url('img/button_listen.png');
+    color:white;
+    height:30px;
+    font-size:14px;
+    padding-left:22px;
+}
