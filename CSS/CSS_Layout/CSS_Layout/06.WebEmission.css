@@ -1,39 +1,51 @@
 ﻿body {
-    background-color:#063e4e;
+   background-color:black;
 }
 * {
     margin:0;
     padding:0;
 }
+aside {
+    background-color:#063e4e;
+    border-radius:8px;
+    height:300px;
+    width:700px;
+}
 header {
     margin-top:10px;
+    background-color:#063e4e;
+}
+ul {
+    background-color:#063e4e;
+    border-top-right-radius:8px;
 }
 ul li {
     display:inline-block;
-    background-color:green;
     padding:8px;
     color:#89bbb5;
     background-color:rgba(120, 104, 104, 0.53);
 }
+    ul li:hover {
+        background-color:#063e4e;
+        cursor:pointer;
+        color:white;
+    }
 
-#selected {
-    color:whitesmoke;
-    background-color:#063e4e;
-
-}
-#selected-news {
-    color:whitesmoke;
-    background-color:#28aa92;
-}
 td {
     width:280px;
     padding-bottom:10px;
     padding-top:10px;  
     color:lightgray;
 }
+    td:hover {
+        background-color:#28aa92;
+        cursor:pointer;
+        color:white;
+    }
 section {
     margin-top:10px;
     float:left;
+    background-color:#063e4e;
 }
 figure {
     margin-top:10px;
