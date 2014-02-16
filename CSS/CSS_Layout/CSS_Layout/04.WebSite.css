@@ -156,6 +156,9 @@ aside {
     aside div a {
         color: #981414;
     }
+input {
+    width:140px;
+}
 
 #style-button {
     width: 155px;

@@ -4,12 +4,11 @@ using System.Collections.Generic;
 
 namespace GenericList
 {                 
-    public class GenericList<T> where T: IComparable
+    public class GenericList <T> where T: IComparable
     {
         private int capacityDefault;
         private T[] items;
         private int index = 0;
-        
 
         public GenericList(int capacity)
         {

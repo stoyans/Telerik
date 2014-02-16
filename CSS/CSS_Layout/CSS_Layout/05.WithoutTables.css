@@ -1,0 +1,67 @@
+﻿body {
+    font-family: Calibri;
+}
+* {
+    margin:0;
+    padding:0;
+}
+header {
+    margin-left:85px;
+}
+ul li{
+    display:inline;
+    list-style-type:none;
+    font-size:18px;
+    font-weight:bold;
+    margin-right:5px;
+}
+    ul li a {
+        color:#49cbfc
+    }
+section {
+    width:520px;
+    padding:5px;
+    border:1px solid black;
+    height:530px;
+    margin-left:5px;
+    margin-top:5px;
+    font-family:Comic Sans MS;
+    font-size:13px;
+    float:left;
+}
+fieldset {
+
+    margin-right:5px;
+    width:250px;
+    float:left;
+    height:170px;
+    border:1px solid black;
+
+}
+hr {
+    margin-top:5px;
+    width:730px;
+}
+legend {
+    margin-left:30%;
+}
+div.image {
+    float:left;
+}
+    div.image div {
+        margin-left:50px;
+    }
+div.desc {
+    margin-top:40px;
+    float:left;
+}
+    div.desc p {
+        margin-bottom:22px;
+    }
+
+aside {
+    font-family:Comic Sans MS;
+    float:left;
+    margin-left:15px;
+    margin-top:135px;
+}

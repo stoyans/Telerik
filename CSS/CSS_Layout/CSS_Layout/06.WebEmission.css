@@ -1,0 +1,50 @@
+﻿body {
+    background-color:#063e4e;
+}
+* {
+    margin:0;
+    padding:0;
+}
+header {
+    margin-top:10px;
+}
+ul li {
+    display:inline-block;
+    background-color:green;
+    padding:8px;
+    color:#89bbb5;
+    background-color:rgba(120, 104, 104, 0.53);
+}
+
+#selected {
+    color:whitesmoke;
+    background-color:#063e4e;
+
+}
+#selected-news {
+    color:whitesmoke;
+    background-color:#28aa92;
+}
+td {
+    width:280px;
+    padding-bottom:10px;
+    padding-top:10px;  
+    color:lightgray;
+}
+section {
+    margin-top:10px;
+    float:left;
+}
+figure {
+    margin-top:10px;
+    float:left;
+}
+table td{
+    border-top:1px solid #808080;
+    padding:10px;
+}
+table {
+    border-collapse:collapse;
+}
+
+
