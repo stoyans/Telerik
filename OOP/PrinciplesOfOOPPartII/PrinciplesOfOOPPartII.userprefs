@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="02.Bank/DepositAccount.cs">
+    <Files>
+      <File FileName="02.Bank/Main.cs" Line="12" Column="40" />
+      <File FileName="02.Bank/IDepositable.cs" Line="12" Column="1" />
+      <File FileName="02.Bank/IWithDrawable.cs" Line="7" Column="32" />
+      <File FileName="02.Bank/Account.cs" Line="48" Column="58" />
+      <File FileName="02.Bank/DepositAccount.cs" Line="5" Column="22" />
+      <File FileName="02.Bank/LoanAccount.cs" Line="9" Column="38" />
+      <File FileName="02.Bank/MortgageAccount.cs" Line="26" Column="18" />
+      <File FileName="02.Bank/Customer.cs" Line="8" Column="32" />
+      <File FileName="02.Bank/Individual.cs" Line="7" Column="29" />
+      <File FileName="02.Bank/Company.cs" Line="17" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
