@@ -2,8 +2,11 @@ using System;
 
 namespace Shapes
 {
-	public abstract class Shape
-	{
-		public abstract decimal CalculateSurface();
-	}
+    public abstract class Shape
+    {
+        public virtual decimal CalculateSurface()
+        {
+            return 0;
+        }
+    }
 }

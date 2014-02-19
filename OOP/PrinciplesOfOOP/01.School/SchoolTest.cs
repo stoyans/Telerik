@@ -2,10 +2,10 @@ using System;
 
 namespace Excercise1
 {
-	class MainClass
-	{
-		public static void Main ()
-		{
+    class MainClass
+    {
+        public static void Main()
+        {
             try
             {
                 Students st = new Students("ivan", 22);
@@ -20,8 +20,8 @@ namespace Excercise1
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            } 
+            }
 
-		}
-	}
+        }
+    }
 }

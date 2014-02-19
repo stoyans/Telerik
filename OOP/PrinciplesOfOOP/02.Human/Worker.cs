@@ -11,7 +11,7 @@ namespace _02.Human
         private int weekSalary;
         private int workHoursPerDay;
 
-        public Worker(string firstName, string lastName, int weekSalary, int hoursPerDay) 
+        public Worker(string firstName, string lastName, int weekSalary, int hoursPerDay)
             : base(firstName, lastName)
         {
             this.WeekSalary = weekSalary;
@@ -43,7 +43,7 @@ namespace _02.Human
 
         public decimal MoneyPerHour()
         {
-            return (decimal)((decimal)(WeekSalary / 5) / WorkHoursPerDay); 
+            return (decimal)((decimal)(WeekSalary / 5) / WorkHoursPerDay);
         }
     }
 }

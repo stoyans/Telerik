@@ -11,7 +11,7 @@ namespace _03.AnimalsTest
         public static double AverageAge(Animal[] animals)
         {
             int sumAge = animals.Sum(animal => animal.Age);
-            return (double)sumAge / animals.Count(); 
+            return (double)sumAge / animals.Count();
         }
         static void Main()
         {

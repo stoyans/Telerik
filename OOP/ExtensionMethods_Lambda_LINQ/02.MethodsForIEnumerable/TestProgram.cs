@@ -14,8 +14,8 @@ namespace _02.MethodsForIEnumerable
     {
         static void Main()
         {
-            int[] nums = new int[] { 1, 2, 3, -1, 6};
-            
+            int[] nums = new int[] { 1, 2, 3, -1, 6 };
+
             Console.WriteLine(nums.SumAll());
             Console.WriteLine(nums.Product());
             Console.WriteLine(nums.Min());

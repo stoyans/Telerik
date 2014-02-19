@@ -16,14 +16,14 @@ namespace _07.TimerAtTSeconds
             interval.Start();
 
             while (true)
-	        {
-                if (interval.ElapsedMilliseconds == seconds*1000)
+            {
+                if (interval.ElapsedMilliseconds == seconds * 1000)
                 {
                     Console.WriteLine("Message");
                     interval.Restart();
-                } 
-	        }
-            
+                }
+            }
+
         }
     }
 }

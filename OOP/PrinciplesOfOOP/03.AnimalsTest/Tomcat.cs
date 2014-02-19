@@ -8,7 +8,7 @@ namespace _03.AnimalsTest
 {
     class Tomcat : Cat, ISound
     {
-        public Tomcat(string name, int age) 
+        public Tomcat(string name, int age)
             : base(name, age, "male")
         {
 

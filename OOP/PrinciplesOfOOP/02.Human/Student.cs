@@ -13,7 +13,7 @@ namespace _02.Human
         public Student(string firstName, string lastName, int grade)
             : base(firstName, lastName)
         {
-            this.Grade = grade; 
+            this.Grade = grade;
         }
 
         public int Grade

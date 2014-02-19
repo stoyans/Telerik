@@ -10,7 +10,7 @@ namespace _06.NumbersDivisibleBy7and3
     {
         static void Main()
         {
-            int[] intArray = new int[] { 3, 5, 7 , 21, 15, 6};
+            int[] intArray = new int[] { 3, 5, 7, 21, 15, 6 };
 
             //linq
             var divisible = from num in intArray
@@ -29,7 +29,7 @@ namespace _06.NumbersDivisibleBy7and3
             {
                 Console.WriteLine(item);
             }
- 
+
 
         }
     }

@@ -11,7 +11,7 @@ namespace _03.AnimalsTest
         public Cat(string name, int age, string sex)
             : base(name, age, sex)
         {
-        
+
         }
 
         public void MakeSound()

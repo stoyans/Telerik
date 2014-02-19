@@ -58,7 +58,7 @@ namespace _03.LastNameBeforeFirstName
 
             foreach (var item in descOrder)
             {
-                Console.WriteLine("{0} {1}",item.FirstName, item.SecondName);
+                Console.WriteLine("{0} {1}", item.FirstName, item.SecondName);
             }
 
         }

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace Excercise1
 {
-	public class Classes : IComment
-	{
+    public class Classes : IComment
+    {
         private string className;
         private string comment;
         private List<Teacher> teachers = new List<Teacher>();
@@ -15,8 +15,8 @@ namespace Excercise1
 
         }
 
-		public string ClassName
-		{
+        public string ClassName
+        {
             get
             {
                 return this.className;
@@ -29,7 +29,7 @@ namespace Excercise1
                 }
                 this.className = value;
             }
-		}
+        }
         private List<Teacher> Teacher
         {
             get
@@ -40,19 +40,19 @@ namespace Excercise1
 
         public void AddTeacher(Teacher teacher)
         {
-            this.teachers.Add(teacher); 
+            this.teachers.Add(teacher);
         }
         public string Comment
         {
-            get 
+            get
             {
                 return this.comment;
             }
-            set 
-            { 
-                this.comment = value; 
+            set
+            {
+                this.comment = value;
             }
         }
-	}
+    }
 }
 

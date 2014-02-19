@@ -10,7 +10,7 @@ namespace _18.StudentsGroupedByGroupName
     {
         static void Main()
         {
-            var students = new []
+            var students = new[]
             {
                 new {Name = "Mila", Group = "Physics"},
                 new {Name = "George", Group = "Math"},

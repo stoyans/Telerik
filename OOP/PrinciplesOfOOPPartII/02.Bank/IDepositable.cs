@@ -2,10 +2,10 @@ using System;
 
 namespace Bank
 {
-	public interface IDepositable
-	{
-		decimal Deposit (int deposit);
-		
-	}
+    public interface IDepositable
+    {
+        decimal Deposit(int deposit);
+
+    }
 }
 

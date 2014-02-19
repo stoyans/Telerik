@@ -94,10 +94,10 @@ namespace Students
                                where gr.GroupNumber == 2
                                select student;
 
-           foreach (var st in studentsMath)
-           {
-               Console.WriteLine(st.FirstName);
-           }
+            foreach (var st in studentsMath)
+            {
+                Console.WriteLine(st.FirstName);
+            }
 
 
         }

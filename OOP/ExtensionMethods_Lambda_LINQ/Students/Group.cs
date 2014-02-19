@@ -11,7 +11,7 @@ namespace Students
         private int groupNumber;
         private string departmentName;
 
-        public Group (int group, string department)
+        public Group(int group, string department)
         {
             this.GroupNumber = group;
             this.DepartmentName = department;
@@ -20,7 +20,7 @@ namespace Students
         public int GroupNumber
         {
             get { return this.groupNumber; }
-            set 
+            set
             {
                 this.groupNumber = value;
             }

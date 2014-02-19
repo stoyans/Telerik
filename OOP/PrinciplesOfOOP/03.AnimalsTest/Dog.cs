@@ -12,7 +12,7 @@ namespace _03.AnimalsTest
         public Dog(string name, int age, string sex)
             : base(name, age, sex)
         {
-           
+
         }
 
         public void MakeSound()

@@ -13,7 +13,7 @@ namespace _02.MethodsForIEnumerable
             dynamic sum = 0;
             foreach (var item in data)
             {
-                sum += (dynamic) item;
+                sum += (dynamic)item;
             }
 
             return sum;

@@ -1,6 +1,6 @@
 ﻿namespace Excercise1
 {
-   public interface IComment
+    public interface IComment
     {
         string Comment
         {

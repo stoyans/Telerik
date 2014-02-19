@@ -51,7 +51,7 @@ namespace _02.Human
 
             foreach (var worker in listOfWorkers)
             {
-                Console.WriteLine(worker.FirstName + " " + worker.LastName + " " + " -> {0:F2} ",worker.MoneyPerHour());
+                Console.WriteLine(worker.FirstName + " " + worker.LastName + " " + " -> {0:F2} ", worker.MoneyPerHour());
             }
 
             Console.WriteLine();

@@ -21,17 +21,17 @@ namespace Bank
 			return Balance -= withdraw;
 		}
 
-		//public override decimal CalculaterInterest (int months)
-		//{
-		//	if (Balance < 1000) 
-		//	{
-		//		return 0;	
-		//	}
-		//	else
-		//	{
-		//		return InterestRate*months;
-		//	}
-		//}
+		public override decimal CalculaterInterest (int months)
+		{
+			if (Balance < 1000) 
+			{
+				return 0;	
+			}
+			else
+			{
+				return InterestRate*months;
+			}
+		}
 	}
 }
 
