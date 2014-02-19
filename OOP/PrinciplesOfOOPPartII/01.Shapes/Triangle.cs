@@ -2,7 +2,7 @@ using System;
 
 namespace Shapes
 {
-    public class Triangle : Rectangle
+    public class Triangle : Shape
     {
         public Triangle(int height, int width)
             : base(height, width)

@@ -2,7 +2,7 @@ using System;
 
 namespace Shapes
 {
-    public class Circle : Triangle
+    public class Circle : Shape
     {
         public Circle(int radius)
             : base(radius, radius)
