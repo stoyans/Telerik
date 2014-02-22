@@ -7,9 +7,9 @@ namespace StudentClass
 		public static void Main ()
 		{
 			
-			Student st = new Student("Black", Student.University.UASG);
+			Student st = new Student("Black", University.UASG);
 			
-            var st1 = new Student("Black",Student.University.UASG, Student.Specialty.MobileNetwork,Student.Faculty.Electronics);
+            var st1 = new Student("John", "Smith",11234,"World","09841233","test@test.po", 4, University.SofiaUniversity, Specialty.SoftwareDevelopment,Faculty.Informatics);
             Console.WriteLine(st.Equals(st1));
             Console.WriteLine(st1.ToString());
 
@@ -17,8 +17,10 @@ namespace StudentClass
             {
                 Console.WriteLine("Equal");
             }
-
-            Console.WriteLine(st1.GetHashCode());
+            else
+            {
+                Console.WriteLine("False");
+            }
             
 		}
 	}
