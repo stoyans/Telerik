@@ -15,7 +15,7 @@ namespace _05.BitArray64
                 Console.Write(bit);
             }
             Console.WriteLine();
-            Console.WriteLine("Bit at position 2 is {0}", number[2]);
+            Console.WriteLine("Bit at position 4 is {0}", number[4]);
 
             Console.WriteLine("Hash code of {0} is {1}", number.Number, number.GetHashCode());
 

@@ -7,7 +7,7 @@ namespace _05.BitArray64
     class BitArray64 : IEnumerable<int>
     {
 
-        private int[] bitArray = new int[64];
+        private int[] bitArray;
         private ulong number;
 
         public ulong Number
@@ -19,17 +19,23 @@ namespace _05.BitArray64
         public BitArray64(ulong number)
         {
             this.Number = number;
+        }
 
+        private int[] Bits()
+        {
+            bitArray = new int[64];
             for (int i = 0; i < 64; i++)
             {
                 bitArray[i] = (int)(number % 2);
                 number /= 2;
             }
+
+            return bitArray;
         }
 
         public IEnumerator<int> GetEnumerator()
         {
-            int[] bits = this.bitArray;
+            int[] bits = Bits();
             for (int i = 63; i >= 0; i--)
             {
                 yield return bits[i];
