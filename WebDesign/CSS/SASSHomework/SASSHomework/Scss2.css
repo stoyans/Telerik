@@ -1,0 +1,26 @@
+body {
+  background-image: url("images/background.jpg"); }
+  body nav {
+    margin-left: 0px; }
+    body nav ul {
+      list-style-type: none;
+      margin: 0; }
+      body nav ul li {
+        display: inline; }
+        body nav ul li img {
+          width: 200px;
+          height: 150px;
+          border-radius: 6px; }
+          body nav ul li img:hover {
+            box-shadow: 1px 10px 10px -4px #fff; }
+  body .pickedpicture {
+    width: 520px;
+    margin-left: 40px;
+    margin-top: 50px; }
+    body .pickedpicture .image {
+      display: none; }
+    body .pickedpicture input:checked + .image {
+      display: block; }
+  body input {
+    display: none; }
+

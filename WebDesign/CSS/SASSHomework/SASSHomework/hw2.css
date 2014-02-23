@@ -11,7 +11,9 @@
 
     .clearfix:after, body header div#header-container:after, body header nav:after, body header nav ul:after, body header nav ul li ul.sub-nav-list:after, body section:after, body aside:after {
         clear: both;
+        
     }
+    
 
 body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
     margin: 0;
@@ -26,11 +28,10 @@ div, h1, h3, h4, h5, h6, header, footer, body, section, nav, article, aside {
 #btn-register {
     background-color: rgba(179, 94, 243, 0.9);
     color: whitesmoke;
-    
-
 }
+
 button {
-    border-color:wheat;
+    border-color: wheat;
 }
 
 body {
@@ -80,7 +81,7 @@ body {
                     border-radius: 10px;
                     padding: 2px 5px;
                     margin: 5px;
-                    background-color:rgba(179, 94, 243, 0.9);
+                    background-color: rgba(179, 94, 243, 0.9);
                 }
 
             body header div#header-container div#reg-form-container button {

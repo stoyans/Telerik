@@ -62,13 +62,18 @@
     <Content Include="Scss1.css">
       <DependentUpon>Scss1.scss</DependentUpon>
     </Content>
+    <Content Include="Scss2.css">
+      <DependentUpon>Scss2.scss</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
+    <Content Include="WebGallery.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scss1.scss" />
+    <Content Include="Scss2.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
