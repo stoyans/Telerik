@@ -175,7 +175,7 @@ input.input {
     margin-left: 0px;
     border: 1px outset #7db6bb;
     border-radius: 3px;
-    background-image: -o-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
     background-image: -moz-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
 }
 
@@ -202,7 +202,7 @@ input.input {
     border: 1px solid #9AA7BD;
     width: 34px;
     height: 43px;
-    background-image: -o-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
     background-image: -moz-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
 }
 
@@ -213,7 +213,7 @@ input.input {
     border: 1px solid #9AA7BD;
     width: 73px;
     height: 23px;
-    background-image: -o-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
     background-image: -moz-linear-gradient(bottom, #D7E5F0 50%, #FFFFFF 100%);
 }
 
