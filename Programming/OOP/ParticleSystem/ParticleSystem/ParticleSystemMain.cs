@@ -22,6 +22,7 @@ namespace ParticleSystem
             {
                 new Particle(new MatrixCoords(5,5), new MatrixCoords(1, 1)),
                 new ParticleEmitter(new MatrixCoords(5,10), new MatrixCoords(0, 0), new Random())
+                
             };
 
             var engine = new Engine(renderer, particleOperator, particles);

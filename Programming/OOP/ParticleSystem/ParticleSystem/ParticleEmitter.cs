@@ -48,7 +48,7 @@ namespace ParticleSystem
 
         }
 
-        private MatrixCoords GetRandomCoords()
+        protected MatrixCoords GetRandomCoords()
         {
             int randomSpeedRow = this.randomGenerator.Next(-MaxSpeedPerCoordinate, MaxSpeedPerCoordinate + 1);
             int randomSpeedCol = this.randomGenerator.Next(-MaxSpeedPerCoordinate, MaxSpeedPerCoordinate + 1);
