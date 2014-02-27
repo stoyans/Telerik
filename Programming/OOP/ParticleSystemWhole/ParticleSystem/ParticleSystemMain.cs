@@ -22,12 +22,14 @@ namespace ParticleSystem
             var particles = new List<Particle>()
             {
                 new Particle(new MatrixCoords(5, 5), new MatrixCoords(1, 1)),
+                //new Particle(new MatrixCoords(5, 5), new MatrixCoords(1, 2)),
                 //new ParticleEmitter(new MatrixCoords(5, 10), new MatrixCoords(0, 0), RandomGenerator),
                 //new ParticleEmitter(new MatrixCoords(5, 20), new MatrixCoords(0, 0), RandomGenerator),
                 //new VariousLifetimeParticleEmitter(new MatrixCoords(29, 1), new MatrixCoords(0, 0), RandomGenerator),
-
+                //new DyingParticle(new MatrixCoords(5, 20), new MatrixCoords(4, 4), 1),
+                new ChaoticParticle(new MatrixCoords(7, 9), new MatrixCoords(6, 4), new Random()),
                 new ParticleAttractor(new MatrixCoords(15, 8), new MatrixCoords(), 5),
-                new ParticleAttractor(new MatrixCoords(15, 20), new MatrixCoords(), 1),
+                //new ParticleAttractor(new MatrixCoords(15, 20), new MatrixCoords(), 1),
             };
 
             var engine = new Engine(renderer, particleOperator, particles, 500);

@@ -42,7 +42,7 @@ namespace ParticleSystem
             get { return true; }
         }
 
-        public MatrixCoords Speed { get; protected set; }
+        public virtual MatrixCoords Speed { get; protected set; }
 
         public void Accelerate(MatrixCoords acceleration)
         {

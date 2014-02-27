@@ -48,12 +48,12 @@ namespace ParticleSystem
 
                 var producedParticles = new List<Particle>();
 
-                foreach (var particle in this.particles)
-                {
-                    producedParticles.AddRange(
-                        particleOperator.OperateOn(particle)
-                        );
-                }
+               foreach (var particle in this.particles)
+               {
+                   producedParticles.AddRange(
+                       particleOperator.OperateOn(particle)
+                       );
+               }
 
                 particleOperator.TickEnded();
 
