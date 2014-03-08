@@ -115,18 +115,18 @@ namespace StudentClass
 
         public Specialty Specialty
         {
-            get { return this.specialty; }
-            set { this.specialty = value; }
+            get;
+            set;
         }
         public University University
         {
-            get { return this.university; }
-            set { this.university = value; }
+            get;
+            set;
         }
         public Faculty Faculty
         {
-            get { return this.faculty; }
-            set { this.faculty = value; }
+            get;
+            set;
         }
 
         public override bool Equals(object obj)
