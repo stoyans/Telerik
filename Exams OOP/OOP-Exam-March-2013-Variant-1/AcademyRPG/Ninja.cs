@@ -32,8 +32,8 @@ namespace AcademyRPG
 
             for (int i = 0; i < availableTargets.Count; i++)
             {
-                if (availableTargets[0].Owner != 0 && availableTargets[0].Owner != this.Owner
-                    && availableTargets[0].HitPoints == targetHighestHitPoints)
+                if (availableTargets[i].Owner != 0 && availableTargets[i].Owner != this.Owner
+                    && availableTargets[i].HitPoints == targetHighestHitPoints)
                 {
                     return i;
                 }

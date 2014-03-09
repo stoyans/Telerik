@@ -31,7 +31,7 @@ namespace AcademyRPG
         {
             for (int i = 0; i < availableTargets.Count; i++)
             {
-                if (availableTargets[0].Owner != 0)
+                if (availableTargets[i].Owner != 0)
                 {
                     return i;
                 }
