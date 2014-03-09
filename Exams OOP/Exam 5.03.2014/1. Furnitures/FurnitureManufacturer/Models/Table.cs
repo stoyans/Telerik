@@ -23,10 +23,6 @@ namespace FurnitureManufacturer
             get { return this.length; }
             private set
             {
-                //if (value < 1)
-                //{
-                //    throw new ArgumentOutOfRangeException("Table length must be positive!");
-                //}
                 this.length = value;
             }
         }
@@ -36,10 +32,6 @@ namespace FurnitureManufacturer
             get { return this.width; }
             private set 
             {
-                //if (value < 1)
-                //{
-                //    throw new ArgumentOutOfRangeException("Table length must be positive!");
-                //}
                 this.width = value;
             }
         }

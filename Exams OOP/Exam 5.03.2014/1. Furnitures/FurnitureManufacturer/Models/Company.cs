@@ -70,8 +70,6 @@ namespace FurnitureManufacturer.Models
             get { return this.furnitures; }
             private set
             {
-                var ordered = furnitures.OrderBy(fur => fur.Price).ThenBy(fur => fur.Model);
-                furnitures = ordered.ToList();
                 this.furnitures = value;
             }
         }
@@ -91,7 +89,7 @@ namespace FurnitureManufacturer.Models
 
             foreach (var furniture in this.furnitures)
             {
-                if (furniture.Model == model)
+                if (furniture.Model.ToLower() == model.ToLower())
                 {
                     return furniture;
                 }
@@ -102,8 +100,23 @@ namespace FurnitureManufacturer.Models
 
         public string Catalog()
         {
-            return string.Format("{0} - {1} - {2} {3}", this.Name, this.RegistrationNumber, this.Furnitures.Count != 0 ? this.Furnitures.Count.ToString() : 
-                "no", this.Furnitures.Count != 1 ? "furnitures" : "furniture");
+            var result = new StringBuilder();
+
+            result.AppendLine(string.Format(
+                "{0} - {1} - {2} {3}",
+                this.Name,
+                this.RegistrationNumber,
+                this.Furnitures.Count != 0 ? this.Furnitures.Count.ToString() : "no",
+                this.Furnitures.Count != 1 ? "furnitures" : "furniture"));
+
+            var ordered = furnitures.OrderBy(fur => fur.Price).ThenBy(fur => fur.Model);
+
+            foreach (var furniture in ordered)
+            {
+                result.AppendLine(furniture.ToString());
+            }
+
+            return result.ToString().Trim();
         }
     }
 }

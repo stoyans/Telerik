@@ -22,7 +22,7 @@
         public IChair CreateChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
             string material = GetMaterialType(materialType).ToString();
-            return new NormalChair(model, material, price, height, numberOfLegs);
+            return new Chair(model, material, price, height, numberOfLegs);
         }
 
         public IAdjustableChair CreateAdjustableChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)

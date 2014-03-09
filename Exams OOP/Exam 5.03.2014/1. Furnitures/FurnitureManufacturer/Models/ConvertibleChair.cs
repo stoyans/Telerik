@@ -1,45 +1,47 @@
-﻿using System;
+﻿using FurnitureManufacturer.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace FurnitureManufacturer
 {
-    public class ConvertibleChair : NormalChair, FurnitureManufacturer.Interfaces.IConvertibleChair
+    public class ConvertibleChair : Chair, FurnitureManufacturer.Interfaces.IConvertibleChair
     {
-        private bool isConverted = false;
+
+        private decimal nonConvertedHeight;
 
         public ConvertibleChair(string model, string material, decimal price, decimal height, int numberOfLegs) :
             base(model, material, price, height, numberOfLegs)
         {
+            this.nonConvertedHeight = height;
         }
 
         public bool IsConverted
         {
-            get { return this.isConverted; }
-            private set 
-            {
-                this.isConverted = value;
-            }
+            get;
+            private set;
         }
 
         public void Convert()
         {
-            if (IsConverted == true)
+            if (!IsConverted)
             {
                 this.Height = 0.10m;
             }
             else
             {
-                this.Height = Height;
+                this.Height = this.nonConvertedHeight;
             }
+
+           this.IsConverted = !this.IsConverted;
         }
 
-        public override string ToString()
-        {
-            return base.ToString() + 
-                string.Format("Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Legs: {5}, State: {6}", 
-                this.GetType().Name, this.Model, this.Material, this.Price, this.Height, this.NumberOfLegs, this.IsConverted ? "Converted" : "Normal");
-        }
+       public override string ToString()
+       {
+           var result = new StringBuilder(base.ToString());
+           result.Append(", State: {0}");
+           return string.Format(result.ToString(), this.IsConverted ? "Converted" : "Normal");
+       }
     }
 }

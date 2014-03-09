@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FurnitureManufacturer.Models
 {
-    public abstract class Chair : FurnitureManufacturer.Furniture, FurnitureManufacturer.Interfaces.IChair
+    public class Chair : FurnitureManufacturer.Furniture, FurnitureManufacturer.Interfaces.IChair
     {
         private int numberOfLegs;
 
@@ -21,22 +21,16 @@ namespace FurnitureManufacturer.Models
             get { return this.numberOfLegs; }
             private set
             {
-                if (value <= 2)
-                {
-                    throw new ArgumentOutOfRangeException("Chair legs must be more than 2!");
-                }
-                else
-                {
-                    this.numberOfLegs = value;
-                }
-                
+                this.numberOfLegs = value;
             }
         }
 
         public override string ToString()
         {
-            return string.Format("Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Legs: {5}", 
-                this.GetType().Name, this.Model, this.Material, this.Price, this.Height, this.NumberOfLegs);
+            var result = new StringBuilder(base.ToString());
+            result.Append(", Legs: {0}");
+            return string.Format(result.ToString(), this.NumberOfLegs);
         }
+
     }
 }
