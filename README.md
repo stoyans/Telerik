@@ -47,6 +47,7 @@
 6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/CommonTypeSystem">Common Type System</a>
 7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/RealExam/Exam%205.03.2014">Exam</a>
 
+***********************
 <h4>
     <strong>
       <u>HTML Basics</u>
