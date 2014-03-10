@@ -1,6 +1,6 @@
 <h2>Telerik Academy</h2>
 
-<h4><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1" target="_blank"<strong>C# Part One</strong></h4>
+<h4><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1" target="_blank"<strong><u>C# Part One</u></strong></h4>
 
 <h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Intro_Programming" target="_blank">1. Intro Programming</a></h6>
 <h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Primitive_Data_types" target="_blank">2. Primitive Data Types</h6>
