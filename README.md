@@ -17,19 +17,11 @@
 </h4>
 
 1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Arrays">Arrays</a>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/MultidimensionalArrays">2. Multidimensional Arrays</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Methods">3. Methods</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/NumeralSystems">4. Numeral Systems</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/ClassesAndObjects">5. Classes And Objects</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/TextFiles">6. Text Files</a>
+2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/MultidimensionalArrays">Multidimensional Arrays</a>
+3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Methods">Methods</a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/NumeralSystems">Numeral Systems</a>
+5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/ClassesAndObjects">Classes And Objects</a>
+6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/TextFiles">Text Files</a>
 </h6>
 <h6>
   <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/HandlingExceptions">7. Handling Exceptions</a>
