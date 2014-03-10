@@ -7,7 +7,7 @@
 4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/In_Out_Console">In and Out of Console
 5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/ConditionalOperators">Conditional Operators
 6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Loops">Loops
-
+***********************
 <h4>
   <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2">
     <strong>
@@ -24,7 +24,7 @@
 6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/TextFiles">Text Files</a>
 7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/HandlingExceptions">Handling Exceptions</a>
 8. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/StringsAndTextProcessing">Strings And Text Processing</a>
-
+***********************
 <br>
 <h4>
   <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP">
