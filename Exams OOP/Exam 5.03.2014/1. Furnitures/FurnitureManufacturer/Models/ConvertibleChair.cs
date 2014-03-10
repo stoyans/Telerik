@@ -10,6 +10,7 @@ namespace FurnitureManufacturer
     {
 
         private decimal nonConvertedHeight;
+        private bool isconverted = false;
 
         public ConvertibleChair(string model, string material, decimal price, decimal height, int numberOfLegs) :
             base(model, material, price, height, numberOfLegs)
@@ -19,8 +20,8 @@ namespace FurnitureManufacturer
 
         public bool IsConverted
         {
-            get;
-            private set;
+            get {return this.isconverted;}
+            private set { this.isconverted = value; }
         }
 
         public void Convert()
