@@ -55,5 +55,5 @@
 1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/HTML_Homework1">HTML Foundamentals</a>
 2. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/Tables">HTML Tables</a>
 3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/HomeworkForms">HTML Forms</a>
-4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/SemanticWeb"></a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/SemanticWeb">Semantic Web</a>
 
