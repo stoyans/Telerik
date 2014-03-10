@@ -27,7 +27,7 @@
 
 <br>
 <h4>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2">
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP">
     <strong>
       <u>Object-Oriented Programming</u>
     </strong>
