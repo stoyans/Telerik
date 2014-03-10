@@ -34,22 +34,11 @@
   </a>
 </h4>
 
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/DefiningClasses">1. Defining Classes Part I</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/DefiningClassesPartII">2. Defining Classes Part II</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/ExtensionMethods_Lambda_LINQ">3. Extension Methods Lambda LINQ</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/PrinciplesOfOOP">4. Principles Of OOP Part I</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/PrinciplesOfOOPPartII">5. Principles Of OOP Part II</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/CommonTypeSystem">6. Common Type System</a>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/DefiningClasses">Defining Classes Part I</a>
+2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/DefiningClassesPartII">2. Defining Classes Part II</a>
+3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/ExtensionMethods_Lambda_LINQ">Extension Methods Lambda LINQ</a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/PrinciplesOfOOP">Principles Of OOP Part I</a>
+5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/PrinciplesOfOOPPartII">Principles Of OOP Part II</a>
+6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/CommonTypeSystem">Common Type System</a>
 </h6>
 
