@@ -2,7 +2,7 @@
 
 <h4><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1"<strong><u>C# Part One</u></strong></h4>
 
-1.<a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Intro_Programming">Intro Programming</a>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Intro_Programming">Intro Programming</a>
 <h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Primitive_Data_types">2. Primitive Data Types</h6>
 <h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Operators_and_Expressions">3. Operators and Expressions</h6>
 <h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/In_Out_Console">4. In and Out of Console</h6>
