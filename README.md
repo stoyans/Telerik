@@ -22,13 +22,8 @@
 4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/NumeralSystems">Numeral Systems</a>
 5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/ClassesAndObjects">Classes And Objects</a>
 6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/TextFiles">Text Files</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/HandlingExceptions">7. Handling Exceptions</a>
-</h6>
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/StringsAndTextProcessing">8. Strings And Text Processing</a>
-</h6>
+7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/HandlingExceptions">Handling Exceptions</a>
+8. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/StringsAndTextProcessing">Strings And Text Processing</a>
 
 <br>
 <h4>
