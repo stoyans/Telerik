@@ -47,3 +47,14 @@
 6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/CommonTypeSystem">Common Type System</a>
 7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/RealExam/Exam%205.03.2014">Exam</a>
 
+<h4>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2">
+    <strong>
+      <u>HTML Basics</u>
+    </strong>
+  </a>
+</h4>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/HTML_Homework1">HTML Foundamentals</a>
+2. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/Tables">HTML Tables</a>
+3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/HomeworkForms">HTML Forms</a>
+
