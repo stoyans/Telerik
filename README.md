@@ -6,7 +6,7 @@
 3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Operators_and_Expressions">Operators and Expressions
 4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/In_Out_Console">In and Out of Console
 5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/ConditionalOperators">Conditional Operators
-<h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Loops">6. Loops</h6>
+6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Loops">Loops
 <br>
 <h4>
   <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2">
@@ -16,10 +16,7 @@
   </a>
 </h4>
 
-<h6>
-  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Arrays">1. Arrays</a>
-</h6>
-<h6>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Arrays">Arrays</a>
   <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/MultidimensionalArrays">2. Multidimensional Arrays</a>
 </h6>
 <h6>
