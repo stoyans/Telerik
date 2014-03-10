@@ -8,7 +8,6 @@
 <h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/In_Out_Console">4. In and Out of Console</h6>
 <h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/ConditionalOperators">5. Conditional Operators</h6>
 <h6><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Loops">6. Loops</h6>
-
 <br>
 <h4>
   <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2">
