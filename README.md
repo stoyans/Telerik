@@ -42,4 +42,38 @@
   <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/StringsAndTextProcessing">8. Strings And Text Processing</a>
 </h6>
 
+<br>
+<h4>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2">
+    <strong>
+      <u>Object-Oriented Programming</u>
+    </strong>
+  </a>
+</h4>
+
+<h6>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Arrays">1. Defining Classes Part I</a>
+</h6>
+<h6>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/MultidimensionalArrays">2. Defining Classes Part II</a>
+</h6>
+<h6>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Methods">3. Extension Methods Lambda LINQ</a>
+</h6>
+<h6>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/NumeralSystems">4. Principles Of OOP Part I</a>
+</h6>
+<h6>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/ClassesAndObjects">5. Principles Of OOP Part II</a>
+</h6>
+<h6>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/TextFiles">6. Common Type System</a>
+</h6>
+<h6>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/HandlingExceptions">7. Handling Exceptions</a>
+</h6>
+<h6>
+  <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/StringsAndTextProcessing">8. Strings And Text Processing</a>
+</h6>
+
 
