@@ -1,7 +1,6 @@
 <h2>Telerik Academy</h2>
 
 <h4><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1"<strong><u>C# Part One</u></strong></h4>
-
 1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Intro_Programming">Intro Programming</a>
 2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Primitive_Data_types">Primitive Data Types
 3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Operators_and_Expressions">Operators and Expressions
