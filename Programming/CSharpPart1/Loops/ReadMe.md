@@ -68,33 +68,3 @@
     * N = 25 -> N! = 15511210043330985984000000 -> 6
 
     Does your program work for N = 50 000? Hint: The trailing zeros in N! are equal to the number of its prime divisors of value 5. Think why!
-* \*Write a program that reads a positive integer `N` (N < 20) from console and outputs in the console the numbers 1 ... N<sup>2</sup> numbers arranged as a spiral.
-<table>
-    <tr>
-        <th colspan="4">N=4</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>13</td>
-        <td>14</td>
-        <td>5</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>16</td>
-        <td>15</td>
-        <td>6</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>9</td>
-        <td>8</td>
-        <td>7</td>
-    </tr>
-</table>
