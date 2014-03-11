@@ -1,1 +1,1 @@
-<a href="http://bgcoder.com/Contests/#!/List/ByCategory/21/TA-2013-2014-CSharp-Exam-2" target="_blank">BGCoder Contest</a>
+<a href="http://bgcoder.com/Contests/142/CSharp-Part-2-2013-2014-22-Jan-2014-Evening" target="_blank">BGCoder Contest</a>
