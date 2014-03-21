@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SortInIncreasingOrder
 {
@@ -8,7 +9,6 @@ namespace SortInIncreasingOrder
 		public static void Main ()
 		{
 			var listOfNumbers = new List<int>();
-			long sum = 0;
 			
 			while(true) 
 			{
@@ -18,7 +18,7 @@ namespace SortInIncreasingOrder
 				{
 					break;
 				}
-				sum += int.Parse(symbol);
+
 				listOfNumbers.Add(int.Parse(symbol)); 
 			}
 			
