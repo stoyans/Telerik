@@ -18,7 +18,7 @@ namespace Task13_ExchangeBIts
             Console.WriteLine("firstbits are:         {0}", Convert.ToString(firstbits, 2).PadLeft(32, '0'));
             uint secondbits = num & (mask << 24); // В променливата secondbits запазваме битове 24, 25, 26
             Console.WriteLine("secondbits are:        {0}", Convert.ToString(secondbits, 2).PadLeft(32, '0'));
-            
+
             uint modified_num = num & (~(mask << 3)) & (~(mask << 24)); // Нулираме позиции 3, 4, 5 и 24, 25, 26 във въведеното число
             Console.WriteLine("Positions 3,4,5 and 24,25,26\nreplaced with zeros:   {0}", Convert.ToString(modified_num, 2).PadLeft(32, '0'));
 

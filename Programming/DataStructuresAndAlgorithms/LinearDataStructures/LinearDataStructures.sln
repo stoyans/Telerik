@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.NumberOfTimesOccurs", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.FindSequence", "09.FindSequence\09.FindSequence.csproj", "{1378D1DB-DDA6-4E6E-9EB6-8D8021D64B4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.ImplementLinkedList", "11.ImplementLinkedList\11.ImplementLinkedList.csproj", "{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,16 @@ Global
 		{1378D1DB-DDA6-4E6E-9EB6-8D8021D64B4F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1378D1DB-DDA6-4E6E-9EB6-8D8021D64B4F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1378D1DB-DDA6-4E6E-9EB6-8D8021D64B4F}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

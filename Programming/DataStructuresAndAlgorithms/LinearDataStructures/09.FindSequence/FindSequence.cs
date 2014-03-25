@@ -13,10 +13,16 @@ namespace _09.FindSequence
             int N = 2;
             var sequence = new Queue<int>();
             sequence.Enqueue(N);
+            int count = 0;
 
-            while (sequence.Count > 0)
+            while (count < 50)
             {
-
+                int currentNum = sequence.Dequeue();
+                count++;
+                Console.WriteLine("{0} -> {1}", count, currentNum);
+                sequence.Enqueue(currentNum + 1);
+                sequence.Enqueue(2 * currentNum + 1);
+                sequence.Enqueue(currentNum + 2);
             }
 
         }

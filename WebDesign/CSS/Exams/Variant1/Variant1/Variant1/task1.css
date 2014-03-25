@@ -1,0 +1,59 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    ul li {
+        color: black;
+        font-size: 18px;
+        border-bottom: 1px solid;
+        border-color: purple;
+        background-color: lightpink;
+        width:130px;
+    }
+        ul li:hover {
+            border:1px solid;
+        }
+
+        ul li ul {
+            display: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            ul li ul li:first-child {
+                background-image: url('imgs/arrow.png');
+                background-repeat: no-repeat;
+                padding-left: 25px;
+            }
+            ul li ul li {
+                padding-left: 25px;
+                width:180px;
+            }
+                ul li ul li:hover {
+                    border:1px solid;
+                }
+
+        ul li:hover ul {
+            display: inline-block;
+            padding-left: 10px;
+            padding-top: 0px;
+            position: fixed;
+        }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#wrapper {
+    border-radius: 10px;
+}
+
+aside {
+}
+
+ul.sidebar li {
+    padding-bottom: 5px;
+}
