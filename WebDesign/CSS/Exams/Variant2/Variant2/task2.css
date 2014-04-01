@@ -1,0 +1,84 @@
+﻿body,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+    ul.notification-list li {
+        display: inline-block;
+        padding-left: 30px;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+        ul.notification-list li span {
+            margin-left: 10px;
+            font-size: 19px;
+        }
+
+            ul.notification-list li span strong {
+                font-weight: bold;
+            }
+
+    ul.notification-list > li div.content {
+        display: none;
+        position: absolute;
+        width: 470px;
+        border: 1px solid;
+        left: 0px;
+        margin-top: 5px;
+    }
+
+    ul.notification-list li div.content ul li {
+        display: block;
+    }
+
+    ul.notification-list li:hover div.content {
+        display: block;
+        border-top: none;
+        background: #cccccc;
+        background: -moz-linear-gradient(top, #dddddd 30%, #cccccc 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #dddddd), color-stop(100%, #cccccc));
+        background: -webkit-linear-gradient(top, #dddddd 30%, #cccccc 100%);
+        background: -o-linear-gradient(top, #dddddd 30%, #cccccc 100%);
+        background: -ms-linear-gradient(top, #dddddd 30%, #cccccc 100%);
+        background: linear-gradient(to bottom, #dddddd 30%, #cccccc 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#cccccc', GradientType=0);
+        left: 25px;
+        top: 47px;
+    }
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div#wrapper {
+    width: 500px;
+}
+
+#wrapper .notification-list {
+    margin-top: 25px;
+    margin-left: 25px;
+    list-style-type: none;
+    width: 470px;
+    display: inline-block;
+    background: #dddddd;
+    background: -moz-linear-gradient(top, #aaaaaa 0%, #dddddd 80%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aaaaaa), color-stop(80%, #dddddd));
+    background: -webkit-linear-gradient(top, #aaaaaa 0%, #dddddd 80%);
+    background: -o-linear-gradient(top, #aaaaaa 0%, #dddddd 80%);
+    background: -ms-linear-gradient(top, #aaaaaa 0%, #dddddd 80%);
+    background: linear-gradient(to bottom, #aaaaaa 0%, #dddddd 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aaaaaa', endColorstr='#dddddd', GradientType=0);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid black;
+    border-bottom: none;
+}

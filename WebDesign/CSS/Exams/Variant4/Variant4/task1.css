@@ -1,0 +1,70 @@
+﻿body,
+div,
+h1,
+img,
+p {
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+}
+
+    p.postedby {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        width: 380px;
+        display: block;
+        padding-left:10px;
+        padding-right:10px;
+        margin-left:20px;
+    }
+
+    div#wrapper {
+        width: 725px;
+    }
+
+p {
+    text-align: justify;
+}
+
+img.left-arrow {
+    position: relative;
+    top: 55px;
+    left: -30px;
+}
+
+img.right-arrow {
+    position: relative;
+    top: 55px;
+    left: 835px;
+}
+
+div#wrapper div {
+    padding-bottom:20px;
+    top:1px;
+    border-radius: 11px;
+    border: 1px solid;
+    width: 868px;
+    padding-left: 30px;
+    padding-right: 30px;
+    left: 30px;
+    background: #f9dbff;
+    background: -moz-linear-gradient(top, #de28ff 15%, #f9dbff 75%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #de28ff), color-stop(75%, #f9dbff));
+    background: -webkit-linear-gradient(top, #de28ff 15%, #f9dbff 75%);
+    background: -o-linear-gradient(top, #de28ff 15%, #f9dbff 75%);
+    background: -ms-linear-gradient(top, #de28ff 15%, #f9dbff 75%);
+    background: linear-gradient(to bottom, #de28ff 15%, #f9dbff 75%);
+}
+
+p.info {
+    margin-top: 20px;
+    margin-left: 6px;
+}
+
+h1 {
+    position: relative;
+    top: 25px;
+}

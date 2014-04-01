@@ -1,0 +1,65 @@
+body,
+hgroup,
+h3,h2,
+div {
+    margin:0;
+    padding:0;
+    font-size: 16px;
+	font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+}
+div {
+    float: left;
+    width: 140px;
+    
+}
+    div#wrapper {
+        width:1200px;
+    }
+h2, h3{
+    font-size:15px;
+    text-align:center;
+    margin-top:2px;
+}
+p {
+    margin-top:15px;
+}
+hgroup {
+    background-position: left bottom !important;
+	padding-left: 40px;
+	height: 40px;
+	display: table-cell;
+	vertical-align: bottom;
+}
+a {
+    text-decoration:none;
+    color:red;
+}
+div#wrapper > div {
+    border:2px solid #d9d3d3;
+}
+div#wrapper div:nth-of-type(1) hgroup{
+	background: url('imgs/install.png') no-repeat;
+}
+
+div#wrapper div:nth-of-type(2) hgroup{
+	background: url('imgs/tuneUp.png') no-repeat;
+}
+
+div#wrapper div:nth-of-type(3) hgroup{
+	background: url('imgs/manage.png') no-repeat;	
+}
+
+div#wrapper div:nth-of-type(4) hgroup{
+	background: url('imgs/openSource.png') no-repeat;
+}
+
+div#wrapper div:nth-of-type(5) hgroup{
+	background: url('imgs/twitter.png') no-repeat;
+}
+
+div#wrapper div:nth-of-type(6) hgroup{
+	background: url('imgs/about.png') no-repeat;
+}
+div.yellowBox {
+    background-color:#fff1a2;
+}

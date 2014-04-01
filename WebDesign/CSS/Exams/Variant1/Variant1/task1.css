@@ -9,22 +9,24 @@ ul {
         font-size: 18px;
         border-bottom: 1px solid;
         border-color: purple;
-        background-color: lightpink;
+        background-color: #be5ace;
         width:130px;
+        padding:10px;
     }
         ul li:hover {
             border:1px solid;
+            border-radius:6px;
         }
 
         ul li ul {
             display: none;
-            padding: 0;
             margin: 0;
         }
 
             ul li ul li:first-child {
                 background-image: url('imgs/arrow.png');
                 background-repeat: no-repeat;
+                background-position-y:center;
                 padding-left: 25px;
             }
             ul li ul li {
@@ -33,12 +35,12 @@ ul {
             }
                 ul li ul li:hover {
                     border:1px solid;
+                    border-radius:6px;
                 }
 
         ul li:hover ul {
             display: inline-block;
             padding-left: 10px;
-            padding-top: 0px;
             position: fixed;
         }
 
@@ -52,6 +54,9 @@ a {
 }
 
 aside {
+    background-color:#be5ace;
+    padding:8px;
+    width:160px;
 }
 
 ul.sidebar li {

@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{306BAB73-4DDB-4379-83D1-8073CBB12E3A}</ProjectGuid>
+    <ProjectGuid>{F2D89276-335E-4FC0-B004-6F9CA7CE722F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Variant1</RootNamespace>
-    <AssemblyName>Variant1</AssemblyName>
+    <RootNamespace>Variant4</RootNamespace>
+    <AssemblyName>Variant4</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,8 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="jquery-1.9.1.js" />
-    <Content Include="tab-strip.js" />
     <Content Include="task1.css" />
     <Content Include="task1.html" />
     <Content Include="task2.css" />
@@ -91,9 +89,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>35112</DevelopmentServerPort>
+          <DevelopmentServerPort>2191</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:35112/</IISUrl>
+          <IISUrl>http://localhost:2191/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
