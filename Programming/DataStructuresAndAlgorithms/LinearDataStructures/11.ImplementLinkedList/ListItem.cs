@@ -9,9 +9,10 @@ namespace _11.ImplementLinkedList
     public class ListItem<T>
     {
 
-        public ListItem(T value)
+        public ListItem(T value, ListItem<T> nextItem = null)
         {
             Value = value;
+            NextItem = nextItem;
         }
 
         public T Value

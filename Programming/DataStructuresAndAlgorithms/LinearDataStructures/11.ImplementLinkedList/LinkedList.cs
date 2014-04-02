@@ -6,24 +6,74 @@ using System.Threading.Tasks;
 
 namespace _11.ImplementLinkedList
 {
-    public class LinkedList<T>: IEnumerable<T>
+    public class CustomLinkedList<T>
     {
 
-        public ListItem<T> FirstElement
+        private ListItem<T> firstElement;
+
+        private ListItem<T> FirstElement
         {
-            get;
-            set;
+            get
+            {
+                return this.firstElement;
+            }
+            set
+            {
+                this.firstElement = value;
+            }
         }
 
-        public IEnumerator<T> GetEnumerator()
+        public CustomLinkedList()
         {
-            //for (var current = this.First; current != null; current = current.Next)
-            //    yield return current.Value;
+            this.FirstElement = null;
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        public void AddFirst(T item)
         {
-            return this.GetEnumerator();
+            if (this.FirstElement == null)
+            {
+                this.FirstElement = new ListItem<T>(item);
+            }
+            else
+            {
+                var addNode = new ListItem<T>(item);
+                addNode.NextItem = this.FirstElement;
+                this.FirstElement = addNode;
+            }
+        }
+
+        public void RemoveFirst()
+        {
+            if (this.FirstElement == null)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            this.firstElement = this.firstElement.NextItem;
+        }
+
+        public override string ToString()
+        {
+            if (this.firstElement == null)
+            {
+                return string.Format("[ ]");
+            }
+
+            StringBuilder sb = new StringBuilder("[ ");
+
+            var currItem = this.firstElement;
+            sb.Append(currItem.Value);
+
+            while (currItem.NextItem != null)
+            {
+                sb.Append(", ");
+                sb.Append(currItem.NextItem);
+                currItem = currItem.NextItem;
+            }
+
+            sb.Append(" ]");
+
+            return sb.ToString();
         }
 
 

@@ -10,7 +10,11 @@ namespace _11.ImplementLinkedList
     {
         static void Main()
         {
-            LinkedList<int> list = new LinkedList<int>();
+            CustomLinkedList<int> list = new CustomLinkedList<int>();
+            list.AddFirst(5);
+            list.AddFirst(11);
+
+            Console.WriteLine(list);
 
         }
     }
