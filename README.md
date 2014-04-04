@@ -19,15 +19,15 @@
   </a>
 </h4>
 
-1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Arrays">Arrays</a>
-2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/MultidimensionalArrays">Multidimensional Arrays</a>
-3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Methods">Methods</a>
-4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/NumeralSystems">Numeral Systems</a>
-5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/ClassesAndObjects">Classes And Objects</a>
-6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/TextFiles">Text Files</a>
-7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/HandlingExceptions">Handling Exceptions</a>
-8. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/StringsAndTextProcessing">Strings And Text Processing</a>
-9. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/Exam_22Jan2014">Exam</a>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/01.Arrays">Arrays</a>
+2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/02.MultidimensionalArrays">Multidimensional Arrays</a>
+3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/03.Methods">Methods</a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/04.NumeralSystems">Numeral Systems</a>
+5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/05.ClassesAndObjects">Classes And Objects</a>
+6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/06.TextFiles">Text Files</a>
+7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/07.HandlingExceptions">Handling Exceptions</a>
+8. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/08.StringsAndTextProcessing">Strings And Text Processing</a>
+9. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart2/09.Exam_22Jan2014">Exam</a>
 
 ***********************
 
@@ -39,13 +39,13 @@
   </a>
 </h4>
 
-1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/DefiningClasses">Defining Classes Part I</a>
-2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/DefiningClassesPartII">Defining Classes Part II</a>
-3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/ExtensionMethods_Lambda_LINQ">Extension Methods Lambda LINQ</a>
-4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/PrinciplesOfOOP">Principles Of OOP Part I</a>
-5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/PrinciplesOfOOPPartII">Principles Of OOP Part II</a>
-6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/CommonTypeSystem">Common Type System</a>
-7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/RealExam/Exam%205.03.2014">Exam</a>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/01.DefiningClasses">Defining Classes Part I</a>
+2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/02.DefiningClassesPartII">Defining Classes Part II</a>
+3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/03.ExtensionMethods_Lambda_LINQ">Extension Methods Lambda LINQ</a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/04.PrinciplesOfOOP">Principles Of OOP Part I</a>
+5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/05.PrinciplesOfOOPPartII">Principles Of OOP Part II</a>
+6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/06.CommonTypeSystem">Common Type System</a>
+7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/OOP/07.RealExam/Exam%205.03.2014">Exam</a>
 
 ***********************
 <h4>
@@ -53,10 +53,10 @@
       <u>HTML Basics</u>
     </strong>
 </h4>
-1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/HTML_Homework1">HTML Foundamentals</a>
-2. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/Tables">HTML Tables</a>
-3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/HomeworkForms">HTML Forms</a>
-4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/SemanticWeb">Semantic Web</a>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/01.HTMLFoundamentals">HTML Foundamentals</a>
+2. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/02.HTMLTables">HTML Tables</a>
+3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/03.HomeworkForms">HTML Forms</a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML/04.SemanticWeb">Semantic Web</a>
 
 ***********************
 <h4>
@@ -64,9 +64,9 @@
       <u>CSS</u>
     </strong>
 </h4>
-1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/HW_SelectorsStylesClasses">CSS Overview</a>
-2. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/CSSPresentation">CSS Presentaion</a>
-3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/CSS_Layout">CSS Layout</a>
-4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/SASSHomework">SASS</a>
-5. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/LESS_Homework">LESS</a>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/01.CSSOverview">CSS Overview</a>
+2. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/02.CSSPresentation">CSS Presentaion</a>
+3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/03.CSS_Layout">CSS Layout</a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/04.SASSHomework">SASS</a>
+5. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/05.LESS_Homework">LESS</a>
 
