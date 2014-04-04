@@ -7,7 +7,7 @@
 4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/04.In_Out_Console">In and Out of Console
 5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/05.ConditionalOperators">Conditional Operators
 6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/06.Loops">Loops</a>
-7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/07.RealExam/Exam_2013_Dec">Exam</a>
+7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/08.RealExam/Exam_2013_Dec">Exam</a>
 
 ***********************
 
