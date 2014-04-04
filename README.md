@@ -49,6 +49,7 @@
 
 ***********************
 <h4>
+  <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/HTML">
     <strong>
       <u>HTML Basics</u>
     </strong>
@@ -69,4 +70,5 @@
 3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/03.CSS_Layout">CSS Layout</a>
 4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/04.SASSHomework">SASS</a>
 5. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/05.LESS_Homework">LESS</a>
+6. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/06.Exams">Exams</a>
 
