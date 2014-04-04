@@ -1,13 +1,13 @@
 <h2>Telerik Academy</h2>
 
 <h4><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1"<strong><u>C# Part One</u></strong></h4>
-1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Intro_Programming">Intro Programming</a>
-2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Primitive_Data_types">Primitive Data Types
-3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Operators_and_Expressions">Operators and Expressions
-4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/In_Out_Console">In and Out of Console
-5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/ConditionalOperators">Conditional Operators
-6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/Loops">Loops</a>
-7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/RealExam/Exam_2013_Dec">Exam</a>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/01.Intro_Programming">Intro Programming</a>
+2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/02.Primitive_Data_types">Primitive Data Types
+3. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/03.Operators_and_Expressions">Operators and Expressions
+4. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/04.In_Out_Console">In and Out of Console
+5. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/05.ConditionalOperators">Conditional Operators
+6. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/06.Loops">Loops</a>
+7. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/07.RealExam/Exam_2013_Dec">Exam</a>
 
 ***********************
 
