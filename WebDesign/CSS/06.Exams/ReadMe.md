@@ -12,3 +12,4 @@ Tasks
 <li>
 <a href="http://downloads.academy.telerik.com/svn/css/2013/Lectures/7.%20Exam%20Preparation/CSS-Styling-Exams-Solutions-Feb-2013-Variant-4.rar" target="_blnak">CSS Styling Exam – Variant 4</a>
 </li>
+</ul>
