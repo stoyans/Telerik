@@ -24,9 +24,9 @@ namespace SortInIncreasingOrder
 			
 			listOfNumbers.Sort();
 			
-			foreach (var item in listOfNumbers) {
+			foreach (var item in listOfNumbers) 
+            {
 				Console.WriteLine (item);
-				
 			}
 		}
 	}

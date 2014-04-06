@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.FindSequence", "09.FindS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.ImplementLinkedList", "11.ImplementLinkedList\11.ImplementLinkedList.csproj", "{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.CustomStack", "12.CustomStack\12.CustomStack.csproj", "{2FE76469-EE01-4989-A2F7-91DAA4B8A759}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +123,16 @@ Global
 		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1C351B06-4ED7-457E-949D-0CDBAEF3AFB2}.Release|x86.ActiveCfg = Release|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2FE76469-EE01-4989-A2F7-91DAA4B8A759}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

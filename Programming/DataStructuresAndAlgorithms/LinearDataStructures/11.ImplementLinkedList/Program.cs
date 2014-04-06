@@ -12,9 +12,10 @@ namespace _11.ImplementLinkedList
         {
             CustomLinkedList<int> list = new CustomLinkedList<int>();
             list.AddFirst(5);
+            list.AddFirst(1);
             list.AddFirst(11);
 
-            Console.WriteLine(list);
+            Console.WriteLine(list.Count);
 
         }
     }

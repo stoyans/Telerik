@@ -8,6 +8,14 @@ namespace _11.ImplementLinkedList
 {
     public class CustomLinkedList<T>
     {
+        public int Count
+        {
+            get
+            {
+                return GetCount();
+            }
+            private set { }
+        }
 
         private ListItem<T> firstElement;
 
@@ -30,15 +38,28 @@ namespace _11.ImplementLinkedList
 
         public void AddFirst(T item)
         {
-            if (this.FirstElement == null)
+
+            var addNode = new ListItem<T>(item);
+            addNode.NextItem = this.FirstElement;
+            this.FirstElement = addNode;
+
+        }
+
+        public void AddLast(T item)
+        {
+            if (this.firstElement == null)
             {
                 this.FirstElement = new ListItem<T>(item);
             }
             else
             {
-                var addNode = new ListItem<T>(item);
-                addNode.NextItem = this.FirstElement;
-                this.FirstElement = addNode;
+                ListItem<T> nextElement = this.FirstElement;
+                while (nextElement.NextItem != null)
+                {
+                    nextElement = nextElement.NextItem;
+                }
+
+                nextElement.NextItem = new ListItem<T>(item);
             }
         }
 
@@ -52,30 +73,23 @@ namespace _11.ImplementLinkedList
             this.firstElement = this.firstElement.NextItem;
         }
 
-        public override string ToString()
+        private int GetCount()
         {
-            if (this.firstElement == null)
+
+            if (this.FirstElement == null)
             {
-                return string.Format("[ ]");
+                return 0;
+            }
+            int countElements = 1;
+            ListItem<T> element = this.FirstElement;
+            while (element.NextItem != null)
+            {
+                countElements++;
+                element = element.NextItem;
             }
 
-            StringBuilder sb = new StringBuilder("[ ");
-
-            var currItem = this.firstElement;
-            sb.Append(currItem.Value);
-
-            while (currItem.NextItem != null)
-            {
-                sb.Append(", ");
-                sb.Append(currItem.NextItem);
-                currItem = currItem.NextItem;
-            }
-
-            sb.Append(" ]");
-
-            return sb.ToString();
+            return countElements;
         }
-
 
     }
 }
