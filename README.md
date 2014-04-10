@@ -1,5 +1,5 @@
 <h2>Telerik Academy</h2>
-
+<a href="http://academy.telerik.com/?utm_source=site&utm_medium=banner&utm_content=468x60&utm_campaign=community" title="Уроци по програмиране"><img src="http://academy.telerik.com/images/default-album/telerik-academy-banner.jpg?sfvrsn=2" alt="Академия на Телерик"/></a> 
 <h4><a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1"<strong><u>C# Part One</u></strong></h4>
 1. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/01.Intro_Programming">Intro Programming</a>
 2. <a href="https://github.com/stoyans/Telerik/tree/master/Programming/CSharpPart1/02.Primitive_Data_types">Primitive Data Types
