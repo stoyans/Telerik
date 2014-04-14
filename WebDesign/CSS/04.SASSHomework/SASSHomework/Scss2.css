@@ -26,6 +26,7 @@ body {
     body .pickedpicture .image {
       display: none; }
     body .pickedpicture input:checked + .image {
+      border-radius: 10px;
       display: block;
       width: 900px;
       height: 600px;

@@ -39,6 +39,7 @@ body
 			display:none;
 		}
 		input:checked + .image{
+			border-radius:10px;
 			display:block;
 			width:900px;
 			height:600px;
