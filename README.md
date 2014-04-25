@@ -74,4 +74,5 @@
 4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/04.SASSHomework">SASS</a>
 5. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/05.LESS_Homework">LESS</a>
 6. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/06.Exams">Exams</a>
+7. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/07.Real%20Exam">Real Exam</a>
 
