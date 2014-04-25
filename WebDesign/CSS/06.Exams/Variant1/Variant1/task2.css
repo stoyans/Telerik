@@ -52,7 +52,6 @@ ul.tab-strip > li {
 ul.tab-strip {
     display: inline-block;
     position: relative;
-
 }
 
     ul.tab-strip ul {
@@ -76,6 +75,15 @@ ul.tab-strip {
 
 li.current .tab-content {
     display: block;
+}
+
+ul.tab-strip > li .tab-content ul li ul {
+    margin-left: 25px;
+    list-style-type: lower-alpha;
+}
+
+.tab-strip > li .tab-content ul {
+    list-style-type: disc;
 }
 
 ul.tab-strip > li .tab-content ul li ul {

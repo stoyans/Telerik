@@ -1,0 +1,74 @@
+html, body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+    background-color: white;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+header > h1, #nav {
+    float: left;
+    margin-left: 10px;
+}
+header h1 {
+    font-size:20px;
+}
+header {
+    background-image: url('images/header-bg.png');
+}
+
+h1 {
+    text-transform: uppercase;
+    color: darkgray;
+}
+
+#nav {
+    margin-left: 350px;
+    position: relative;
+}
+
+    #nav ul li {
+        padding-left: 20px;
+    }
+
+#searchBar {
+    background-color: black;
+    border: 1px solid;
+    height: 40px;
+    color: whitesmoke;
+}
+
+#archives, #search {
+    float: left;
+    padding: 5px;
+    background-color: black;
+    padding-top: 10px;
+}
+
+#searchBar div a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#search {
+    margin-left: 690px;
+}
+
+#content h1 {
+    text-transform: lowercase;
+}
+
+    #content h1::first-letter {
+        text-transform: uppercase;
+    }
