@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Exchange Values</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="firstField"/>
+    <input type="text" id="secondField" />
+    <a href="#" onclick="onExchangeValues()">Exchange Values</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onExchangeValues() {
+            var firstNum = jsConsole.readFloat("#firstField");
+            var secondNum = jsConsole.readFloat("#secondField");
+            var temp;
+            if (firstNum > secondNum) {
+                temp = secondNum;
+                secondNum = firstNum;
+                firstNum = temp;
+            }
+            jsConsole.writeLine(firstNum);
+            jsConsole.writeLine(secondNum);
+        }
+    </script>
+</body>
+</html>

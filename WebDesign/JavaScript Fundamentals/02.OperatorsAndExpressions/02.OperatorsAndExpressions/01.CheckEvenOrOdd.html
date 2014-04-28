@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Even or Odd</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <!--Task 1 (CheckEvenOrOdd)-->
+    <script>
+        var value = 11;
+        jsConsole.writeLine(value);
+        if (value % 2 == 0) {
+            jsConsole.writeLine('even')
+        }
+        else {
+            jsConsole.writeLine('odd')
+        }
+    </script>
+    <!--Task 2 (Divide by 5 and 7 without remainder)-->
+    <script>
+        var value = 70;
+        if (value % 35 == 0) {
+            jsConsole.writeLine('Can be divided!')
+        }
+        else {
+            jsConsole.writeLine("Can't be divided!")
+        }
+    </script>
+    <!--Task 3 (Rectangle's Area)-->
+    <script>
+        var width = 7.3;
+        var height = 3.2;
+        var area = width * height;
+        jsConsole.writeLine(area + ' cm2');
+    </script>
+    <!--Task 4 (Check if the third digit is 7)-->
+    <script>
+        var number = 1738;
+        jsConsole.writeLine(number.toString()[1] == 7);
+        jsConsole.writeLine(Math.floor((number / 100) % 10) == 7);
+    </script>
+    <!--Task 5 (Find 3rd bit if it's 1 or 0)-->
+    <script>
+        var num = 19;
+        var bit = 1 << 3;
+        jsConsole.writeLine((num & bit) == bit ? true: false);
+    </script>
+    <!--Task 6 (Check if the point is inside a circle)-->
+    <script>
+        var radius = 5;
+        var x = 3;
+        var y = 3;
+        jsConsole.writeLine('Is the point inside the circle? ' + ((x*x + y*y) <= Math.pow(radius, 2) ? true : false));
+    </script>
+    <!--Task 6 (Check if the point is inside a circle)-->
+    <script>
+        var number1 = 97;
+        var isPrime = true;
+        for (var i = 2; i <= Math.sqrt(number1) ; i++) {
+            if (number1 % i == 0) {
+                isPrime = false;
+            }
+        }
+        if (isPrime) {
+            jsConsole.writeLine('The number is prime');
+        }
+        else {
+            jsConsole.writeLine('The number is NOT prime');
+        }
+    </script>
+</body>
+</html>

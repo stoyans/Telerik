@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Numbers in Words</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="number" />
+    <a href="#" onclick="ConvertInWords()">Convert In Words</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function ConvertInWords() {
+            var digits = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+            var _10to19 = ["Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+            var tens = ["Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+
+            var num = jsConsole.readInteger("#number");
+            if (num >= 0 && num < 10) {
+                jsConsole.writeLine(digits[num]);
+            }
+            else if (num > 9 && num < 20) {
+                jsConsole.writeLine(_10to19[num.toString()[1]]);
+            }
+            else if (num > 19 && num < 100) {
+                if (num.toString()[1] == 0) {
+                    jsConsole.writeLine(tens[num.toString()[0] - 2]);
+                }
+                else {
+                    jsConsole.writeLine(tens[num.toString()[0] - 2] + ' ' + digits[num.toString()[1]]);
+                }
+            }
+            else if (num >= 100 && num <= 999) {
+                if (num.toString()[2] == 0 && num.toString()[1] == 0) {
+                    jsConsole.writeLine(digits[num.toString()[0]] + ' ' + "Hundred");
+                }
+                else if (num.toString()[2] == 0 && num.toString()[1] > 1) {
+                    jsConsole.writeLine(digits[num.toString()[0]] + ' ' + "Hundred" + ' and ' + tens[num.toString()[1] - 2]);
+                }
+                else if (num.toString()[2] != 0 && num.toString()[1] == 0) {
+                    jsConsole.writeLine(digits[num.toString()[0]] + ' ' + "Hundred" + ' and ' + digits[num.toString()[2]]);
+                }
+                else if (num.toString()[1] == 1) {
+                    jsConsole.writeLine(digits[num.toString()[0]] + ' ' + "Hundred" + ' and ' + _10to19[num.toString()[2]]);
+                }
+                else  {
+                    jsConsole.writeLine(digits[num.toString()[0]] + ' ' + "Hundred" + ' and ' + tens[num.toString()[1] - 2] + ' ' + digits[num.toString()[2]]);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

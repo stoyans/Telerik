@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find Biggest Of 5 Numbers</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    1.<input type="text" id="firstNum" /><br />
+    2.<input type="text" id="secondNum" /><br />
+    3.<input type="text" id="thirdNum" /><br />
+    4.<input type="text" id="fourthNum" /><br />
+    5.<input type="text" id="fifthNum" /><br />
+    <a href="#" onclick="onFindBiggest()">Find Biggest</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onFindBiggest() {
+            var nums = new Array();
+            nums.push(jsConsole.readFloat("#firstNum"));
+            nums.push(jsConsole.readFloat("#secondNum"));
+            nums.push(jsConsole.readFloat("#thirdNum"));
+            nums.push(jsConsole.readFloat("#fourthNum"));
+            nums.push(jsConsole.readFloat("#fifthNum"));
+            
+            var biggest = Number.MIN_VALUE;
+            for (var i = 0; i < nums.length; i++) {
+
+                if (nums[i] >= biggest) {
+                    biggest = nums[i];
+                }
+            }
+
+            jsConsole.writeLine(biggest);
+        }
+    </script>
+</body>
+</html >
