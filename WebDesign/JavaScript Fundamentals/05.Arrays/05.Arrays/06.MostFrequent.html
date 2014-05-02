@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Most Frequent</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="nums" />
+    <a href="#" onclick="onMostFrequent()">Find Most Frequent Number</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var element = document.getElementById("nums");
+        var nums = element.value;
+        var numsArray = nums.split(" ");
+
+        function onMostFrequent() {
+
+            var biggestSum = 0;
+            var num = 0;
+
+            for (var i = 0; i < numsArray.length; i++) {
+                var sum = 0;
+
+                for (var j = i; j < numsArray.length; j++) {
+                    if (numsArray[j] == numsArray[i]) {
+                        sum++;
+                    }
+                }
+                if (sum > biggestSum) {
+                    num = numsArray[i];
+                    biggestSum = sum;
+                }
+            }
+
+            jsConsole.writeLine(num + ' -> ' + biggestSum + ' times');
+        }
+    </script>
+</body>
+</html>

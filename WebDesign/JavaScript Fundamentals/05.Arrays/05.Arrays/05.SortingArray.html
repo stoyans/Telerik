@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sorting Array</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="nums" />
+    <a href="#" onclick="onSortSequence()">Sorting Array</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var element = document.getElementById("nums");
+        var nums = element.value;
+        var numsArray = nums.split(" ");
+
+        function onSortSequence() {
+            var temp = 0;
+            var position = 0;
+
+            for (var i = 0; i < numsArray.length; i++) {
+                temp = numsArray[i];
+                var smallest = Number.MAX_VALUE;
+
+                for (var j = i; j < numsArray.length; j++) {
+                    if (numsArray[j] < smallest) {
+                        position = j;
+                        smallest = numsArray[j];
+                    }
+                }
+                numsArray[position] = temp;
+                numsArray[i] = smallest;
+            }
+
+            jsConsole.writeLine("Sorted array:");
+            jsConsole.writeLine(numsArray);
+        }
+    </script>
+</body>
+</html>

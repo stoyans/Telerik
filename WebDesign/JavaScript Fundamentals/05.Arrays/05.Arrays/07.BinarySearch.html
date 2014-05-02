@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Binary Search</title>
+</head>
+<body>
+    <script>
+        var nums = prompt("Enter a number: ");
+        var numsArray = nums.split(" ");
+        numsArray.sort();
+        document.writeln(numsArray);
+        var start = 0;
+        var inArray = false
+        var startIn = false;
+
+        var element = 1;
+
+        while (numsArray.length - start >= 1) {
+            var index = Math.floor((numsArray.length + start) / 2);
+            if (numsArray[index] == element) {
+                document.writeln(element + ' on ' + index + ' position');
+                inArray = true;
+                break;
+            }
+            if (startIn == true) {
+                break;
+            }
+            else if (numsArray[Math.floor((numsArray.length + start) / 2)] > element) {
+                numsArray.length = Math.floor((numsArray.length + start) / 2);
+            }
+            else if (numsArray[Math.floor((numsArray.length + start) / 2)] < element) {
+                if (start == 0) {
+                    startIn = true;
+                }
+                start = Math.floor(numsArray.length / 2);
+            }
+        }
+        
+        if (!inArray) {
+            document.writeln("The number is not available in the array");
+        }
+    </script>
+</body>
+</html>

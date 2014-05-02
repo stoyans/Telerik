@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Multiply Elements By 5</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="num" />
+    <a href="#" onclick="onMultiply()">Multiply</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onMultiply() {
+            var element = document.getElementById("num");
+            var nums = element.value;
+            var numsArray = nums.split(" ");
+
+            for (var i = 0; i < numsArray.length; i++) {
+                jsConsole.writeLine(numsArray[i] * 5);
+            }
+        }
+    </script>
+</body>
+</html>

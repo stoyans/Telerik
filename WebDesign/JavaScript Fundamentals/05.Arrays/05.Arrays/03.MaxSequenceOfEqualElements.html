@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Max Sequence Of Equal Elements</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="nums" />
+    <a href="#" onclick="onFindSequence()">Find Max Sequence</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onFindSequence() {
+            var element = document.getElementById("nums");
+            var nums = element.value;
+            var numsArray = nums.split(" ");
+
+            var maxCount = Number.MIN_VALUE;
+            var currentCount = 1;
+            currentNum = numsArray[0];
+            var sequence = new Array();
+            var maxSequence = new Array();
+            sequence.push(numsArray[0]);
+
+            for (var i = 1; i <= numsArray.length; i++) {
+                if (numsArray[i] == currentNum) {
+                    currentCount++;
+                    sequence.push(currentNum);
+                }
+                else {
+                    if (currentCount > maxCount) {
+                        maxSequence = sequence.slice();
+                        maxCount = currentCount;
+                    }
+                    currentCount = 1;
+                    sequence = [];
+                    currentNum = numsArray[i];
+                    sequence.push(currentNum);
+                }
+            }
+            jsConsole.writeLine(maxCount);
+            jsConsole.writeLine(maxSequence);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find Max and Min Values</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    How many numbers: <input type="text" id="nums" />
+    <a href="#" onclick="onClickPrintNums()">Print</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onClickPrintNums() {
+
+            var min = Number.MAX_VALUE;
+            var max = Number.MIN_VALUE;
+
+            for (var i = 1; i <= jsConsole.readFloat("#nums") ; i++) {
+                var random = Math.random();
+                jsConsole.writeLine(random);
+                if (random < min) {
+                    min = random;
+                }
+                if (random > max) {
+                    max = random;
+                }
+            }
+
+            jsConsole.writeLine('Min value: ' + min);
+            jsConsole.writeLine('Max value: ' + max);
+        }
+    </script>
+</body>
+</html>

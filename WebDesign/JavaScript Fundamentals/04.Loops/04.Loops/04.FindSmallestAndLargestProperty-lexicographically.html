@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find Smallest And Largest Property - lexicographically</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        findSmallest(window);
+        findSmallest(navigator);
+        findSmallest(document);
+        findLargest(window);
+        findLargest(navigator);
+        findLargest(document);
+
+        function findSmallest(object) {
+            var smallest = 'zzz';
+            for (var prop in object) {
+
+                if (smallest > prop) {
+                    smallest = prop;
+                }
+            }
+            jsConsole.writeLine(smallest);
+        }
+
+        function findLargest(object) {
+            var largest = 'aaa';
+            for (var prop in object) {
+
+                if (largest < prop) {
+                    largest = prop;
+                }
+            }
+            
+            jsConsole.writeLine(largest);
+        }
+    </script>
+</body>
+</html>

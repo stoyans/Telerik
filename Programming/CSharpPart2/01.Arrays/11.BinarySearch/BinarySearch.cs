@@ -19,7 +19,7 @@ class BinarySearch
 
         for (int i = 0; i < array.Length; i++)
         {
-            array[i] = int.Parse(Console.ReadLine()); //filllin the array
+            array[i] = int.Parse(Console.ReadLine()); //filling the array
         }
         Array.Sort(array); //sorting the array
         Console.WriteLine("Sorted array:");

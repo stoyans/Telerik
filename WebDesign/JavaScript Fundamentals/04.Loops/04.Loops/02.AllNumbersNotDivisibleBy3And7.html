@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find Numbers</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    Print all numbers to:
+    <input type="text" id="num" /> Divisible by 3 and 7
+    <a href="#" onclick="onClickPrintNums()">Print</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onClickPrintNums() {
+            for (var i = 1; i <= jsConsole.readInteger("#num") ; i++) {
+                if (i % 21 == 0) {
+                    jsConsole.writeLine(i);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

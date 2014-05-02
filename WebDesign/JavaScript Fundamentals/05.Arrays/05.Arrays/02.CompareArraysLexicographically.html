@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Compare Arrays Lexicographically</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="firstArray" />
+    <input type="text" id="secondArray" />
+    <a href="#" onclick="compareArrays()">Compare</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function compareArrays() {
+            var firstElement = document.getElementById("firstArray");
+            var secondElement = document.getElementById("secondArray");
+            var firstArrayNums = firstElement.value;
+            var secondArrayNums = secondElement.value;
+            var firstArray = firstArrayNums.split(" ");
+            var secondArray = secondArrayNums.split(" ");
+
+            var equal = true;
+
+            if (firstArray.length != secondArray.length) {
+                jsConsole.writeLine("Arrays are NOT equal");
+                equal = false;
+            }
+            else {
+
+                /*Compare*/
+                for (var i = 0; i < firstArray.length; i++) {
+                    if (firstArray[i] != secondArray[i]) {
+                        equal = false;
+                        jsConsole.writeLine("Arrays are NOT equal");
+                    }
+                    if (firstArray[i] < secondArray[i]) {
+                        jsConsole.writeLine("Array One is first in the lexicographical order");
+                    }
+                    if (firstArray[i] > secondArray[i]) {
+                        jsConsole.writeLine("Array Two is first in the lexicographical order");
+                    }
+                }
+            }
+
+            if (equal == true) {
+                jsConsole.writeLine("Arrays are equal");
+            }
+        }
+    </script>
+
+</body>
+</html>

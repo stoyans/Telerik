@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Print All Numbers</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <script src="scripts/js-console.js"></script>
+</head>
+<body>
+    Print all numbers to: 
+    <input type="text" id="num" />
+    <a href="#" onclick="onClickPrintNums()">Print</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onClickPrintNums() {
+            for (var i = 1; i <= jsConsole.readInteger("#num") ; i++) {
+                jsConsole.writeLine(i);
+            }
+        }
+    </script>
+</body>
+</html>
