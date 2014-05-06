@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Planar Coordinate System</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function planarPoint(x, y) {
+            return {X: x, Y:y}
+        }
+
+        function CalculateLine(P1, P2) {
+            return Math.sqrt(Math.pow((P2.X - P1.X), 2) + Math.pow((P2.Y - P1.Y), 2));
+        }
+
+        function CheckPossibleTriangle(A, B, C) {
+            if (sideA + sideB > sideC &&
+                sideB + sideC > sideA &&
+                sideA + sideC > sideB) {
+                return 'Selected points can define a triangle!';
+            }
+            else {
+                return 'Selected points can\'T define a triangle!';
+            }
+        }
+        var P1 = planarPoint(0, 0);
+        var P2 = planarPoint(0, 0);
+        var P3 = planarPoint(3, 1);
+
+        var sideA = CalculateLine(P1, P2);
+        var sideB = CalculateLine(P2, P3);
+        var sideC = CalculateLine(P3, P1);
+
+        jsConsole.writeLine(sideA);
+        jsConsole.writeLine(sideB);
+        jsConsole.writeLine(sideC);
+
+        jsConsole.writeLine(CheckPossibleTriangle(sideA, sideB, sideC));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check If Bigger Than Neighbours</title>
+</head>
+<body>
+    Enter numbers separated with space: ' '<input type="text" id="array" />
+    enter a position<input type="text" id="position" />
+    <a href="#" onclick="checkBiggerThanNeighbours()">Check If Bigger Than Neighbours</a>
+    <script>
+        function checkBiggerThanNeighbours() {
+            var nums = document.getElementById("array").value.split(' ');
+            var position = parseInt(document.getElementById("position").value);
+
+            if (nums.length == 1) {
+                document.write("In the array there's only one element " + nums[0]);
+            }
+            else if (position > 0 && position < nums.length - 1) {
+                if (nums[position] > nums[position - 1] && nums[position] > nums[position + 1]) {
+                    document.write("The element on position " + position + " is bigger than its neighbours");
+                }
+                else {
+                    document.write("The element on position " + position + " is smaller or equal to one of its neighbours");
+                }
+            }
+            else if (position == 0) {
+                if (position == 0 && nums[0] > nums[1]) {
+                    document.write("The element on position 0 has only one neighbour on the right and it's bigger");
+                }
+                else {
+                    document.write("The element on position 0 has only one neighbour on the right and it's smaller");
+                }
+
+            }
+            else if (position == nums.length - 1) {
+                if (position == nums.length - 1 && nums[nums.length - 1] > nums[nums.length - 2]) {
+                    document.write("The element on position " + position + " has only one neighbour on the left and it's bigger");
+                }
+                else {
+                    document.write("The element on position " + position + " has only one neighbour on the left and it's smaller");
+                }
+            }
+            else if (position > nums.length - 1 || position < 0) {
+                document.write("The chosen index is outside of the array");
+            }
+        }
+    </script>
+
+</body>
+</html>

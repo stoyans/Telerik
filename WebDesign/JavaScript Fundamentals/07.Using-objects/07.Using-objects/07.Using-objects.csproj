@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7C521FB9-A495-4FD2-B62D-B9FAE767D835}</ProjectGuid>
+    <ProjectGuid>{F4A1DCE3-0055-484E-AE00-4825EF70C8D0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02.OperatorsAndExpressions</RootNamespace>
-    <AssemblyName>02.OperatorsAndExpressions</AssemblyName>
+    <RootNamespace>_07.Using_objects</RootNamespace>
+    <AssemblyName>07.Using-objects</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,7 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AllTasks.html" />
+    <Content Include="01.PlanarCoordinateSystem.html" />
+    <Content Include="02.ExtensionMethodToRemove.html" />
     <Content Include="scripts\js-console.js" />
     <Content Include="styles\js-console.css" />
     <Content Include="styles\js-console.min.css" />
@@ -88,9 +89,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>44298</DevelopmentServerPort>
+          <DevelopmentServerPort>44986</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:44298/</IISUrl>
+          <IISUrl>http://localhost:44986/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Оccurences Of Words</title>
+</head>
+<body>
+    Enter some text:
+    <textarea id="text"></textarea>
+    <input type="text" id="word" />
+    <a href="#" onclick="findOccurences()">findOccurences</a>
+    <script>
+
+        function findOccurences(word, isCaseSensitive) {
+
+            text = document.getElementById("text").value.split(' ');
+            word = document.getElementById("word").value;
+
+            function countWordsCaseInsensitive() {
+                var count = 0;
+                for (var i = 0; i < text.length; i++) {
+                    if (text[i].toLowerCase() == word.toLowerCase()) {
+                        count++;
+                    }
+                }
+                return count;
+            }
+
+            function countWordsCaseSensitive() {
+                var count = 0;
+                var countChar = 0;
+                for (var i = 0; i < text.length; i++) {
+                    countChar = 0;
+                    for (var k = 0; k < word.length; k++) {
+                        if (word[k] === text[i][k]) {
+                            countChar++;
+                        }
+                    }
+                    if (countChar == word.length) {
+                        count++;
+                    }
+                }
+                return count;
+            }
+
+            switch (arguments.length) {
+                case 1: return countWordsCaseInsensitive();
+                case 2: return countWordsCaseSensitive();
+            }
+        }
+
+        document.writeln(findOccurences(word));
+        document.writeln(findOccurences(word, true));
+
+    </script>
+</body>
+</html>

@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7C521FB9-A495-4FD2-B62D-B9FAE767D835}</ProjectGuid>
+    <ProjectGuid>{E207B6EF-8943-4C6B-BAA9-7CB0901B0CB4}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02.OperatorsAndExpressions</RootNamespace>
-    <AssemblyName>02.OperatorsAndExpressions</AssemblyName>
+    <RootNamespace>_06.Functions</RootNamespace>
+    <AssemblyName>06.Functions</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,17 +57,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AllTasks.html" />
-    <Content Include="scripts\js-console.js" />
-    <Content Include="styles\js-console.css" />
-    <Content Include="styles\js-console.min.css" />
+    <Content Include="01.ReturnLastDigitInWords.html" />
+    <Content Include="02.ReverseDigits.html" />
+    <Content Include="03.ОccurencesOfWords.html" />
+    <Content Include="04.CountDiv.html" />
+    <Content Include="05.NumberOfAppearances.html" />
+    <Content Include="06.CheckIfBiggerThanNeighbours.html" />
+    <Content Include="07.CheckIfBigger.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="styles\js-console.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -88,9 +90,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>44298</DevelopmentServerPort>
+          <DevelopmentServerPort>20755</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:44298/</IISUrl>
+          <IISUrl>http://localhost:20755/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

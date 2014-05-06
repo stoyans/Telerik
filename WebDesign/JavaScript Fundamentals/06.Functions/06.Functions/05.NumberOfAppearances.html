@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Number Of Appearances</title>
+</head>
+<body>
+    Enter numbers separated with space: ' '<input type="text" id="array"/>
+    enter a number<input type="text" id="number" />
+    <a href="#" onclick="findAppearances()">Find Appearances</a>
+
+    <script>
+        function findAppearances() {
+            var nums = document.getElementById("array").value.split(' ');
+            var number = document.getElementById("number").value;
+            var count = 0;
+
+            for (var i = 0; i < nums.length; i++) {
+                if (nums[i] == number) {
+                    count++;
+                }
+            }
+            document.write(count);
+        }
+    </script>
+</body>
+</html>

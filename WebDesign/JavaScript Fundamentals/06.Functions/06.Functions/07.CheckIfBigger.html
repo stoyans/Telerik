@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check If Bigger</title>
+</head>
+<body>
+    Enter numbers separated with space: ' '<input type="text" id="array" />
+    <a href="#" onclick="checkBiggerThanNeighbours()">Check If Bigger Than Neighbours</a>
+    <script>
+        function checkBiggerThanNeighbours() {
+            var nums = document.getElementById("array").value.split(' ');
+
+            if (nums.length == 0) {
+                document.write("No elements in the array");
+                return;
+            }
+
+            if (CheckIfBigger() == -1) {
+                document.write("In the array there is NO element bigger than its neighbours");
+            }
+            else {
+                document.write("The first element which is bigger than its neighbours has index: " + CheckIfBigger());
+            }
+
+            function CheckIfBigger() {
+
+                for (var i = 1; i < nums.length - 1; i++) {
+                    if (nums[i] > nums[i - 1] && nums[i] > nums[i + 1]) {
+                        return i;
+                    }
+                }
+
+                return -1;
+            }
+        }
+    </script>
+</body>
+</html>

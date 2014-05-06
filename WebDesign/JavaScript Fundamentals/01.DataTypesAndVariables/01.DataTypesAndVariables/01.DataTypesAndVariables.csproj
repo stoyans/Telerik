@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7C521FB9-A495-4FD2-B62D-B9FAE767D835}</ProjectGuid>
+    <ProjectGuid>{D92740AC-7C76-4FA9-A472-F9C958BB1CF4}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02.OperatorsAndExpressions</RootNamespace>
-    <AssemblyName>02.OperatorsAndExpressions</AssemblyName>
+    <RootNamespace>_01.DataTypesAndVariables</RootNamespace>
+    <AssemblyName>01.DataTypesAndVariables</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,7 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AllTasks.html" />
+    <Content Include="01.AssignVariables.html" />
+    <Content Include="02.Quotes.html" />
+    <Content Include="03.TypeOf.html" />
+    <Content Include="04.CreateVariables.html" />
     <Content Include="scripts\js-console.js" />
     <Content Include="styles\js-console.css" />
     <Content Include="styles\js-console.min.css" />
@@ -88,9 +91,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>44298</DevelopmentServerPort>
+          <DevelopmentServerPort>4317</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:44298/</IISUrl>
+          <IISUrl>http://localhost:4317/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

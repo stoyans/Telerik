@@ -23,7 +23,7 @@ class SieveOfEratosthenes
         
         for (long index = 2; index < n; index++) //start the loop with the first prime number, which is 2
         {
-            if (check[index] == true) //the innder loop below will start from the next prime number ('true' element)
+            if (check[index] == true) //the inner loop below will start from the next prime number ('true' element)
             {
                 long num = array[index]; //in num we save the number in the current position which is true
 

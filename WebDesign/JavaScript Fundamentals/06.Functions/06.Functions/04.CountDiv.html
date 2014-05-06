@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Count Div Elements</title>
+</head>
+<body>
+    <div id="center">
+        <div class="name">text text</div>
+        <div class="name">text text text ... </div>
+        <div class="name">text ...</div>
+    </div>
+    <script>
+        function countDivs() {
+            var divs = document.getElementsByTagName("div");
+            return divs.length;
+        }
+
+        document.write(countDivs());
+    </script>
+</body>
+</html>

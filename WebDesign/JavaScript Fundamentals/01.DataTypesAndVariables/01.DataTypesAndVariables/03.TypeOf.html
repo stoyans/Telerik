@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Type Of</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var variable = 1;
+        jsConsole.writeLine(typeof variable);
+        variable = "yes";
+        jsConsole.writeLine(typeof variable);
+        variable = [];
+        jsConsole.writeLine(typeof variable);
+        variable = {};
+        jsConsole.writeLine(typeof variable);
+        variable = 2.344;
+        jsConsole.writeLine(typeof variable);
+        variable = true;
+        jsConsole.writeLine(typeof variable);
+        variable = null;
+        jsConsole.writeLine(typeof variable);
+        jsConsole.writeLine(typeof new Date());
+        jsConsole.writeLine(typeof undefined);
+    </script>
+    
+</body>
+</html>
