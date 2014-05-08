@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Make A Deep Copy</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var person = {
+            fname: 'Mark',
+            age: 20
+        }
+        jsConsole.writeLine(typeof person);
+
+        function clone(obj) {
+            if (obj == null || typeof (obj) != 'object')
+                return obj;
+
+            var temp = obj.constructor(); // changed
+
+            for (var key in obj)
+                temp[key] = clone(obj[key]);
+            return temp;
+        }
+
+        jsConsole.writeLine(clone(person));
+
+        function deepCopy(obj) {
+            if (Object.prototype.toString.call(obj) === '[object Array]') {
+                var out = [], i = 0, len = obj.length;
+                for (; i < len; i++) {
+                    out[i] = arguments.callee(obj[i]);
+                }
+                return out;
+            }
+            if (typeof obj === 'object') {
+                var out = {}, i;
+                for (i in obj) {
+                    out[i] = arguments.callee(obj[i]);
+                }
+                return out;
+            }
+            return obj;
+        }
+        jsConsole.writeLine(deepCopy(person));
+    </script>
+</body>
+</html>

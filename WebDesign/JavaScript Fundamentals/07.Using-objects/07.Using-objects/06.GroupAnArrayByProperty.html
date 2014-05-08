@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Group An Array By Property</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+
+        function group(arrayPeople, key) {
+            var filterPeople = {};
+
+            for (var i = 0; i < arrayPeople.length; i++) {
+                var keyValue = arrayPeople[i][key];
+                filterPeople[keyValue] = [];
+
+                for (var k = 0; k < arrayPeople.length; k++) {
+                    if (keyValue == arrayPeople[k][key]) {
+                        filterPeople[keyValue].push(arrayPeople[k]);
+                    }
+                }
+                
+            }
+            return filterPeople;
+
+        }
+
+        var people = [
+                        { firstname: "Gosho", lastname: "Petrov", age: 32 },
+                        { firstname: "Bay", lastname: "Ivan", age: 11 },
+                        { firstname: "Pepo", lastname: "Ivan", age: 7 },
+                        { firstname: "Bay", lastname: "Ivan", age: 32 },
+                        { firstname: "Pepo", lastname: "Ivan", age: 81 },
+                        { firstname: "Bay", lastname: "Ivan", age: 32 },
+                        { firstname: "Pepo", lastname: "Ivan", age: 81 }
+        ];
+
+        var groupedByFname = group(people, "firstname");
+        var groupedByAge = group(people, "age");
+
+        for (var group in groupedByFname) {
+            jsConsole.writeLine(group);
+            for (var i = 0; i < groupedByFname[group].length; i++) {
+                
+                jsConsole.writeLine("FirstName: " + groupedByFname[group][i].firstname + "; LastName: " + groupedByFname[group][i].lastname + "; Age: " + groupedByFname[group][i].age);
+            } 
+        }
+
+    </script>
+</body>
+</html>

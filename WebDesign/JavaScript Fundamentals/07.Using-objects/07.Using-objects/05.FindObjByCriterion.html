@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find Obj By Critea</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <script src="scripts/js-console.js"></script>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var people = [
+                        { firstname: "Gosho", lastname: "Petrov", age: 32 },
+                        { firstname: "Bay", lastname: "Ivan", age: 11 },
+                        { firstname: "Youngest", lastname: "Dude", age: 7 },
+                        { firstname: "Bay", lastname: "Ivan", age: 21 },
+                        { firstname: "Bay", lastname: "Ivan", age: 99 },
+                        { firstname: "Bay", lastname: "Ivan", age: 27 },
+                        { firstname: "Bay", lastname: "Ivan", age: 81 }
+        ];
+
+        function findYoungestPerson(arr) {
+            var youngest = Number.MAX_VALUE;
+            var personName;
+
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].age <= youngest) {
+                    youngest = arr[i].age;
+                    personName = arr[i].firstname + ' ' + arr[i].lastname;
+                }                
+            }
+
+            return personName;
+        }
+        
+        jsConsole.writeLine('The youngest person is: ' + findYoungestPerson(people));
+
+    </script>
+</body>
+</html>
