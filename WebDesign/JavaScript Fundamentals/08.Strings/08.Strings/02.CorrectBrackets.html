@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Correct Brackets</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var expression = "((a+b)/5-d)";
+
+        function validateExpression(sample) {
+            var ex = [];
+            for (var i = 0; i < sample.length; i++) {
+                if (sample[i] == "(") {
+                    ex.push(sample[i]);
+                }
+                if (sample[i] == ")") {
+                    if (ex.length == 0) {
+                        ex.push(sample[i]);
+                    }
+                    else {
+                        ex.pop(sample[i]);
+                    }
+                    
+                }
+            }
+            if (ex.length == 0) {
+                return 'Expression is correct!';
+            }
+            else {
+                return 'Expression is INcorrect!';
+            }
+        }
+
+        jsConsole.writeLine(validateExpression(expression));
+    </script>
+</body>
+</html>

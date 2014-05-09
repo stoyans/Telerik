@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Extract Palindromes</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var palindromes ='aba acca adda affa aga aha ajaja aka ala alala alula ama amma words other ana\
+        anana anna apa ara arara atta ava awa bib bob bub dad deed deedeed degged did dod dud ABBA exe jiwagg';
+
+        function extractPalindromes(text) {
+            var words = text.split(' ');
+            var countpolidromes = 0;
+
+            for (var i = 0; i < words.length; i++) {
+
+                var currentWord = words[i];
+                var reversedword = words[i].split("").reverse().join("");
+                if (currentWord == reversedword)
+                {
+                    countpolidromes++;
+                    jsConsole.writeLine(currentWord);
+                }
+            }
+        }
+       
+        extractPalindromes(palindromes);
+    </script>
+</body>
+</html>

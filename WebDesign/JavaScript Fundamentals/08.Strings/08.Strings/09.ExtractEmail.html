@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Extract Email</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <script src="scripts/js-console.js"></script>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var text = 'sdabhikagathara@rediffmail.com, new@abv.bg "assdsdf" <dsfassdfhsdfarkal@gmail.com>, \
+                    "rodnsdfald ferdfnson" <rfernsdfson@gmal.com>, "Affdmdol Gondfgale" <gyfanamosl@gmail.com>,\
+                    "truform techno" <pidfpinfg@truformdftechnoproducts.com>, "NiTsdfeSh ThIdfsKaRe" <nthfsskare@ysahoo.in>,\
+                    "akasdfsh kasdfstla" <akashkatsdfsa@yahsdfsfoo.in>, "Bisdsdfamal Prakaasdsh" <bimsdaalprakash@live.com>,; \
+                    "milisdfsfnd ansdfasdfnsftwar" <dfdmilifsd.ensfdfcogndfdfatia@gmail.com>';
+
+        function extractEmails(text) {
+            return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+        }
+        var result = extractEmails(text);
+        jsConsole.writeLine(extractEmails(text).join('\n'));
+    </script>
+</body>
+</html>

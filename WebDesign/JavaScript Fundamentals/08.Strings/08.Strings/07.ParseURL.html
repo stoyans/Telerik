@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Parse URL</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+
+        var URL = 'http://forums.academy.telerik.com/search?q=javascript+string&start=10';
+
+        function formatURL(url) {
+            var protocol = url.substring(0, url.indexOf(":"));
+            var serverAndResource = url.substring(url.indexOf("://") + 3);
+            var resource = serverAndResource.substring(serverAndResource.indexOf("/"));
+            var server = serverAndResource.substring(0, serverAndResource.indexOf("/"));
+
+            return {
+                protocol: protocol,
+                server: server,
+                resource: resource,
+            }
+        }
+
+        function onExtractURL(json) {
+        
+            for (var i in json) {
+                jsConsole.writeLine(i + ': ' + json[i]);
+            }
+        }
+
+        onExtractURL(formatURL(URL));
+
+    </script>
+</body>
+</html>

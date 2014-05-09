@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Extract Text From HTML</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var htmlTxt = '<html><head><title>Sample site</title></head><body><div>text<div>more text</div>and more...</div>in body</body></html>';
+
+        function extractTxt(txt) {
+            var resultTxt = '';
+            var betweenTags = false;
+
+            for (var i = 0; i < txt.length; i++) {
+                if (txt[i] == '<') {
+                    betweenTags = true;
+                }
+                if (betweenTags == true && txt[i] == '>') {
+                    betweenTags = false;
+                    continue;
+                }
+                if (betweenTags == false) {
+                    resultTxt += txt[i];
+                }
+            }
+
+            return resultTxt;
+        }
+
+        jsConsole.writeLine(extractTxt(htmlTxt));
+    </script>
+</body>
+</html>

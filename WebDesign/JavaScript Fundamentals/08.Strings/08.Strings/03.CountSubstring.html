@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Count Substring</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var textSample = 'We are living in an yellow submarine. We don\'t have anything else. \
+                          Inside the submarine is very tight. So we are drinking all the day. \
+                          We will move out of it in 5 days.';
+        
+        function countInSubstring(str) {
+
+            var countIN = 0;
+            var index = 0;
+
+            for (var i = 0; i < str.length - 2; i++) {
+                if (str[i].toLowerCase() == "i" && str[i + 1].toLowerCase() == "n") {
+                    countIN++;
+                }
+            }
+            
+            return countIN;
+        }
+
+        jsConsole.writeLine(countInSubstring(textSample));
+    </script>
+</body>
+</html>

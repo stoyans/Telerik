@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Replace Non Breaking WhiteSpace</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var text = 'Text-processing software typically assumes that an...';
+
+        function replace(expression) {
+            var expression = text.replace(/ /g, '&nbws;');
+            return expression;
+        }
+
+        function replace2(expression) {
+            var result = '';
+
+            for (var i = 0; i < expression.length; i++) {
+                if (expression[i] == ' ') {
+                    result += '&nbws;';
+                }
+                else {
+                    result += expression[i];
+                }
+            }
+            
+            return result;
+        }
+
+        jsConsole.writeLine(replace(text));
+        jsConsole.writeLine(replace2(text));
+    </script>
+</body>
+</html>

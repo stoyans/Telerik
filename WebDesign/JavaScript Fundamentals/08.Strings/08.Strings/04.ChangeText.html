@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Change Text</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <script src="scripts/js-console.js"></script>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var sampleText = "We are <mixcase>living</mixcase> in a \
+                         <upcase>yellow submarine</upcase>. We \
+                         <mixcase>don't</mixcase> have <lowcase>Anything</lowcase> <upcase>else</upcase>.";
+        jsConsole.writeLine(sampleText);
+
+        function changeText(text) {
+
+            var result = "";
+            var indexStartUP = 0;
+            var indexEndUP = 0;
+            var indexStartLOW = 0;
+            var indexEndLOW = 0;
+            var indexStartMIX = 0;
+            var indexEndMIX = 0;
+
+            indexStartUP = text.indexOf("<upcase>", indexStartUP);
+            indexEndUP = text.indexOf("</upcase>", indexEndUP);
+            indexStartLOW = text.indexOf("<lowcase>", indexStartLOW);
+            indexEndLOW = text.indexOf("</lowcase>", indexEndLOW);
+            indexStartMIX = text.indexOf("<mixcase>", indexStartMIX);
+            indexEndMIX = text.indexOf("</mixcase>", indexEndMIX);
+
+            for (var i = 0; i < text.length; i++) {
+
+                if (i > indexStartUP + 7 && i < indexEndUP) { //if the position is 7 symbols after <upcase> and before </upcase>
+
+                    result += text[i].toUpperCase();
+                }
+                else if (i > indexStartLOW + 8 && i < indexEndLOW) {
+                    result += text[i].toLowerCase();
+                }
+                else if (i > indexStartMIX + 8 && i < indexEndMIX) {
+
+                    if (i % 2 == 0) {
+                        result += text[i].toUpperCase();
+                    }
+                    else {
+                        result += text[i].toLowerCase();
+                    }
+                }
+                else {
+                    result += text[i];
+                }
+                if (i > indexEndUP + 8) {    // finds the next appearance of tags
+                    indexStartUP = text.indexOf("<upcase>", indexStartUP + 8);
+                    indexEndUP = text.indexOf("</upcase>", indexEndUP + 9);
+                }
+                if (i > indexEndLOW + 9) {// finds the next appearance of tags
+                    indexStartLOW = text.indexOf("<lowcase>", indexStartLOW + 8);
+                    indexEndLOW = text.indexOf("</lowcase>", indexEndLOW + 9);
+                }
+                if (i > indexEndMIX + 9) {// finds the next appearance of tags
+                    indexStartMIX = text.indexOf("<mixcase>", indexStartMIX + 8);
+                    indexEndMIX = text.indexOf("</mixcase>", indexEndMIX + 9);
+                }
+
+            }
+
+            return result;
+        }
+
+        jsConsole.writeLine(changeText(sampleText));
+
+    </script>
+</body>
+</html>
