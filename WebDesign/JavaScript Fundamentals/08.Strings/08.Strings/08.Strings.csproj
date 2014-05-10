@@ -67,6 +67,8 @@
     <Content Include="08.ReplaceStringInHTML.html" />
     <Content Include="09.ExtractEmail.html" />
     <Content Include="10.ExtractPalindromes.html" />
+    <Content Include="11.FormatWithPlaceholders.html" />
+    <Content Include="12.CreateHTML-UL.html" />
     <Content Include="scripts\js-console.js" />
     <Content Include="styles\js-console.css" />
     <Content Include="styles\js-console.min.css" />

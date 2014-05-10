@@ -6,16 +6,16 @@
     <link href="styles/js-console.css" rel="stylesheet" />
 </head>
 <body>
-    <input type="text" id="nums" />
-    <a href="#" onclick="onSortSequence()">Sorting Array</a>
+    Enter numbers separated with space ' ':<input type="text" id="nums" />
+    <a href="#" onclick="onSortSequence()">Sort the Array</a>
     <div id="js-console"></div>
     <script src="scripts/js-console.js"></script>
     <script>
-        var element = document.getElementById("nums");
-        var nums = element.value;
-        var numsArray = nums.split(" ");
-
+        
         function onSortSequence() {
+            var element = document.getElementById("nums");
+            var nums = element.value;
+            var numsArray = nums.split(" ");
             var temp = 0;
             var position = 0;
 

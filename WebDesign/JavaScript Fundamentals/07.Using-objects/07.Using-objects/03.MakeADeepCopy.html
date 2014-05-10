@@ -15,19 +15,6 @@
         }
         jsConsole.writeLine(typeof person);
 
-        function clone(obj) {
-            if (obj == null || typeof (obj) != 'object')
-                return obj;
-
-            var temp = obj.constructor(); // changed
-
-            for (var key in obj)
-                temp[key] = clone(obj[key]);
-            return temp;
-        }
-
-        jsConsole.writeLine(clone(person));
-
         function deepCopy(obj) {
             if (Object.prototype.toString.call(obj) === '[object Array]') {
                 var out = [], i = 0, len = obj.length;

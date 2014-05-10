@@ -48,6 +48,13 @@
                 jsConsole.writeLine("FirstName: " + groupedByFname[group][i].firstname + "; LastName: " + groupedByFname[group][i].lastname + "; Age: " + groupedByFname[group][i].age);
             } 
         }
+		for (var group in groupedByAge) {
+            jsConsole.writeLine(group);
+            for (var i = 0; i < groupedByAge[group].length; i++) {
+                
+                jsConsole.writeLine("FirstName: " + groupedByAge[group][i].firstname + "; LastName: " + groupedByAge[group][i].lastname + "; Age: " + groupedByAge[group][i].age);
+            } 
+        }
 
     </script>
 </body>

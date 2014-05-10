@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Create HTML-UL</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <div data-type="template" id="list-item">
+        <strong>-{name}-</strong> <span>-{age}-</span>
+    </div>
+
+    <script>
+
+        function generateList(people, template) {
+            
+        }
+
+        var people = [
+            { name: "Peter", age: 14 },
+            { name: "Pesho", age: 18 },
+            { name: "Gosho", age: 11 },
+            { name: "Rosen", age: 24 },
+            { name: "Boko", age: 34 },
+            { name: "Koko", age: 17 },
+        ];
+
+        var tmpl = document.getElementById("list-item").innerHtml;
+        var peopleList = generateList(people, tmpl);
+
+    </script>
+</body>
+</html>

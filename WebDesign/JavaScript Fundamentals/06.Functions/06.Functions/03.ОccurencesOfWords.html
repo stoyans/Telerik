@@ -46,10 +46,13 @@
                 case 1: return countWordsCaseInsensitive();
                 case 2: return countWordsCaseSensitive();
             }
+            location.reload();
         }
 
-        document.writeln(findOccurences(word));
-        document.writeln(findOccurences(word, true));
+        document.writeln('InsensitiveCase found ' + findOccurences(word) + ' times');
+        document.writeln('<br>');
+        document.writeln('Case Sensitive found ' + findOccurences(word, true));
+        
 
     </script>
 </body>

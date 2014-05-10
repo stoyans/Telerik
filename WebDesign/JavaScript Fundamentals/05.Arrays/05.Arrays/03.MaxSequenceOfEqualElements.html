@@ -6,7 +6,7 @@
     <link href="styles/js-console.css" rel="stylesheet" />
 </head>
 <body>
-    <input type="text" id="nums" />
+    Enter numbers separated with space ' '<input type="text" id="nums" />
     <a href="#" onclick="onFindSequence()">Find Max Sequence</a>
     <div id="js-console"></div>
     <script src="scripts/js-console.js"></script>
@@ -39,7 +39,7 @@
                     sequence.push(currentNum);
                 }
             }
-            jsConsole.writeLine(maxCount);
+            jsConsole.writeLine(maxCount + ' time(s)');
             jsConsole.writeLine(maxSequence);
         }
     </script>

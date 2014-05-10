@@ -2,42 +2,53 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Binary Search</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
 </head>
 <body>
+    Enter numbers separated with space ' ':<input type="text" id="nums" />
+    <br />
+    Enter a number to be searched:<input type="text" id="num" />
+    <a href="#" onclick="onBinarySearch()">Activate Binary Search</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
     <script>
-        var nums = prompt("Enter a number: ");
-        var numsArray = nums.split(" ");
-        numsArray.sort();
-        document.writeln(numsArray);
-        var start = 0;
-        var inArray = false
-        var startIn = false;
 
-        var element = 1;
+        function onBinarySearch() {
 
-        while (numsArray.length - start >= 1) {
-            var index = Math.floor((numsArray.length + start) / 2);
-            if (numsArray[index] == element) {
-                document.writeln(element + ' on ' + index + ' position');
-                inArray = true;
-                break;
-            }
-            if (startIn == true) {
-                break;
-            }
-            else if (numsArray[Math.floor((numsArray.length + start) / 2)] > element) {
-                numsArray.length = Math.floor((numsArray.length + start) / 2);
-            }
-            else if (numsArray[Math.floor((numsArray.length + start) / 2)] < element) {
-                if (start == 0) {
-                    startIn = true;
+            var numsArray = document.getElementById("nums").value.split(' ');
+            numsArray.sort(function (a, b) { return a - b });
+            jsConsole.writeLine("Sorted array: " + numsArray);
+            var start = 0;
+            var inArray = false
+            var startIn = false;
+
+            var element = document.getElementById("num").value;
+
+            while (numsArray.length - start >= 1) {
+                var index = Math.floor((numsArray.length + start) / 2);
+                if (numsArray[index] == element) {
+                    jsConsole.writeLine('the number ' + element + ' is on ' + index + ' position');
+                    inArray = true;
+                    break;
                 }
-                start = Math.floor(numsArray.length / 2);
+                if (startIn == true) {
+                    break;
+                }
+                else if (numsArray[Math.floor((numsArray.length + start) / 2)] > element) {
+                    numsArray.length = Math.floor((numsArray.length + start) / 2);
+                }
+                else if (numsArray[Math.floor((numsArray.length + start) / 2)] < element) {
+                    if (start == 0) {
+                        startIn = true;
+                    }
+                    start = Math.floor(numsArray.length / 2);
+                }
             }
-        }
-        
-        if (!inArray) {
-            document.writeln("The number is not available in the array");
+
+            if (!inArray) {
+                jsConsole.writeLine("The number is not available in the array");
+            }
         }
     </script>
 </body>
