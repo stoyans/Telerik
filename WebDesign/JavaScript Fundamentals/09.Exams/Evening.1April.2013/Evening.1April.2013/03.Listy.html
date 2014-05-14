@@ -112,6 +112,7 @@
                     if (functions[i].fName == currentValue) {
                         if (!isNaN(functions[i].value)) {
                             func.value.push(functions[i].value);
+                            break;
                         }
                         else {
                             for (var j = 0; j < functions[i].value.length; j++) {
@@ -120,6 +121,7 @@
                                 }
 
                             }
+                            break;
                         }
 
                     }
@@ -151,13 +153,12 @@
         }
 
         var a = [
-        'def func sum[1, 2, 3, -6]',
-        'def newList [func, 10, 1]',
-        'def newFunc sum[func, 100, newList]',
-        '[newFunc]',
-        //'def func5 avg[5, 3, 7, 2, 6, 3]',
-        //'def func6 sum[func2, func3, func4 ]',
-        //'sum[func6, func4]',
+            'def maxy max[100, 5000, 4,2,1]',
+            'def summary1 [0]',
+            'def summary11 avg[summary1,maxy]',
+            'def summary111 avg[   summary11 ,  maxy]',
+            'def summary1111 avg[summary111 , maxy]',
+            'sum[75468, summary1111]',
         ];
 
         document.writeln(Solve(a));
