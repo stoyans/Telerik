@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <script src="scripts/js-console.js"></script>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function Solve(params) {
+            var result;
+            for (var i = 0; i < params.length; i++) {
+                params[i] = params[i].split(/[() ]/g);
+            }
+            var t;
+        }
+
+        var commands = [
+            '(def func 10)',
+            '(def newFunc (+  func 2))',
+            '(def sumFunc (+ func func newFunc 0 0 0))',
+            '(* sumFunc 2)'
+        ];
+
+        Solve(commands);
+
+    </script>
+</body>
+</html>

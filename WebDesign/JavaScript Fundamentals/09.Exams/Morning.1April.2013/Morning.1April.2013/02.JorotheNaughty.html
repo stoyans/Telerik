@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Joro the Naughty</title>
+    <script src="scripts/js-console.js"></script>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function Solve(array) {
+           //var array = [
+           //    "500 500 4",
+           //     "25 25",
+           //     "2 2",
+           //     //"-11 1"
+           //      "2 -2",
+           //     "1 1",
+           //     "-1 1"
+           //];
+            var N = parseInt(array[0].split(' ')[0]);
+            var M = parseInt(array[0].split(' ')[1]);
+            var J = parseInt(array[0].split(' ')[2]);
+
+            var startPosition = array[1].split(' ');
+
+            var field = [];
+            var fieldCheck = [];
+            var countCells = 1;
+
+            for (var row = 0; row < N; row++) {
+                field[row] = [];
+                fieldCheck[row] = [];
+                for (var col = 0; col < M; col++) {
+                    field[row][col] = countCells;
+                    fieldCheck[row][col] = false;
+                    countCells++;
+                }
+            }
+            var SUM_OF_NUMBERS = 0;
+            var NUMBER_OF_JUMPS = 0;
+            var numberRow = parseInt(startPosition[0]);
+            var numberCol = parseInt(startPosition[1]);
+
+            for (var i = 1; i < array.length; i++) {
+
+                numberRow += parseInt(array[i].split(' ')[0]);
+                numberCol += parseInt(array[i].split(' ')[1]);
+
+                if (numberRow >= N || numberCol >= M || numberRow < 0 || numberCol < 0) {
+                    return "escaped " + SUM_OF_NUMBERS;
+                    break;
+
+                }
+                if (fieldCheck[numberRow][numberCol] == true) {
+                    return "caught " + NUMBER_OF_JUMPS;
+                    break;
+
+                }
+
+                SUM_OF_NUMBERS += field[numberRow][numberCol];
+                fieldCheck[numberRow][numberCol] = true;
+                NUMBER_OF_JUMPS++;
+
+                if (i == array.length - 1) {
+                    i = 1;
+                }
+            }
+        }
+
+        var result = Solve();
+        console.log();
+        jsConsole.writeLine(result);
+
+    </script>
+</body>
+</html>

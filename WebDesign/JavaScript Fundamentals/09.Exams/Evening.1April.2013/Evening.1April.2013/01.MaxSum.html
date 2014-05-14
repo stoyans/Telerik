@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Max Sum</title>
+</head>
+<body>
+    <script>
+        function Solve(params) {
+
+            var biggestSum = Number.MIN_VALUE;
+
+            for (var i = 1; i < params.length; i++) {
+                var currentSum = 0;
+
+                for (var j = i; j < params.length; j++) {
+                    currentSum += parseInt(params[j]);
+
+                    if (currentSum > biggestSum) {
+                        biggestSum = currentSum;
+
+                    }
+                }
+
+            }
+
+            return biggestSum;
+        }
+    </script>
+</body>
+</html>

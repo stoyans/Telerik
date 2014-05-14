@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sequence</title>
+</head>
+<body>
+    <input type="text" id="input"/>
+    <a href="#" onclick="onGetInput()">GetInput</a>
+    <script>
+       function onGetInput() {
+           var params = document.getElementById("input").value.split(' ');
+           console.log(params);
+           return params;
+       }
+
+       function Solve1(params) {
+           var N = parseInt(params[0]);
+           var answer = 1;       
+           for (var i = 1; i < params.length - 1; i++) {
+       
+               if (parseInt(params[i]) > parseInt(params[i + 1])) {
+                   answer++;
+               }
+           }
+       
+           return answer;
+       }
+
+       var array = onGetInput();
+       document.writeln(Solve(array));
+       document.writeln(Solve1(array));
+    </script>
+</body>
+</html>
