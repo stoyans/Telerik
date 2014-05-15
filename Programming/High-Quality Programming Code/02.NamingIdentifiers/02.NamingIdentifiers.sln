@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.RefactorTheCode", "02.Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.RefactorTheCodeJS", "03.RefactorTheCodeJS\03.RefactorTheCodeJS.csproj", "{1F2EC833-D477-4F17-8E6C-5AF841D4FEA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.RefactorTheCode", "04.RefactorTheCode\04.RefactorTheCode.csproj", "{2AF16CD5-959B-4CF1-B91E-7FACD850AD6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1F2EC833-D477-4F17-8E6C-5AF841D4FEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F2EC833-D477-4F17-8E6C-5AF841D4FEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F2EC833-D477-4F17-8E6C-5AF841D4FEA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF16CD5-959B-4CF1-B91E-7FACD850AD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF16CD5-959B-4CF1-B91E-7FACD850AD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF16CD5-959B-4CF1-B91E-7FACD850AD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF16CD5-959B-4CF1-B91E-7FACD850AD6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
