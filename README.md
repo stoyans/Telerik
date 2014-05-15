@@ -76,3 +76,12 @@
 6. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/06.Exams">Exams</a>
 7. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/CSS/07.Real%20Exam">Real Exam</a>
 
+***********************
+<h4>
+  <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals">
+    <strong>
+      <u>JavaScript Fundamentals</u>
+    </strong>
+</h4>
+1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/01.DataTypesAndVariables/01.DataTypesAndVariables">Data Types And Variables</a>
+2. 
