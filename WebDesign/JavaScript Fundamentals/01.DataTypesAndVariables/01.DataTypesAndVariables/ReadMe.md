@@ -1,4 +1,4 @@
-## Operators and Expressions
+## Data Types And Variables
 
 1. Assign all the possible JavaScript literals to different variables.
 2. Create a string variable with quoted text in it. For example: "How you doin'?", Joey said.
