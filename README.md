@@ -85,8 +85,10 @@
 </h4>
 1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/01.DataTypesAndVariables/01.DataTypesAndVariables">Data Types And Variables</a>
 2. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/02.OperatorsAndExpressions/02.OperatorsAndExpressions">Operators And Expressions</a>
-3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/03.ConditionalStatements">Conditional Statements</a>
-4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/04.Loops">Loops</a>
-5. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/05.Arrays">Arrays</a>
-6. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/06.Functions">Functions</a>
-7. 
+3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/03.ConditionalStatements/03.ConditionalStatements">Conditional Statements</a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/04.Loops/04.Loops">Loops</a>
+5. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/05.Arrays/05.Arrays">Arrays</a>
+6. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/06.Functions/06.Functions">Functions</a>
+7. <a href = "https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/07.Using-objects/07.Using-objects">Using Objects<a/>
+8. <a href = "https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/08.Strings/08.Strings">Strings<a/>
+9. <a href = "https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/09.Exams">Exams</a>
