@@ -84,4 +84,9 @@
     </strong>
 </h4>
 1. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/01.DataTypesAndVariables/01.DataTypesAndVariables">Data Types And Variables</a>
-2. 
+2. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/02.OperatorsAndExpressions/02.OperatorsAndExpressions">Operators And Expressions</a>
+3. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/03.ConditionalStatements">Conditional Statements</a>
+4. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/04.Loops">Loops</a>
+5. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/05.Arrays">Arrays</a>
+6. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/06.Functions">Functions</a>
+7. 
