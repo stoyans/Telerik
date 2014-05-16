@@ -1,39 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace GameMines
+﻿namespace GameMines
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
     public class Mines
     {
-        public class Player
-        {
-            private string name;
-            private int points;
-
-            public string Name
-            {
-                get { return name; }
-                set { name = value; }
-            }
-
-            public int Points
-            {
-                get { return points; }
-                set { points = value; }
-            }
-
-            public Player() { }
-
-            public Player(string name, int points)
-            {
-                this.Name = name;
-                this.Points = points;
-            }
-        }
-
-        static void Main(string[] arguments)
+        public static void Main()
         {
             string command = string.Empty;
             char[,] field = CreateField();
@@ -43,21 +17,23 @@ namespace GameMines
             List<Player> champions = new List<Player>(6);
             int row = 0;
             int column = 0;
-            bool flag = true;
+            bool isGameOn = true;
             const int MAX = 35;
-            bool flag2 = false;
+            bool isMaxResult = false;
 
             do
             {
-                if (flag)
+                if (isGameOn)
                 {
-                    Console.WriteLine("Hajde da igraem na “Mini4KI”. Probvaj si kasmeta da otkriesh poleteta bez mini4ki." +
-                    " Komanda 'top' pokazva klasiraneto, 'restart' po4va nova igra, 'exit' izliza i hajde 4ao!");
-                    dumpp(field);
-                    flag = false;
+                    Console.WriteLine("Let's play \"Mines\". Test your luck to find the boxes without mines" +
+                    "\nCommands:\n'top' -> Display ranking \n'restart' -> Starts a new game \n'exit' -> Exit the game!");
+                    DrawField(field);
+                    isGameOn = false;
                 }
-                Console.Write("Daj red i kolona : ");
+
+                Console.Write("Give position for Row and Column : ");
                 command = Console.ReadLine().Trim();
+
                 if (command.Length >= 3)
                 {
                     if (int.TryParse(command[0].ToString(), out row) &&
@@ -67,6 +43,7 @@ namespace GameMines
                         command = "turn";
                     }
                 }
+
                 switch (command)
                 {
                     case "top":
@@ -75,9 +52,9 @@ namespace GameMines
                     case "restart":
                         field = CreateField();
                         bombs = SetBombs();
-                        dumpp(field);
+                        DrawField(field);
                         explosion = false;
-                        flag = false;
+                        isGameOn = false;
                         break;
                     case "exit":
                         Console.WriteLine("You left the game!");
@@ -90,29 +67,31 @@ namespace GameMines
                                 NewTurn(field, bombs, row, column);
                                 pointsCounter++;
                             }
+
                             if (MAX == pointsCounter)
                             {
-                                flag2 = true;
+                                isMaxResult = true;
                             }
                             else
                             {
-                                dumpp(field);
+                                DrawField(field);
                             }
                         }
                         else
                         {
                             explosion = true;
                         }
+
                         break;
                     default:
                         Console.WriteLine("\nError! Invalid Command!\n");
                         break;
                 }
+
                 if (explosion)
                 {
-                    dumpp(bombs);
-                    Console.Write("\nBoooom! Game over!\n{0} points. " +
-                        "\nEnter your Nickname: ", pointsCounter);
+                    DrawField(bombs);
+                    Console.Write("\nBoooom! Game over!\n{0} points. " + "\nEnter your Nickname: ", pointsCounter);
                     string playerName = Console.ReadLine();
                     Player playerPoints = new Player(playerName, pointsCounter);
                     if (champions.Count < 5)
@@ -131,6 +110,7 @@ namespace GameMines
                             }
                         }
                     }
+
                     champions.Sort((Player r1, Player r2) => r2.Name.CompareTo(r1.Name));
                     champions.Sort((Player r1, Player r2) => r2.Points.CompareTo(r1.Points));
                     Ranking(champions);
@@ -139,12 +119,13 @@ namespace GameMines
                     bombs = SetBombs();
                     pointsCounter = 0;
                     explosion = false;
-                    flag = true;
+                    isGameOn = true;
                 }
-                if (flag2)
+
+                if (isMaxResult)
                 {
                     Console.WriteLine("\nCongratulations! You opened 35 cells!");
-                    dumpp(bombs);
+                    DrawField(bombs);
                     Console.WriteLine("Enter your nickname: ");
                     string name = Console.ReadLine();
                     Player player = new Player(name, pointsCounter);
@@ -153,8 +134,8 @@ namespace GameMines
                     field = CreateField();
                     bombs = SetBombs();
                     pointsCounter = 0;
-                    flag2 = false;
-                    flag = true;
+                    isMaxResult = false;
+                    isGameOn = true;
                 }
             }
             while (command != "exit");
@@ -171,6 +152,7 @@ namespace GameMines
                 {
                     Console.WriteLine("{0}. {1} --> {2} points", i + 1, points[i].Name, points[i].Points);
                 }
+
                 Console.WriteLine();
             }
             else
@@ -186,7 +168,7 @@ namespace GameMines
             field[row, col] = bombsNumber;
         }
 
-        private static void dumpp(char[,] board)
+        private static void DrawField(char[,] board)
         {
             int boardRows = board.GetLength(0);
             int boardColums = board.GetLength(1);
@@ -199,9 +181,11 @@ namespace GameMines
                 {
                     Console.Write(string.Format("{0} ", board[i, j]));
                 }
+
                 Console.Write("|");
                 Console.WriteLine();
             }
+
             Console.WriteLine("   ---------------------\n");
         }
 
@@ -235,21 +219,21 @@ namespace GameMines
                 }
             }
 
-            List<int> r3 = new List<int>();
-            while (r3.Count < 15)
+            List<int> bombs = new List<int>();
+            while (bombs.Count < 15)
             {
                 Random random = new Random();
-                int asfd = random.Next(50);
-                if (!r3.Contains(asfd))
+                int position = random.Next(50);
+                if (!bombs.Contains(position))
                 {
-                    r3.Add(asfd);
+                    bombs.Add(position);
                 }
             }
 
-            foreach (int i2 in r3)
+            foreach (int i2 in bombs)
             {
-                int col = (i2 / cols);
-                int row = (i2 % cols);
+                int col = i2 / cols;
+                int row = i2 % cols;
                 if (row == 0 && i2 != 0)
                 {
                     col--;
@@ -259,6 +243,7 @@ namespace GameMines
                 {
                     row++;
                 }
+
                 playGround[col, row - 1] = '*';
             }
 
@@ -276,8 +261,8 @@ namespace GameMines
                 {
                     if (playGround[i, j] != '*')
                     {
-                        char kolkoo = GetPoints(playGround, i, j);
-                        playGround[i, j] = kolkoo;
+                        char numberOfPoints = GetPoints(playGround, i, j);
+                        playGround[i, j] = numberOfPoints;
                     }
                 }
             }
@@ -296,6 +281,7 @@ namespace GameMines
                     points++;
                 }
             }
+
             if (indexRow + 1 < rows)
             {
                 if (field[indexRow + 1, indexCol] == '*')
@@ -303,6 +289,7 @@ namespace GameMines
                     points++;
                 }
             }
+
             if (indexCol - 1 >= 0)
             {
                 if (field[indexRow, indexCol - 1] == '*')
@@ -310,6 +297,7 @@ namespace GameMines
                     points++;
                 }
             }
+
             if (indexCol + 1 < cols)
             {
                 if (field[indexRow, indexCol + 1] == '*')
@@ -317,6 +305,7 @@ namespace GameMines
                     points++;
                 }
             }
+
             if ((indexRow - 1 >= 0) && (indexCol - 1 >= 0))
             {
                 if (field[indexRow - 1, indexCol - 1] == '*')
@@ -324,6 +313,7 @@ namespace GameMines
                     points++;
                 }
             }
+
             if ((indexRow - 1 >= 0) && (indexCol + 1 < cols))
             {
                 if (field[indexRow - 1, indexCol + 1] == '*')
@@ -331,6 +321,7 @@ namespace GameMines
                     points++;
                 }
             }
+
             if ((indexRow + 1 < rows) && (indexCol - 1 >= 0))
             {
                 if (field[indexRow + 1, indexCol - 1] == '*')
@@ -338,6 +329,7 @@ namespace GameMines
                     points++;
                 }
             }
+
             if ((indexRow + 1 < rows) && (indexCol + 1 < cols))
             {
                 if (field[indexRow + 1, indexCol + 1] == '*')
@@ -345,6 +337,7 @@ namespace GameMines
                     points++;
                 }
             }
+
             return char.Parse(points.ToString());
         }
     }
