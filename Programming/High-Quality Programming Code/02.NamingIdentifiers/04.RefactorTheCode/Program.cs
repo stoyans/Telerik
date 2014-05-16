@@ -7,7 +7,7 @@ namespace GameMines
 {
     public class Mines
     {
-        public class Points
+        public class Player
         {
             private string name;
             private int points;
@@ -24,12 +24,12 @@ namespace GameMines
                 set { points = value; }
             }
 
-            public Points() { }
+            public Player() { }
 
-            public Points(string name, int points)
+            public Player(string name, int points)
             {
-                this.name = name;
-                this.points = points;
+                this.Name = name;
+                this.Points = points;
             }
         }
 
@@ -38,9 +38,9 @@ namespace GameMines
             string command = string.Empty;
             char[,] field = CreateField();
             char[,] bombs = SetBombs();
-            int counter = 0;
+            int pointsCounter = 0;
             bool explosion = false;
-            List<Points> champions = new List<Points>(6);
+            List<Player> champions = new List<Player>(6);
             int row = 0;
             int column = 0;
             bool flag = true;
@@ -87,10 +87,10 @@ namespace GameMines
                         {
                             if (bombs[row, column] == '-')
                             {
-                                tisinahod(field, bombs, row, column);
-                                counter++;
+                                NewTurn(field, bombs, row, column);
+                                pointsCounter++;
                             }
-                            if (MAX == counter)
+                            if (MAX == pointsCounter)
                             {
                                 flag2 = true;
                             }
@@ -112,9 +112,9 @@ namespace GameMines
                 {
                     dumpp(bombs);
                     Console.Write("\nBoooom! Game over!\n{0} points. " +
-                        "\nEnter your Nickname: ", counter);
+                        "\nEnter your Nickname: ", pointsCounter);
                     string playerName = Console.ReadLine();
-                    Points playerPoints = new Points(playerName, counter);
+                    Player playerPoints = new Player(playerName, pointsCounter);
                     if (champions.Count < 5)
                     {
                         champions.Add(playerPoints);
@@ -131,13 +131,13 @@ namespace GameMines
                             }
                         }
                     }
-                    champions.Sort((Points r1, Points r2) => r2.Name.CompareTo(r1.Name));
-                    champions.Sort((Points r1, Points r2) => r2.Points.CompareTo(r1.Points));
+                    champions.Sort((Player r1, Player r2) => r2.Name.CompareTo(r1.Name));
+                    champions.Sort((Player r1, Player r2) => r2.Points.CompareTo(r1.Points));
                     Ranking(champions);
 
                     field = CreateField();
                     bombs = SetBombs();
-                    counter = 0;
+                    pointsCounter = 0;
                     explosion = false;
                     flag = true;
                 }
@@ -147,30 +147,29 @@ namespace GameMines
                     dumpp(bombs);
                     Console.WriteLine("Enter your nickname: ");
                     string name = Console.ReadLine();
-                    Points points = new Points(name, counter);
-                    champions.Add(points);
+                    Player player = new Player(name, pointsCounter);
+                    champions.Add(player);
                     Ranking(champions);
                     field = CreateField();
                     bombs = SetBombs();
-                    counter = 0;
+                    pointsCounter = 0;
                     flag2 = false;
                     flag = true;
                 }
             }
             while (command != "exit");
-            Console.WriteLine("Made in Bulgaria - Uauahahahahaha!");
-            Console.WriteLine("AREEEEEEeeeeeee.");
+            Console.WriteLine("Good bye");
             Console.Read();
         }
 
-        private static void Ranking(List<Points> points)
+        private static void Ranking(List<Player> points)
         {
             Console.WriteLine("\nPoints:");
             if (points.Count > 0)
             {
                 for (int i = 0; i < points.Count; i++)
                 {
-                    Console.WriteLine("{0}. {1} --> {2} boxes", i + 1, points[i].Name, points[i].Points);
+                    Console.WriteLine("{0}. {1} --> {2} points", i + 1, points[i].Name, points[i].Points);
                 }
                 Console.WriteLine();
             }
@@ -182,7 +181,7 @@ namespace GameMines
 
         private static void NewTurn(char[,] field, char[,] bombs, int row, int col)
         {
-            char bombsNumber = kolko(bombs, row, col);
+            char bombsNumber = GetPoints(bombs, row, col);
             bombs[row, col] = bombsNumber;
             field[row, col] = bombsNumber;
         }
@@ -224,15 +223,15 @@ namespace GameMines
 
         private static char[,] SetBombs()
         {
-            int Редове = 5;
-            int Колони = 10;
-            char[,] игрално_поле = new char[Редове, Колони];
+            int rows = 5;
+            int cols = 10;
+            char[,] playGround = new char[rows, cols];
 
-            for (int i = 0; i < Редове; i++)
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < Колони; j++)
+                for (int j = 0; j < cols; j++)
                 {
-                    игрално_поле[i, j] = '-';
+                    playGround[i, j] = '-';
                 }
             }
 
@@ -249,104 +248,104 @@ namespace GameMines
 
             foreach (int i2 in r3)
             {
-                int kol = (i2 / Колони);
-                int red = (i2 % Колони);
-                if (red == 0 && i2 != 0)
+                int col = (i2 / cols);
+                int row = (i2 % cols);
+                if (row == 0 && i2 != 0)
                 {
-                    kol--;
-                    red = Колони;
+                    col--;
+                    row = cols;
                 }
                 else
                 {
-                    red++;
+                    row++;
                 }
-                игрално_поле[kol, red - 1] = '*';
+                playGround[col, row - 1] = '*';
             }
 
-            return игрално_поле;
+            return playGround;
         }
 
-        private static void smetki(char[,] pole)
+        private static void smetki(char[,] playGround)
         {
-            int kol = pole.GetLength(0);
-            int red = pole.GetLength(1);
+            int col = playGround.GetLength(0);
+            int row = playGround.GetLength(1);
 
-            for (int i = 0; i < kol; i++)
+            for (int i = 0; i < col; i++)
             {
-                for (int j = 0; j < red; j++)
+                for (int j = 0; j < row; j++)
                 {
-                    if (pole[i, j] != '*')
+                    if (playGround[i, j] != '*')
                     {
-                        char kolkoo = kolko(pole, i, j);
-                        pole[i, j] = kolkoo;
+                        char kolkoo = GetPoints(playGround, i, j);
+                        playGround[i, j] = kolkoo;
                     }
                 }
             }
         }
 
-        private static char kolko(char[,] r, int rr, int rrr)
+        private static char GetPoints(char[,] field, int indexRow, int indexCol)
         {
-            int brojkata = 0;
-            int reds = r.GetLength(0);
-            int kols = r.GetLength(1);
+            int points = 0;
+            int rows = field.GetLength(0);
+            int cols = field.GetLength(1);
 
-            if (rr - 1 >= 0)
+            if (indexRow - 1 >= 0)
             {
-                if (r[rr - 1, rrr] == '*')
+                if (field[indexRow - 1, indexCol] == '*')
                 {
-                    brojkata++;
+                    points++;
                 }
             }
-            if (rr + 1 < reds)
+            if (indexRow + 1 < rows)
             {
-                if (r[rr + 1, rrr] == '*')
+                if (field[indexRow + 1, indexCol] == '*')
                 {
-                    brojkata++;
+                    points++;
                 }
             }
-            if (rrr - 1 >= 0)
+            if (indexCol - 1 >= 0)
             {
-                if (r[rr, rrr - 1] == '*')
+                if (field[indexRow, indexCol - 1] == '*')
                 {
-                    brojkata++;
+                    points++;
                 }
             }
-            if (rrr + 1 < kols)
+            if (indexCol + 1 < cols)
             {
-                if (r[rr, rrr + 1] == '*')
+                if (field[indexRow, indexCol + 1] == '*')
                 {
-                    brojkata++;
+                    points++;
                 }
             }
-            if ((rr - 1 >= 0) && (rrr - 1 >= 0))
+            if ((indexRow - 1 >= 0) && (indexCol - 1 >= 0))
             {
-                if (r[rr - 1, rrr - 1] == '*')
+                if (field[indexRow - 1, indexCol - 1] == '*')
                 {
-                    brojkata++;
+                    points++;
                 }
             }
-            if ((rr - 1 >= 0) && (rrr + 1 < kols))
+            if ((indexRow - 1 >= 0) && (indexCol + 1 < cols))
             {
-                if (r[rr - 1, rrr + 1] == '*')
+                if (field[indexRow - 1, indexCol + 1] == '*')
                 {
-                    brojkata++;
+                    points++;
                 }
             }
-            if ((rr + 1 < reds) && (rrr - 1 >= 0))
+            if ((indexRow + 1 < rows) && (indexCol - 1 >= 0))
             {
-                if (r[rr + 1, rrr - 1] == '*')
+                if (field[indexRow + 1, indexCol - 1] == '*')
                 {
-                    brojkata++;
+                    points++;
                 }
             }
-            if ((rr + 1 < reds) && (rrr + 1 < kols))
+            if ((indexRow + 1 < rows) && (indexCol + 1 < cols))
             {
-                if (r[rr + 1, rrr + 1] == '*')
+                if (field[indexRow + 1, indexCol + 1] == '*')
                 {
-                    brojkata++;
+                    points++;
                 }
             }
-            return char.Parse(brojkata.ToString());
+            return char.Parse(points.ToString());
         }
     }
 }
