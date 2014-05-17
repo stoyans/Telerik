@@ -250,24 +250,6 @@
             return playGround;
         }
 
-        private static void smetki(char[,] playGround)
-        {
-            int col = playGround.GetLength(0);
-            int row = playGround.GetLength(1);
-
-            for (int i = 0; i < col; i++)
-            {
-                for (int j = 0; j < row; j++)
-                {
-                    if (playGround[i, j] != '*')
-                    {
-                        char numberOfPoints = GetPoints(playGround, i, j);
-                        playGround[i, j] = numberOfPoints;
-                    }
-                }
-            }
-        }
-
         private static char GetPoints(char[,] field, int indexRow, int indexCol)
         {
             int points = 0;
