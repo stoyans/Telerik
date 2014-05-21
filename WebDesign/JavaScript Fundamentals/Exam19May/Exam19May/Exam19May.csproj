@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E0B8EE19-7E36-42CC-AE09-B85074FAD8BD}</ProjectGuid>
+    <ProjectGuid>{150F2C64-96D0-4183-A484-5F00A31D82D8}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Morning._1April._2013</RootNamespace>
-    <AssemblyName>Morning.1April.2013</AssemblyName>
+    <RootNamespace>Exam19May</RootNamespace>
+    <AssemblyName>Exam19May</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,20 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01.Sequences.html" />
-    <Content Include="03.ClojureParser.html" />
-    <Content Include="scripts\js-console.js" />
-    <Content Include="styles\js-console.css" />
-    <Content Include="styles\js-console.min.css" />
-    <Content Include="test.html" />
+    <Content Include="01.Vehicles.html" />
+    <Content Include="04.Bonus.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="02.JorotheNaughty.html" />
-    <Content Include="styles\js-console.less" />
+    <Content Include="02.Paths.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -91,9 +86,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>15062</DevelopmentServerPort>
+          <DevelopmentServerPort>30096</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:15062/</IISUrl>
+          <IISUrl>http://localhost:30096/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
