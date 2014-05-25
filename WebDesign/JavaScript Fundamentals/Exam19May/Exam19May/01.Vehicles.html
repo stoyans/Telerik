@@ -5,102 +5,21 @@
 </head>
 <body>
     <script>
-        function Solve() {
-            var s = parseInt(input);
-            var count = 0;
-            var vehiclesWheels = [4, 10, 3];
-            var remaider = 0;
-
-            for (var i = 0; i < vehiclesWheels.length; i++) {
-                remaider = s % vehiclesWheels[i];
-                if (remaider == 0) {
-                    count++;
-                }
-                else {
-                    if (remaider % vehiclesWheels[]) {
-
-                    }
-                }
-            }
-        }
-        //function Solve(input) {
-        //    var s = parseInt(input);
-        //    var count = 0;
-        //    var vehiclesWheels = [4, 10, 3];
-        //    var power = parseInt(Math.pow(2, vehiclesWheels.length)) - 1;
-        //    var sum = 0;
-        //
-        //        for (var i1 = 1; i1 <= power; i1++) {
-        //            for (var i2 = 0; i2 < vehiclesWheels.length; i2++) {
-        //                var mask = 1 << i2;
-        //                var bit = mask & i1;
-        //                var bit1 = bit >> i2;
-        //                if (bit1 == 1) {
-        //                    sum += vehiclesWheels[i2];
-        //                }
-        //            }
-        //            if (sum == s) {
-        //                count++;
-        //            }
-        //            sum = 0;
-        //
-        //        }
-        //
-        //    return count;
-        //}
-
         function Solve(input) {
             var s = parseInt(input);
             var count = 0;
-            var vehiclesWheels = [4, 10, 3];
-            //var power = parseInt(Math.pow(2, vehiclesWheels.length)) - 1;
-            var sum = 0;
 
-            for (var i = 0; i < vehiclesWheels.length; i++) {
-               //if (vehiclesWheels[i] == s) {
-               //    count++;
-               //}
-                for (var k = 0; k < vehiclesWheels.length; k++) {
-                    //if (vehiclesWheels[k] == s) {
-                    //    count++;
-                    //}
-                    //if (vehiclesWheels[i] + vehiclesWheels[k] == s) {
-                    //    count++;
-                    //}
-                    for (var j = 0; j < vehiclesWheels.length; j++) {
-                        //if (vehiclesWheels[j] == s) {
-                        //    count++
-                        //}
-                        //if (vehiclesWheels[j] + vehiclesWheels[i] == s) {
-                        //    count++
-                        //}
-                        //if (vehiclesWheels[j] + vehiclesWheels[k] == s) {
-                        //    count++
-                        //}
-                        
-                        while (sum < s) {
-                            sum += vehiclesWheels[i] + vehiclesWheels[k] + vehiclesWheels[j];
-                            if (sum == s) {
-                                count++;
-                            }
-                        }
-                        
-                        if (sum ) {
-
+            for (var cars = 0; cars < s; cars++)
+                for (var trucks = 0; trucks < s; trucks++)
+                    for (var trikes = 0; trikes < s; trikes++) {
+                        if (cars * 4 + trucks * 10 + trikes * 3 == s) {
+                            count++;
                         }
                     }
-                    
-                }
-            }
 
             return count;
         }
 
-        //Solve(7);
-       // document.writeln(Solve(7));
-        //Solve(10);
-        //document.writeln(Solve(10));
-        //Solve(40);
         document.writeln(Solve(40));
     </script>
 </body>
