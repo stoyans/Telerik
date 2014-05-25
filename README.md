@@ -91,4 +91,6 @@
 6. <a href="https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/06.Functions/06.Functions">Functions</a>
 7. <a href = "https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/07.Using-objects/07.Using-objects">Using Objects<a/>
 8. <a href = "https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/08.Strings/08.Strings">Strings<a/>
-9. <a href = "https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/09.Exams">Exams</a>
+9. <a href = "https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/09.Exams">Exams Practice</a>
+10. <a href = "https://github.com/stoyans/Telerik/tree/master/WebDesign/JavaScript%20Fundamentals/Exam19May/Exam19May">Exam</a>
+
