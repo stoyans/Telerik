@@ -54,17 +54,17 @@
             return maxElement;
         }
 
-        static void PrintAsFixedPoint(object number)
+        public static void PrintAsFixedPoint(object number)
         {
             Console.WriteLine("{0:f2}", number);
         }
 
-        static void PrintAsPercent(object number)
+        public static void PrintAsPercent(object number)
         {
             Console.WriteLine("{0:p0}", number);
         }
 
-        static void PrintRightAligned(object number)
+        public static void PrintRightAligned(object number)
         {
             Console.WriteLine("{0,8}", number);
         }
