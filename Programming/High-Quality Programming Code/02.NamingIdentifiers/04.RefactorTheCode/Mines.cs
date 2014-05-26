@@ -38,7 +38,7 @@
                 {
                     if (int.TryParse(command[0].ToString(), out row) &&
                         int.TryParse(command[2].ToString(), out column) &&
-                        row <= field.GetLength(0) && column <= field.GetLength(1))
+                        row < field.GetLength(0) && column < field.GetLength(1))
                     {
                         command = "turn";
                     }
