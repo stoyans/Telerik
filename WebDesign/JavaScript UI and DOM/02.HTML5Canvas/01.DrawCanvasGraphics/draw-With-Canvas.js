@@ -16,16 +16,12 @@
     canvasContext.beginPath();
     canvasContext.rect(630, 330, 140, 90);
     canvasContext.fillStyle = 'black';
-    canvasContext.fill();
     canvasContext.stroke();
     canvasContext.rect(810, 330, 140, 90);
-    canvasContext.fillStyle = 'black';
-    canvasContext.fill();
     canvasContext.stroke();
     canvasContext.rect(810, 450, 140, 90);
-    canvasContext.fillStyle = 'black';
-    canvasContext.fill();
     canvasContext.strokeStyle = 'black';
+    canvasContext.fill();
     canvasContext.stroke();
     canvasContext.closePath();
 
