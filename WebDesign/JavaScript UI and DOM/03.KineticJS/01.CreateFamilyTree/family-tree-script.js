@@ -174,42 +174,61 @@ function treeSearch(familiesWithChildren) {
 console.log(findRoot(familyMembers));
 treeSearch(familiesWithChildren);
 
-var text = ["aaaaaa", "dawdww", "dad"]
-var stage = new Kinetic.Stage({
-    container: 'container',
-    width: 2000,
-    height:2000
-});
-
-var layer = new Kinetic.Layer();
-
-for (var i = 0; i < text.length ; i++) {
-    var y = i;
-    var text = new Kinetic.Text(
-        {
-            x: 0,
-            y: y + 10,
-            text: text[i] + '\n' + text[i + 1],
-            fontSize: 20,
-            fontFamily: 'Calibri',
-            fill: 'green',
-            width: 500,
-            height: 500
-        }
-        );
-}
-
+//var text = ["aaaaaa", "dawdww", "dad"];
+//var stage = new Kinetic.Stage({
+//    container: 'container',
+//    width: 2000,
+//    height:2000
+//});
+//
+//var layer = new Kinetic.Layer();
+//
+//for (var i = 0; i < text.length ; i++) {
+//    var y = i;
+//    var text = new Kinetic.Text(
+//        {
+//            x: 0,
+//            y: y + 10,
+//            text: text[i] + '\n' + text[i + 1],
+//            fontSize: 20,
+//            fontFamily: 'Calibri',
+//            fill: 'green',
+//            width: 500,
+//            height: 500
+//        }
+//        );
+//}
+//
 //var rect = new Kinetic.Rect(
 //    {
 //        x: 50,
 //        y: 50,
-//        width: 2000,
-//        height: 2000,
+//        width: 100,
+//        height: 100,
 //        fill: 'orange',
 //        stroke: 'green'
 //    }
 //    );
-
+//
 //layer.add(rect);
-layer.add(text);
-stage.add(layer);
+//layer.add(text);
+//stage.add(layer);
+//
+//function draw(text) {
+//    for (var i = 0; i < text.length ; i++) {
+//        var y = i;
+//        var text = new Kinetic.Text(
+//            {
+//                x: 0,
+//                y: y + 10,
+//                text: text[i] + '\n' + text[i + 1],
+//                fontSize: 20,
+//                fontFamily: 'Calibri',
+//                fill: 'green',
+//                width: 500,
+//                height: 500
+//            }
+//            );
+//    }
+//}
+//draw(text);
