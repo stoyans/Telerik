@@ -137,18 +137,18 @@ function treeSearch(familiesWithChildren) {
     for (var i = 0; i < familiesWithChildren.length; i++) {
 
         var currentFamilyIndex = familiesWithChildren[i];
-        
+
         for (var k = 0; k < familyMembers[currentFamilyIndex].children.length; k++) {
             isMarried = false;
             var currentChild = familyMembers[currentFamilyIndex].children[k];
             for (var j = 0; j < familyMembers.length; j++) {
                 if (currentChild === familyMembers[j].mother) {
-                    currentLevelofMembers += familyMembers[j].father + '+' + currentChild + ' ';
+                    currentLevelofMembers += '(' + currentChild + '-' + familyMembers[j].father + ')' + ' ';
                     subfamilies.push(j);
                     isMarried = true;
                 }
                 if (currentChild === familyMembers[j].father) {
-                    currentLevelofMembers += currentChild + '+' + familyMembers[j].mother + ' ';
+                    currentLevelofMembers += '(' + currentChild + '-' + familyMembers[j].mother + ')' + ' ';
                     subfamilies.push(j);
                     isMarried = true;
                 }
@@ -158,8 +158,9 @@ function treeSearch(familiesWithChildren) {
             }
         }
         if (i === familiesWithChildren.length - 1) {
-            
+
             console.log(currentLevelofMembers);
+
             resultLevel.push(currentLevelofMembers);
             currentLevelofMembers = '';
             familiesWithChildren = [];
@@ -174,61 +175,36 @@ function treeSearch(familiesWithChildren) {
 console.log(findRoot(familyMembers));
 treeSearch(familiesWithChildren);
 
-//var text = ["aaaaaa", "dawdww", "dad"];
-//var stage = new Kinetic.Stage({
-//    container: 'container',
-//    width: 2000,
-//    height:2000
-//});
-//
-//var layer = new Kinetic.Layer();
-//
-//for (var i = 0; i < text.length ; i++) {
-//    var y = i;
-//    var text = new Kinetic.Text(
-//        {
-//            x: 0,
-//            y: y + 10,
-//            text: text[i] + '\n' + text[i + 1],
-//            fontSize: 20,
-//            fontFamily: 'Calibri',
-//            fill: 'green',
-//            width: 500,
-//            height: 500
-//        }
-//        );
-//}
-//
-//var rect = new Kinetic.Rect(
-//    {
-//        x: 50,
-//        y: 50,
-//        width: 100,
-//        height: 100,
-//        fill: 'orange',
-//        stroke: 'green'
-//    }
-//    );
-//
-//layer.add(rect);
-//layer.add(text);
-//stage.add(layer);
-//
-//function draw(text) {
-//    for (var i = 0; i < text.length ; i++) {
-//        var y = i;
-//        var text = new Kinetic.Text(
-//            {
-//                x: 0,
-//                y: y + 10,
-//                text: text[i] + '\n' + text[i + 1],
-//                fontSize: 20,
-//                fontFamily: 'Calibri',
-//                fill: 'green',
-//                width: 500,
-//                height: 500
-//            }
-//            );
-//    }
-//}
-//draw(text);
+draw(treeSearch(familiesWithChildren));
+
+function draw(familiesWithChildren) {
+    var stage = new Kinetic.Stage({
+        container: 'container',
+        width: 1024,
+        height: 1024
+    });
+
+    var layer = new Kinetic.Layer();
+    var depth = 0;
+
+    for (var i = 0; i < familiesWithChildren.length; i++) {
+        depth += i + 50;
+        var dotLabel = new Kinetic.Text({
+            x: 50,
+            y: depth,
+            text: familiesWithChildren[i],
+            stroke: 'green',
+            fontSize: 20
+        });
+        var rect = new Kinetic.Rect({
+            x: 30,
+            y: depth - 10,
+            width: dotLabel.getWidth() + 20,
+            height: dotLabel.getHeight() + 20,
+            stroke: 'green'
+        });
+        layer.add(dotLabel);
+        layer.add(rect);
+    }
+    stage.add(layer);
+}

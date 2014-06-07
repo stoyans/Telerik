@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8BA84E69-B488-4F0E-9C1C-9914E829388E}</ProjectGuid>
+    <ProjectGuid>{576AFF0B-FF74-4932-86F3-DA0049E17C11}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01.CreateFamilyTree</RootNamespace>
-    <AssemblyName>01.CreateFamilyTree</AssemblyName>
+    <RootNamespace>_04.SVG</RootNamespace>
+    <AssemblyName>04.SVG</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,10 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="demo.html" />
-    <Content Include="family-tree-script.js" />
-    <Content Include="scripts\kinetic.js" />
-    <Content Include="scripts\kinetic.min.js" />
+    <Content Include="01.MEANImage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -87,9 +84,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>35034</DevelopmentServerPort>
+          <DevelopmentServerPort>24611</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:35034/</IISUrl>
+          <IISUrl>http://localhost:24611/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
