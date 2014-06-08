@@ -59,6 +59,21 @@
   <ItemGroup>
     <Content Include="01.MEANImage.html" />
     <Content Include="02.Win8StartScreen.html" />
+    <Content Include="img\2s.jpg" />
+    <Content Include="img\finance.png" />
+    <Content Include="img\IE.png" />
+    <Content Include="img\maps.png" />
+    <Content Include="img\MikeGibbs.jpg" />
+    <Content Include="img\music.png" />
+    <Content Include="img\photos.png" />
+    <Content Include="img\reader.png" />
+    <Content Include="img\skyDrive.png" />
+    <Content Include="img\store.png" />
+    <Content Include="img\video.png" />
+    <Content Include="img\weather.png" />
+    <Content Include="img\WindowsExplorer.png" />
+    <Content Include="img\WordPress.jpg" />
+    <Content Include="img\XboxLiveGames.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
