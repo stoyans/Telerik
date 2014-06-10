@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{576AFF0B-FF74-4932-86F3-DA0049E17C11}</ProjectGuid>
+    <ProjectGuid>{EC36199C-AFF1-46B8-91E1-4DB54A7778A6}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_04.SVG</RootNamespace>
-    <AssemblyName>04.SVG</AssemblyName>
+    <RootNamespace>_06.CanvasAnimations</RootNamespace>
+    <AssemblyName>06.CanvasAnimations</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,26 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01.MEANImage.html" />
-    <Content Include="02.Win8StartScreen.html" />
-    <Content Include="img\2s.jpg" />
-    <Content Include="img\camera.png" />
-    <Content Include="img\finance.png" />
-    <Content Include="img\IE.png" />
-    <Content Include="img\maps.png" />
-    <Content Include="img\messaging.png" />
-    <Content Include="img\MikeGibbs.jpg" />
-    <Content Include="img\music.png" />
-    <Content Include="img\photos.png" />
-    <Content Include="img\reader.png" />
-    <Content Include="img\skyDrive.png" />
-    <Content Include="img\store.png" />
-    <Content Include="img\video.png" />
-    <Content Include="img\weather.png" />
-    <Content Include="img\WindowsExplorer.png" />
-    <Content Include="img\WordPress.jpg" />
-    <Content Include="img\xboxcom.png" />
-    <Content Include="img\XboxLiveGames.png" />
+    <Content Include="01.SuperMarioDemo.html" />
+    <Content Include="animations.js" />
+    <Content Include="img\background.jpg" />
+    <Content Include="img\walk.png" />
+    <Content Include="img\walkReverse.png" />
+    <Content Include="scripts\jquery-1.10.1.min.js" />
+    <Content Include="scripts\kinetic.min.js" />
+    <Content Include="scripts\raphael-min.js" />
+    <Content Include="style\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,9 +92,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>24611</DevelopmentServerPort>
+          <DevelopmentServerPort>51663</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:24611/</IISUrl>
+          <IISUrl>http://localhost:51663/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

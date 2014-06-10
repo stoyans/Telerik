@@ -23,7 +23,7 @@ function frame() {
     x += dx;
     y += dy;
     
-    setTimeout(frame, 1);
+    setTimeout(frame, 8);
 }
 frame();
 

@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{576AFF0B-FF74-4932-86F3-DA0049E17C11}</ProjectGuid>
+    <ProjectGuid>{EFED9D88-91A6-4232-B2FF-73888AB9A4DC}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_04.SVG</RootNamespace>
-    <AssemblyName>04.SVG</AssemblyName>
+    <RootNamespace>_07.DOMOperations</RootNamespace>
+    <AssemblyName>07.DOMOperations</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,26 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01.MEANImage.html" />
-    <Content Include="02.Win8StartScreen.html" />
-    <Content Include="img\2s.jpg" />
-    <Content Include="img\camera.png" />
-    <Content Include="img\finance.png" />
-    <Content Include="img\IE.png" />
-    <Content Include="img\maps.png" />
-    <Content Include="img\messaging.png" />
-    <Content Include="img\MikeGibbs.jpg" />
-    <Content Include="img\music.png" />
-    <Content Include="img\photos.png" />
-    <Content Include="img\reader.png" />
-    <Content Include="img\skyDrive.png" />
-    <Content Include="img\store.png" />
-    <Content Include="img\video.png" />
-    <Content Include="img\weather.png" />
-    <Content Include="img\WindowsExplorer.png" />
-    <Content Include="img\WordPress.jpg" />
-    <Content Include="img\xboxcom.png" />
-    <Content Include="img\XboxLiveGames.png" />
+    <Content Include="01.CreateRandomDivElements\create-Random-Divs.js" />
+    <Content Include="01.CreateRandomDivElements\demo.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,9 +85,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>24611</DevelopmentServerPort>
+          <DevelopmentServerPort>10422</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:24611/</IISUrl>
+          <IISUrl>http://localhost:10422/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
