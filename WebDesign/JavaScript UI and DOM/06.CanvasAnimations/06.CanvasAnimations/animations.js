@@ -5,6 +5,7 @@ upKey = false,
 downKey = false,
 x = 25, y = 455, width = 90, height = 115, srcX = 0, srcY = 0;
 
+
 function clearCanvas() {
     ctx.clearRect(0, 0, 1000, 800);
 }
@@ -16,7 +17,12 @@ function drawMario() {
         x -= 5;
         srcX = 80;
     }
-
+    if (x > 1010) {
+        x = 0;
+    }
+    if (x < 0) {
+        x = 1000;
+    }
     ctx.drawImage(sprites, srcX, srcY, width, height, x, y, width, height);
     if (rightKey == false || leftKey == false) {
         srcX = 0;
