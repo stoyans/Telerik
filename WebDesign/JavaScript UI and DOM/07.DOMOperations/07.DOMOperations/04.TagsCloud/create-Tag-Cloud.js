@@ -69,4 +69,3 @@ function random() {
 var tagCloud = generateTagCloud(tags);
 sortTags(tagCloud);
 drawTag(tagCloud, 17, 42);
-console.log(a);
