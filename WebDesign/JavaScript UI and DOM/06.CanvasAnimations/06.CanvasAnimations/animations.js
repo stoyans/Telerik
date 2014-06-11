@@ -8,7 +8,7 @@ x = 25, y = 455, width = 90, height = 115, srcX = 0, srcY = 0;
 function clearCanvas() {
     ctx.clearRect(0, 0, 1000, 800);
 }
-function drawShip() {
+function drawMario() {
     if (rightKey) {
         x += 5;
         srcX = 80;
@@ -25,7 +25,7 @@ function drawShip() {
 
 function loop() {
     clearCanvas();
-    drawShip();
+    drawMario();
 }
 function keyDown(e) {
     if (e.keyCode == 39) rightKey = true;
