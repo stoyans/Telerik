@@ -9,14 +9,14 @@
 
 function getDivsInsideDivsGetTagName() {
     var insideDivs = document.getElementsByTagName('div');
-    var coundInnerDivs = 0;
+    var countInnerDivs = 0;
     for (var i = 0; i < insideDivs.length; i++) {
         if (insideDivs[i].parentNode.tagName.toLowerCase() === 'div') {
             console.log(insideDivs[i].innerHTML);
-            coundInnerDivs++;
+            countInnerDivs++;
         }
     }
-    console.log('number of divs directly inside divs are: ' + coundInnerDivs);
+    console.log('number of divs directly inside divs are: ' + countInnerDivs);
 }
 getDivsInsideDivsQuery();
 getDivsInsideDivsGetTagName();

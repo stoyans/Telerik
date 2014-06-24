@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HandleBars demos</title>
+    <script src="../libs/handlebars-v1.3.0.js"></script>
+</head>
+<body>
+    <script id="handlebars" type="text/x-handlebars-template">
+        <h1>{{title}}</h1>
+        <p>{{content}}</p>
+    </script>
+    <script>
+        var templateNode = document.getElementById("handlebars");
+        var templateString = templateNode.innerHTML;
+        var template = Handlebars.compile(templateString);
+
+        var article = {
+            title: 'Text on article',
+            content: "LOrem dmamdmdmauy auidb uab dibuhr o-30 jin"
+        };
+
+        var articleHTML = template(article);
+        console.log(articleHTML);
+    </script>
+</body>
+</html>

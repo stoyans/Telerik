@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Messages</title>
+    <script src="../libs/jquery-1.11.1.min.js"></script>
+    <style>
+        #success {
+            border: 2px solid #4cff00;
+            border-width: 5px;
+            border-radius:55px;
+            text-align: center;
+            color: green;
+            width: 200px;
+            height: 100px;
+            font-size: 35px;
+            padding-top: 50px;
+        }
+        #error {
+            border: 2px solid #aa4d4d;
+            border-width: 5px;
+            border-radius:55px;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            font-size: 35px;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message-box">
+        <button>Success</button>
+        <button>Error</button>
+    </div>
+    <script>
+        $(function () {
+            $('#message-box').messageBox();
+        });
+    </script>
+    <script src="generate-Messages.js"></script>
+</body>
+</html>

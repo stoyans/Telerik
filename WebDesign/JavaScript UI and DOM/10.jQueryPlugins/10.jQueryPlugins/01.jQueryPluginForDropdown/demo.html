@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown with jQuery</title>
+    <script src="../libs/jquery-1.11.1.min.js"></script>
+    <style>
+        .dropdown-list-container {
+            border: 1px solid green;
+            border-radius:10px;
+            width:200px;
+        }
+        ul {
+            list-style-type:none;
+            margin:10px;
+            width:100px;
+            
+        }
+            ul li {
+                background-color:green;
+                text-align:center;
+                margin-left:0;
+                border-radius:10px;
+                margin-bottom:10px;
+                
+            }
+                ul li:hover {
+                    cursor:pointer;
+                }
+    </style>
+</head>
+<body>
+    <select id="dropdown">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+    </select>
+    <script>
+        $(function () {
+            $('#dropdown').dropdown();
+        });
+    </script>
+    <script src="dropdown-list.js"></script>
+</body>
+</html>

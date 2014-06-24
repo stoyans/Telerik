@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+    <script src="../libs/handlebars-v1.3.0.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script id="options" type="text/x-handlebars-template">
+        <select>
+            {{#each options}}
+            <option value = {{value}}>{{text}}</option>
+            {{/each}}
+        </select>
+    </script>
+    <script src="generate-list.js"></script>
+</body>
+</html>
