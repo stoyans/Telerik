@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.T4Template", "01.T4Template\01.T4Template.csproj", "{5E571BD6-D443-45C0-9B29-95257F55ABEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{83720E1C-AC67-4075-9E55-761FE41D0AF0}"
+	ProjectSection(SolutionItems) = preProject
+		02.LinkToGithub.txt = 02.LinkToGithub.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E571BD6-D443-45C0-9B29-95257F55ABEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E571BD6-D443-45C0-9B29-95257F55ABEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E571BD6-D443-45C0-9B29-95257F55ABEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E571BD6-D443-45C0-9B29-95257F55ABEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
